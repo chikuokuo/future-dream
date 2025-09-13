@@ -32,14 +32,12 @@
           </div>
 
           <div class="hero-buttons">
-            <button class="btn-primary">
+            <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk" 
+               class="btn-primary" 
+               download="NeuschwansteinCastle-App.apk">
               <span class="btn-icon">📱</span>
-              Download on App Store
-            </button>
-            <button class="btn-secondary">
-              <span class="btn-icon">📱</span>
-              Get it on Google Play
-            </button>
+              Download APK
+            </a>
           </div>
 
           <button class="learn-more-btn">
