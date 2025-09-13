@@ -4,6 +4,26 @@
  * 改寫自 Flutter AppColorScheme
  */
 
+import {
+  baseColors,
+  themeColors,
+} from '@/constants/colors';
+import {
+  lightColorScheme,
+  darkColorScheme,
+  themes,
+  defaultTheme,
+} from '@/theme/colorSchemes';
+import {
+  getPrimaryShade,
+  getSecondaryShade,
+  getNeutralShade,
+  getColorScheme,
+  applyTheme,
+  toggleTheme,
+  getThemeGradient,
+} from '@/utils/colorHelpers';
+
 // 類型定義導出
 export type {
   ColorPalette,

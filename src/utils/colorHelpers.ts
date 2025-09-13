@@ -192,7 +192,7 @@ export function getContrastColor(backgroundColor: string): string {
  * @param direction 漸變方向（預設：135deg）
  * @returns CSS 線性漸變字符串
  */
-export function createLinearGradient(colors: string[], direction = '135deg'): string {
+export function createLinearGradient(colors: readonly string[], direction = '135deg'): string {
   const colorStops = colors.map((color, index) => {
     const position = index === 0 ? '0%' : index === colors.length - 1 ? '100%' : `${(index / (colors.length - 1)) * 100}%`
     return `${color} ${position}`

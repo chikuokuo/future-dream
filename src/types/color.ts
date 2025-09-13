@@ -80,9 +80,9 @@ export interface AppTheme {
   colorScheme: ColorScheme;
   colors: BaseColors;
   gradients: {
-    castle: string[];
-    sunset: string[];
-    forest: string[];
+    castle: readonly string[];
+    sunset: readonly string[];
+    forest: readonly string[];
   };
 }
 
