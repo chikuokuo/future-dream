@@ -390,7 +390,7 @@ onUnmounted(() => {
 /* Responsive Design */
 @media (max-width: 768px) {
   .header-container {
-    padding: 1rem;
+    padding: 0.75rem 1rem;
   }
   
   .brand-title {
@@ -398,52 +398,81 @@ onUnmounted(() => {
   }
   
   .header-actions {
-    gap: 0.75rem;
+    gap: 0.5rem;
   }
   
   .download-app-btn {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.85rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+    min-height: 40px;
+    border-radius: 6px;
+  }
+  
+  .download-icon {
+    font-size: 1rem;
   }
   
   .language-button {
-    min-width: 120px;
-    padding: 0.4rem 0.8rem;
-    font-size: 0.85rem;
+    min-width: 110px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+    min-height: 40px;
+    border-radius: 6px;
+  }
+  
+  .language-flag {
+    font-size: 1.1rem;
   }
   
   .language-menu {
     right: 0;
     left: auto;
-    min-width: 160px;
+    min-width: 150px;
+    top: calc(100% + 0.25rem);
+  }
+  
+  .language-option {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
   }
 }
 
 @media (max-width: 480px) {
   .header-container {
-    padding: 0.75rem;
+    padding: 0.5rem 0.75rem;
   }
   
   .brand-title {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   
   .header-actions {
-    gap: 0.5rem;
+    gap: 0.4rem;
   }
   
   .download-app-btn {
-    padding: 0.4rem 0.6rem;
-    font-size: 0.8rem;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    min-width: 44px;
+    min-height: 36px;
+    border-radius: 6px;
+    justify-content: center;
   }
   
   .download-text {
     display: none; /* Hide text on very small screens */
   }
   
+  .download-icon {
+    font-size: 1.1rem;
+  }
+  
   .language-button {
-    min-width: 100px;
-    padding: 0.4rem 0.6rem;
+    min-width: 44px;
+    padding: 0.5rem;
+    min-height: 36px;
+    border-radius: 6px;
+    justify-content: center;
   }
   
   .language-name {
@@ -452,6 +481,65 @@ onUnmounted(() => {
   
   .current-language .language-name {
     display: none;
+  }
+  
+  .current-language {
+    justify-content: center;
+  }
+  
+  .language-flag {
+    font-size: 1.1rem;
+  }
+  
+  .dropdown-icon {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .language-menu {
+    min-width: 140px;
+    right: -10px;
+  }
+  
+  .language-option {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .language-option .language-flag {
+    font-size: 1.3rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+  .header-container {
+    padding: 0.4rem 0.6rem;
+  }
+  
+  .brand-title {
+    font-size: 0.9rem;
+  }
+  
+  .header-actions {
+    gap: 0.3rem;
+  }
+  
+  .download-app-btn,
+  .language-button {
+    min-width: 40px;
+    min-height: 32px;
+    padding: 0.4rem;
+  }
+  
+  .download-icon,
+  .language-flag {
+    font-size: 1rem;
+  }
+  
+  .dropdown-icon {
+    width: 10px;
+    height: 10px;
   }
 }
 

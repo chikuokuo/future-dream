@@ -35,7 +35,7 @@
             </a>
           </div>
 
-          <button class="learn-more-btn">
+          <button class="learn-more-btn" @click="scrollToWhyChoose">
             {{ $t('hero.learnMore') }}
           </button>
         </div>
@@ -43,7 +43,7 @@
     </section>
 
     <!-- Why Choose Section -->
-    <section class="why-choose-section">
+    <section id="why-choose" class="why-choose-section">
       <div class="container">
         <h2 class="section-title">{{ $t('whyChoose.title') }}</h2>
         <p class="section-subtitle" v-html="$t('whyChoose.subtitle')">
@@ -85,10 +85,14 @@
         <h2 class="download-title">{{ $t('download.title') }}</h2>
         <p class="download-subtitle">{{ $t('download.subtitle') }}</p>
         
-        <button class="download-btn">
+        <a 
+          href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk"
+          class="download-btn"
+          download="NeuschwansteinCastle-App.apk"
+        >
           <span class="download-btn-icon">⬇️</span>
           {{ $t('download.button') }}
-        </button>
+        </a>
         
         <p class="compatibility">{{ $t('download.compatibility') }}</p>
       </div>
@@ -97,7 +101,16 @@
 </template>
 
 <script setup lang="ts">
-// Component logic can be added here if needed
+// Smooth scroll to Why Choose section
+const scrollToWhyChoose = () => {
+  const element = document.getElementById('why-choose')
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  }
+}
 </script>
 
 <style scoped>
@@ -202,6 +215,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -374,6 +388,14 @@
   transition: all 0.3s ease;
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 12px rgba(107, 114, 128, 0.2);
+  text-decoration: none;
+  justify-content: center;
+}
+
+.download-btn:link,
+.download-btn:visited {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .download-btn:hover {
@@ -381,6 +403,12 @@
   border-color: #d1d5db;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(107, 114, 128, 0.3);
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.download-btn:active {
+  transform: translateY(0);
 }
 
 .download-btn-icon {
@@ -414,12 +442,29 @@
   .hero-buttons {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
   }
 
   .btn-primary,
   .btn-secondary {
     width: 100%;
     max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .learn-more-btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .download-btn {
+    width: 100%;
+    max-width: 320px;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    margin: 0 auto 1.5rem;
   }
 
   .section-title {
@@ -432,6 +477,10 @@
 
   .download-title {
     font-size: 2rem;
+  }
+
+  .download-container {
+    padding: 0 1rem;
   }
 }
 
@@ -451,6 +500,90 @@
 
   .feature-card {
     padding: 1.5rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    max-width: 280px;
+    padding: 0.9rem 1.8rem;
+    font-size: 0.95rem;
+    margin: 0 auto;
+  }
+
+  .learn-more-btn {
+    width: 100%;
+    max-width: 250px;
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .download-btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+    margin: 0 auto 1.5rem;
+  }
+
+  .download-btn-icon {
+    font-size: 1.2rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+  .hero-content {
+    padding: 0.75rem;
+    margin-top: 45px;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    max-width: 260px;
+    padding: 0.9rem 1.5rem;
+    font-size: 0.9rem;
+    margin: 0 auto;
+  }
+
+  .learn-more-btn {
+    width: 100%;
+    max-width: 220px;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .download-btn {
+    width: 100%;
+    max-width: 250px;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+    margin: 0 auto 1.5rem;
+  }
+
+  .download-btn-icon {
+    font-size: 1.1rem;
+  }
+
+  .download-title {
+    font-size: 1.75rem;
+  }
+
+  .download-subtitle {
+    font-size: 1rem;
+  }
+
+  .download-container {
+    padding: 0 0.75rem;
   }
 }
 </style>
