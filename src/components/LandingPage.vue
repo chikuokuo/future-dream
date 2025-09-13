@@ -166,12 +166,17 @@
 /* Hero Section */
 .hero-section {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
     url('/ticket_frontend/images/Bg-NeuschwansteinCastle.jpg') center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  color: white;
 }
 
 .hero-background {
