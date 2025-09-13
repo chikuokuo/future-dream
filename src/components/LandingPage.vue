@@ -11,7 +11,7 @@
           </h1>
           <p class="hero-subtitle" v-html="$t('hero.subtitle')">
           </p>
-          
+
           <div class="hero-features">
             <div class="feature-item">
               <span class="feature-icon">🕐</span>
@@ -28,9 +28,8 @@
           </div>
 
           <div class="hero-buttons">
-            <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk" 
-               class="btn-primary" 
-               download="NeuschwansteinCastle-App.apk">
+            <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk"
+              class="btn-primary" download="NeuschwansteinCastle-App.apk">
               <span class="btn-icon">📱</span>
               {{ $t('hero.downloadApk') }}
             </a>
@@ -56,19 +55,19 @@
             <h3>{{ $t('whyChoose.features.instantBooking.title') }}</h3>
             <p>{{ $t('whyChoose.features.instantBooking.description') }}</p>
           </div>
-          
+
           <div class="feature-card">
             <div class="feature-icon-large">📱</div>
             <h3>{{ $t('whyChoose.features.digitalTickets.title') }}</h3>
             <p>{{ $t('whyChoose.features.digitalTickets.description') }}</p>
           </div>
-          
+
           <div class="feature-card">
             <div class="feature-icon-large">🛡️</div>
             <h3>{{ $t('whyChoose.features.securePayment.title') }}</h3>
             <p>{{ $t('whyChoose.features.securePayment.description') }}</p>
           </div>
-          
+
           <div class="feature-card">
             <div class="feature-icon-large">🌍</div>
             <h3>{{ $t('whyChoose.features.multiLanguage.title') }}</h3>
@@ -109,16 +108,21 @@
 
 /* Hero Section */
 .hero-section {
-  min-height: 100vh;
-  position: relative;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url('/ticket_frontend/images/Bg-NeuschwansteinCastle.jpg') center/cover;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  color: white;
 }
 
 .hero-background {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-              url('@/assets/images/Bg-NeuschwansteinCastle.jpg') center/cover;
+    url('@/assets/images/Bg-NeuschwansteinCastle.jpg') center/cover;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -397,35 +401,35 @@
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.2rem;
   }
-  
+
   .hero-features {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .hero-buttons {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .btn-primary,
   .btn-secondary {
     width: 100%;
     max-width: 300px;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .features-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .download-title {
     font-size: 2rem;
   }
@@ -436,15 +440,15 @@
     padding: 1rem;
     margin-top: 50px; /* Even smaller offset for very small screens */
   }
-  
+
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .container {
     padding: 0 1rem;
   }
-  
+
   .feature-card {
     padding: 1.5rem;
   }
