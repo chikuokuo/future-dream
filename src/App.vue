@@ -17,8 +17,8 @@ import LandingPage from '@/components/LandingPage.vue'
 
 #app {
   min-height: 100vh;
-  background-color: var(--md-background);
-  color: var(--md-on-background);
+  background-color: #ffffff;
+  color: #1f2937;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
