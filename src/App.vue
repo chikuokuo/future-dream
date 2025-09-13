@@ -1,41 +1,33 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import LandingPage from '@/components/LandingPage.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
-  <div class="apk-download">
-    <a
-      href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk"
-      class="download-button"
-      download
-    >
-      Download APK
-    </a>
+  <div id="app">
+    <LandingPage />
   </div>
 </template>
 
-<style scoped>
-.apk-download {
-  margin-top: 2rem;
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.download-button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  color: white;
-  background-color: #42b983;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
+#app {
+  min-height: 100vh;
+  background-color: var(--md-background);
+  color: var(--md-on-background);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.download-button:hover {
-  background-color: #33a06f;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 </style>
