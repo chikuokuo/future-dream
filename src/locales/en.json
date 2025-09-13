@@ -1,0 +1,46 @@
+{
+  "header": {
+    "language": "Language",
+    "downloadApp": "Download App"
+  },
+  "hero": {
+    "badge": "👑 Neuschwanstein Castle Booking Made Easy",
+    "title": "Castle\nBooking App",
+    "subtitle": "Your trusted companion for\nNeuschwanstein Castle ticket booking",
+    "features": {
+      "booking": "24/7 Online Booking",
+      "trusted": "Trusted by Travelers",
+      "downloads": "100K+ Downloads"
+    },
+    "downloadApk": "Download App",
+    "learnMore": "Learn More About Features ↓"
+  },
+  "whyChoose": {
+    "title": "Why Choose Our App?",
+    "subtitle": "A comprehensive ticketing app designed for travelers visiting\nNeuschwanstein Castle, providing convenient booking solutions",
+    "features": {
+      "instantBooking": {
+        "title": "Instant Booking",
+        "description": "Book tickets anytime, anywhere without waiting in line"
+      },
+      "digitalTickets": {
+        "title": "Digital Tickets",
+        "description": "Show digital tickets on your phone - eco-friendly and convenient"
+      },
+      "securePayment": {
+        "title": "Secure Payment",
+        "description": "Your payment information is protected with the highest level of encryption"
+      },
+      "multiLanguage": {
+        "title": "Multi-language Support",
+        "description": "Available in Chinese, English, German, and many other languages"
+      }
+    }
+  },
+  "download": {
+    "title": "Download Now",
+    "subtitle": "Join over 100,000 satisfied users",
+    "button": "Download App for Free",
+    "compatibility": "Supports iOS 12.0+ and Android 8.0+"
+  }
+}

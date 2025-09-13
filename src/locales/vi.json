@@ -1,0 +1,46 @@
+{
+  "header": {
+    "language": "Ngôn ngữ",
+    "downloadApp": "Tải ứng dụng"
+  },
+  "hero": {
+    "badge": "👑 Đặt vé lâu đài Neuschwanstein dễ dàng",
+    "title": "Ứng dụng\nĐặt vé lâu đài",
+    "subtitle": "Người bạn đồng hành đáng tin cậy của bạn cho\nviệc đặt vé lâu đài Neuschwanstein",
+    "features": {
+      "booking": "Đặt vé trực tuyến 24/7",
+      "trusted": "Được du khách tin tưởng",
+      "downloads": "Hơn 100K lượt tải"
+    },
+    "downloadApk": "Tải ứng dụng",
+    "learnMore": "Tìm hiểu thêm về tính năng ↓"
+  },
+  "whyChoose": {
+    "title": "Tại sao chọn ứng dụng của chúng tôi?",
+    "subtitle": "Một ứng dụng bán vé toàn diện được thiết kế cho du khách đến thăm\nlâu đài Neuschwanstein, cung cấp giải pháp đặt vé tiện lợi",
+    "features": {
+      "instantBooking": {
+        "title": "Đặt vé ngay lập tức",
+        "description": "Đặt vé mọi lúc, mọi nơi mà không cần xếp hàng chờ đợi"
+      },
+      "digitalTickets": {
+        "title": "Vé điện tử",
+        "description": "Hiển thị vé điện tử trên điện thoại - thân thiện với môi trường và tiện lợi"
+      },
+      "securePayment": {
+        "title": "Thanh toán an toàn",
+        "description": "Thông tin thanh toán của bạn được bảo vệ với mức độ mã hóa cao nhất"
+      },
+      "multiLanguage": {
+        "title": "Hỗ trợ đa ngôn ngữ",
+        "description": "Có sẵn bằng tiếng Trung, tiếng Anh, tiếng Đức và nhiều ngôn ngữ khác"
+      }
+    }
+  },
+  "download": {
+    "title": "Tải ngay",
+    "subtitle": "Tham gia cùng hơn 100.000 người dùng hài lòng",
+    "button": "Tải ứng dụng miễn phí",
+    "compatibility": "Hỗ trợ iOS 12.0+ và Android 8.0+"
+  }
+}

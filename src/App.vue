@@ -1,9 +1,11 @@
 <script setup lang="ts">
+import AppHeader from '@/components/AppHeader.vue'
 import LandingPage from '@/components/LandingPage.vue'
 </script>
 
 <template>
   <div id="app">
+    <AppHeader />
     <LandingPage />
   </div>
 </template>

@@ -5,29 +5,25 @@
       <div class="hero-background">
         <div class="hero-content">
           <div class="hero-badge">
-            👑 Neuschwanstein Castle Booking Made Easy
+            {{ $t('hero.badge') }}
           </div>
-          <h1 class="hero-title">
-            Castle<br>
-            Booking App
+          <h1 class="hero-title" v-html="$t('hero.title')">
           </h1>
-          <p class="hero-subtitle">
-            Your trusted companion for<br>
-            Neuschwanstein Castle ticket booking
+          <p class="hero-subtitle" v-html="$t('hero.subtitle')">
           </p>
           
           <div class="hero-features">
             <div class="feature-item">
               <span class="feature-icon">🕐</span>
-              <span>24/7 Online Booking</span>
+              <span>{{ $t('hero.features.booking') }}</span>
             </div>
             <div class="feature-item">
               <span class="feature-icon">🛡️</span>
-              <span>Trusted by Travelers</span>
+              <span>{{ $t('hero.features.trusted') }}</span>
             </div>
             <div class="feature-item">
               <span class="feature-icon">⭐</span>
-              <span>100K+ Downloads</span>
+              <span>{{ $t('hero.features.downloads') }}</span>
             </div>
           </div>
 
@@ -36,12 +32,12 @@
                class="btn-primary" 
                download="NeuschwansteinCastle-App.apk">
               <span class="btn-icon">📱</span>
-              Download APK
+              {{ $t('hero.downloadApk') }}
             </a>
           </div>
 
           <button class="learn-more-btn">
-            Learn More About Features ↓
+            {{ $t('hero.learnMore') }}
           </button>
         </div>
       </div>
@@ -50,104 +46,52 @@
     <!-- Why Choose Section -->
     <section class="why-choose-section">
       <div class="container">
-        <h2 class="section-title">Why Choose Our App?</h2>
-        <p class="section-subtitle">
-          A comprehensive ticketing app designed for travelers visiting<br>
-          Neuschwanstein Castle, providing convenient booking solutions
+        <h2 class="section-title">{{ $t('whyChoose.title') }}</h2>
+        <p class="section-subtitle" v-html="$t('whyChoose.subtitle')">
         </p>
 
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon-large">📅</div>
-            <h3>Instant Booking</h3>
-            <p>Book tickets anytime, anywhere without waiting in line</p>
+            <h3>{{ $t('whyChoose.features.instantBooking.title') }}</h3>
+            <p>{{ $t('whyChoose.features.instantBooking.description') }}</p>
           </div>
           
           <div class="feature-card">
             <div class="feature-icon-large">📱</div>
-            <h3>Digital Tickets</h3>
-            <p>Show digital tickets on your phone - eco-friendly and convenient</p>
+            <h3>{{ $t('whyChoose.features.digitalTickets.title') }}</h3>
+            <p>{{ $t('whyChoose.features.digitalTickets.description') }}</p>
           </div>
           
           <div class="feature-card">
             <div class="feature-icon-large">🛡️</div>
-            <h3>Secure Payment</h3>
-            <p>Your payment information is protected with the highest level of encryption</p>
+            <h3>{{ $t('whyChoose.features.securePayment.title') }}</h3>
+            <p>{{ $t('whyChoose.features.securePayment.description') }}</p>
           </div>
           
           <div class="feature-card">
             <div class="feature-icon-large">🌍</div>
-            <h3>Multi-language Support</h3>
-            <p>Available in Chinese, English, German, and many other languages</p>
+            <h3>{{ $t('whyChoose.features.multiLanguage.title') }}</h3>
+            <p>{{ $t('whyChoose.features.multiLanguage.description') }}</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- App Exclusive Benefits -->
-    <section class="benefits-section">
-      <div class="container">
-        <h2 class="section-title">App Exclusive Benefits</h2>
-        
-        <div class="benefits-list">
-          <div class="benefit-item">
-            <span class="benefit-icon">🎫</span>
-            <span>Skip the line with fast entry</span>
-          </div>
-          
-          <div class="benefit-item">
-            <span class="benefit-icon">📱</span>
-            <span>Digital tickets - eco-friendly & convenient</span>
-          </div>
-          
-          <div class="benefit-item">
-            <span class="benefit-icon">💰</span>
-            <span>Exclusive app-only discounted prices</span>
-          </div>
-          
-          <div class="benefit-item">
-            <span class="benefit-icon">🔔</span>
-            <span>Real-time notifications for updates</span>
-          </div>
-          
-          <div class="benefit-item">
-            <span class="benefit-icon">📍</span>
-            <span>Navigation and location information</span>
-          </div>
-          
-          <div class="benefit-item">
-            <span class="benefit-icon">⭐</span>
-            <span>User reviews and experiences</span>
-          </div>
-        </div>
-
-        <!-- User Review -->
-        <div class="user-review">
-          <div class="review-header">
-            <span class="review-icon">⭐</span>
-            <h3>User Review</h3>
-          </div>
-          <blockquote class="review-text">
-            "Great booking experience! The app made it so easy to secure our tickets in advance. Highly recommended for anyone planning to visit."
-          </blockquote>
-          <cite class="review-author">- Sarah M., Travel Blogger</cite>
-        </div>
-      </div>
-    </section>
 
     <!-- Download Section -->
     <section class="download-section">
       <div class="download-container">
         <div class="download-icon">📱</div>
-        <h2 class="download-title">Download Now</h2>
-        <p class="download-subtitle">Join over 100,000 satisfied users</p>
+        <h2 class="download-title">{{ $t('download.title') }}</h2>
+        <p class="download-subtitle">{{ $t('download.subtitle') }}</p>
         
         <button class="download-btn">
           <span class="download-btn-icon">⬇️</span>
-          Download App for Free
+          {{ $t('download.button') }}
         </button>
         
-        <p class="compatibility">Supports iOS 12.0+ and Android 8.0+</p>
+        <p class="compatibility">{{ $t('download.compatibility') }}</p>
       </div>
     </section>
   </div>
@@ -181,6 +125,7 @@
   align-items: center;
   justify-content: center;
   background-attachment: fixed;
+  background-position: center top;
 }
 
 .hero-content {
@@ -188,6 +133,7 @@
   color: white;
   max-width: 800px;
   padding: 2rem;
+  margin-top: 80px; /* Offset for fixed header */
 }
 
 .hero-badge {
@@ -254,6 +200,13 @@
   align-items: center;
   gap: 0.5rem;
   transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+  text-decoration: none;
+  color: white;
 }
 
 .btn-primary:hover {
@@ -362,78 +315,11 @@
   line-height: 1.6;
 }
 
-/* Benefits Section */
-.benefits-section {
-  padding: 5rem 0;
-  background: white;
-}
-
-.benefits-list {
-  margin-bottom: 4rem;
-}
-
-.benefit-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 0;
-  font-size: 1.1rem;
-  color: #1f2937;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.benefit-item:last-child {
-  border-bottom: none;
-}
-
-.benefit-icon {
-  font-size: 1.5rem;
-  width: 2rem;
-  text-align: center;
-}
-
-/* User Review */
-.user-review {
-  background: #f1f5f9;
-  padding: 2rem;
-  border-radius: 16px;
-  margin-top: 3rem;
-}
-
-.review-header {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.review-icon {
-  font-size: 1.5rem;
-}
-
-.review-header h3 {
-  font-size: 1.5rem;
-  color: #3b82f6;
-  margin: 0;
-}
-
-.review-text {
-  font-size: 1.1rem;
-  font-style: italic;
-  color: #4b5563;
-  margin: 1rem 0;
-  line-height: 1.6;
-}
-
-.review-author {
-  color: #6b7280;
-  font-size: 0.9rem;
-}
 
 /* Download Section */
 .download-section {
-  background: linear-gradient(135deg, #3b82f6, #1e40af);
-  padding: 5rem 0;
+  background: linear-gradient(135deg, #374151, #1f2937);
+  padding: 3rem 0;
   text-align: center;
 }
 
@@ -444,35 +330,35 @@
 }
 
 .download-icon {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
   background: white;
-  width: 100px;
-  height: 100px;
-  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 2rem;
+  margin: 0 auto 1.5rem;
 }
 
 .download-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: white;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .download-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .download-btn {
-  background: #fbbf24;
-  color: #1f2937;
-  border: none;
+  background: #6b7280;
+  color: #ffffff;
+  border: 2px solid #9ca3af;
   padding: 1.25rem 3rem;
   border-radius: 12px;
   font-size: 1.2rem;
@@ -482,12 +368,15 @@
   align-items: center;
   gap: 0.75rem;
   transition: all 0.3s ease;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(107, 114, 128, 0.2);
 }
 
 .download-btn:hover {
-  background: #f59e0b;
+  background: #4b5563;
+  border-color: #d1d5db;
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(107, 114, 128, 0.3);
 }
 
 .download-btn-icon {
@@ -501,6 +390,10 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .hero-content {
+    margin-top: 60px; /* Smaller offset for mobile */
+  }
+  
   .hero-title {
     font-size: 2.5rem;
   }
@@ -541,6 +434,7 @@
 @media (max-width: 480px) {
   .hero-content {
     padding: 1rem;
+    margin-top: 50px; /* Even smaller offset for very small screens */
   }
   
   .hero-title {

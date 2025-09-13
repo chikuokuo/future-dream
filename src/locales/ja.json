@@ -1,0 +1,46 @@
+{
+  "header": {
+    "language": "言語",
+    "downloadApp": "アプリをダウンロード"
+  },
+  "hero": {
+    "badge": "👑 ノイシュヴァンシュタイン城の予約が簡単に",
+    "title": "城\n予約アプリ",
+    "subtitle": "ノイシュヴァンシュタイン城のチケット予約のための\n信頼できるパートナー",
+    "features": {
+      "booking": "24時間オンライン予約",
+      "trusted": "旅行者に信頼されている",
+      "downloads": "10万回以上のダウンロード"
+    },
+    "downloadApk": "アプリをダウンロード",
+    "learnMore": "機能について詳しく見る ↓"
+  },
+  "whyChoose": {
+    "title": "なぜ私たちのアプリを選ぶのですか？",
+    "subtitle": "ノイシュヴァンシュタイン城を訪れる旅行者のために設計された\n包括的なチケットアプリで、便利な予約ソリューションを提供します",
+    "features": {
+      "instantBooking": {
+        "title": "即座予約",
+        "description": "列に並んで待つことなく、いつでもどこでもチケットを予約できます"
+      },
+      "digitalTickets": {
+        "title": "デジタルチケット",
+        "description": "スマートフォンでデジタルチケットを表示 - 環境に優しく便利です"
+      },
+      "securePayment": {
+        "title": "安全な支払い",
+        "description": "お客様の支払い情報は最高レベルの暗号化で保護されています"
+      },
+      "multiLanguage": {
+        "title": "多言語サポート",
+        "description": "中国語、英語、ドイツ語、その他多くの言語で利用可能です"
+      }
+    }
+  },
+  "download": {
+    "title": "今すぐダウンロード",
+    "subtitle": "10万人以上の満足したユーザーと一緒に",
+    "button": "無料でアプリをダウンロード",
+    "compatibility": "iOS 12.0+およびAndroid 8.0+をサポート"
+  }
+}

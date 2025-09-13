@@ -1,0 +1,46 @@
+{
+  "header": {
+    "language": "언어",
+    "downloadApp": "앱 다운로드"
+  },
+  "hero": {
+    "badge": "👑 노이슈반슈타인 성 예약이 쉬워졌습니다",
+    "title": "성\n예약 앱",
+    "subtitle": "노이슈반슈타인 성 티켓 예약을 위한\n신뢰할 수 있는 동반자",
+    "features": {
+      "booking": "24시간 온라인 예약",
+      "trusted": "여행자들이 신뢰하는",
+      "downloads": "10만+ 다운로드"
+    },
+    "downloadApk": "앱 다운로드",
+    "learnMore": "기능에 대해 더 알아보기 ↓"
+  },
+  "whyChoose": {
+    "title": "왜 우리 앱을 선택해야 할까요?",
+    "subtitle": "노이슈반슈타인 성을 방문하는 여행자를 위해 설계된\n종합 티켓팅 앱으로 편리한 예약 솔루션을 제공합니다",
+    "features": {
+      "instantBooking": {
+        "title": "즉시 예약",
+        "description": "줄을 서서 기다릴 필요 없이 언제 어디서나 티켓을 예약하세요"
+      },
+      "digitalTickets": {
+        "title": "디지털 티켓",
+        "description": "휴대폰에서 디지털 티켓을 보여주세요 - 친환경적이고 편리합니다"
+      },
+      "securePayment": {
+        "title": "안전한 결제",
+        "description": "귀하의 결제 정보는 최고 수준의 암호화로 보호됩니다"
+      },
+      "multiLanguage": {
+        "title": "다국어 지원",
+        "description": "중국어, 영어, 독일어 및 기타 여러 언어로 이용 가능합니다"
+      }
+    }
+  },
+  "download": {
+    "title": "지금 다운로드",
+    "subtitle": "10만 명 이상의 만족한 사용자와 함께하세요",
+    "button": "무료로 앱 다운로드",
+    "compatibility": "iOS 12.0+ 및 Android 8.0+ 지원"
+  }
+}
