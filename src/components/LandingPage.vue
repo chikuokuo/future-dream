@@ -15,7 +15,7 @@
             Your trusted companion for<br>
             Neuschwanstein Castle ticket booking
           </p>
-          
+
           <div class="hero-features">
             <div class="feature-item">
               <span class="feature-icon">🕐</span>
@@ -32,9 +32,8 @@
           </div>
 
           <div class="hero-buttons">
-            <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk" 
-               class="btn-primary" 
-               download="NeuschwansteinCastle-App.apk">
+            <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk"
+              class="btn-primary" download="NeuschwansteinCastle-App.apk">
               <span class="btn-icon">📱</span>
               Download APK
             </a>
@@ -62,19 +61,19 @@
             <h3>Instant Booking</h3>
             <p>Book tickets anytime, anywhere without waiting in line</p>
           </div>
-          
+
           <div class="feature-card">
             <div class="feature-icon-large">📱</div>
             <h3>Digital Tickets</h3>
             <p>Show digital tickets on your phone - eco-friendly and convenient</p>
           </div>
-          
+
           <div class="feature-card">
             <div class="feature-icon-large">🛡️</div>
             <h3>Secure Payment</h3>
             <p>Your payment information is protected with the highest level of encryption</p>
           </div>
-          
+
           <div class="feature-card">
             <div class="feature-icon-large">🌍</div>
             <h3>Multi-language Support</h3>
@@ -88,33 +87,33 @@
     <section class="benefits-section">
       <div class="container">
         <h2 class="section-title">App Exclusive Benefits</h2>
-        
+
         <div class="benefits-list">
           <div class="benefit-item">
             <span class="benefit-icon">🎫</span>
             <span>Skip the line with fast entry</span>
           </div>
-          
+
           <div class="benefit-item">
             <span class="benefit-icon">📱</span>
             <span>Digital tickets - eco-friendly & convenient</span>
           </div>
-          
+
           <div class="benefit-item">
             <span class="benefit-icon">💰</span>
             <span>Exclusive app-only discounted prices</span>
           </div>
-          
+
           <div class="benefit-item">
             <span class="benefit-icon">🔔</span>
             <span>Real-time notifications for updates</span>
           </div>
-          
+
           <div class="benefit-item">
             <span class="benefit-icon">📍</span>
             <span>Navigation and location information</span>
           </div>
-          
+
           <div class="benefit-item">
             <span class="benefit-icon">⭐</span>
             <span>User reviews and experiences</span>
@@ -128,7 +127,8 @@
             <h3>User Review</h3>
           </div>
           <blockquote class="review-text">
-            "Great booking experience! The app made it so easy to secure our tickets in advance. Highly recommended for anyone planning to visit."
+            "Great booking experience! The app made it so easy to secure our tickets in advance. Highly recommended for
+            anyone planning to visit."
           </blockquote>
           <cite class="review-author">- Sarah M., Travel Blogger</cite>
         </div>
@@ -141,12 +141,12 @@
         <div class="download-icon">📱</div>
         <h2 class="download-title">Download Now</h2>
         <p class="download-subtitle">Join over 100,000 satisfied users</p>
-        
+
         <button class="download-btn">
           <span class="download-btn-icon">⬇️</span>
           Download App for Free
         </button>
-        
+
         <p class="compatibility">Supports iOS 12.0+ and Android 8.0+</p>
       </div>
     </section>
@@ -166,10 +166,8 @@
 /* Hero Section */
 .hero-section {
   height: 100vh;
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
+  background: linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
     url('/ticket_frontend/images/Bg-NeuschwansteinCastle.jpg') center/cover;
   display: flex;
   flex-direction: column;
@@ -181,7 +179,7 @@
 
 .hero-background {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-              url('@/assets/images/Bg-NeuschwansteinCastle.jpg') center/cover;
+    url('@/assets/images/Bg-NeuschwansteinCastle.jpg') center/cover;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -511,35 +509,35 @@
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.2rem;
   }
-  
+
   .hero-features {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .hero-buttons {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .btn-primary,
   .btn-secondary {
     width: 100%;
     max-width: 300px;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .features-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .download-title {
     font-size: 2rem;
   }
@@ -549,15 +547,15 @@
   .hero-content {
     padding: 1rem;
   }
-  
+
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .container {
     padding: 0 1rem;
   }
-  
+
   .feature-card {
     padding: 1.5rem;
   }
