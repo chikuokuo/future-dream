@@ -42,7 +42,10 @@
       </div>
     </section>
 
+    <UffiziGallerySection />
+    <NeuschwansteinCastleSection />
     <ExploreItalySection />
+    <OurServicesSection />
 
     <!-- Why Choose Section -->
     <section id="why-choose" class="why-choose-section">
@@ -107,6 +110,9 @@ import { useI18n } from 'vue-i18n'
 import { useHead } from '@vueuse/head'
 import OurServicesSection from './OurServicesSection.vue'
 import ExploreItalySection from './ExploreItalySection.vue'
+import UffiziGallerySection from './UffiziGallerySection.vue'
+import NeuschwansteinCastleSection from './NeuschwansteinCastleSection.vue'
+
 
 const { t } = useI18n()
 

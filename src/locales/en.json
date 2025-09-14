@@ -90,5 +90,44 @@
       }
     },
     "cta": "Plan Your Italian Journey"
+  },
+  "uffiziGallery": {
+    "title": "Uffizi Gallery (Florence, Italy)",
+    "story": {
+      "title": "Story & History",
+      "content1": "Built in 1560, it originally served as government offices (Uffizi means 'offices') for Florence.",
+      "content2": "It houses the most important collection of Renaissance art, making it one of the world's most famous museums."
+    },
+    "experience": {
+      "title": "Visual & Experience",
+      "content1": "The gallery features over 2,000 works, including Botticelli's 'The Birth of Venus,' sketches by da Vinci, and paintings by Michelangelo.",
+      "content2": "Walking through its corridors offers stunning views of the Arno River and Florence's historic cityscape."
+    },
+    "tips": {
+      "title": "Travel Tips",
+      "content1": "Location: Florence city center, easily reachable on foot.",
+      "content2": "Booking tickets online in advance is highly recommended, as it often sells out, especially during peak season.",
+      "content3": "The best time to visit is in the morning to avoid large crowds."
+    },
+    "cta": "Buy Tickets & Download App"
+  },
+  "neuschwansteinCastle": {
+    "title": "Neuschwanstein Castle (Germany)",
+    "story": {
+      "title": "Story & History",
+      "content1": "Built in the 19th century by King Ludwig II of Bavaria, known as the 'Fairytale King.'",
+      "content2": "It was inspired by German legends and operas and later served as the inspiration for Disneyland's Sleeping Beauty Castle."
+    },
+    "experience": {
+      "title": "Visual & Experience",
+      "content1": "Nestled in the Alpine foothills, the white castle against the mountains and lakes creates a real-life fairytale setting.",
+      "content2": "The interior is lavishly decorated, combining Gothic and Byzantine styles, with the 'Singers' Hall' being particularly breathtaking."
+    },
+    "tips": {
+      "title": "Travel Tips",
+      "content1": "Nearest train station: Füssen, about a 2-hour journey from Munich by ICE/regional train.",
+      "content2": "Upon arrival, you can take a bus or walk up the hill. Booking tickets online in advance is recommended to avoid queues."
+    },
+    "cta": "Buy Tickets & Download App"
   }
 }

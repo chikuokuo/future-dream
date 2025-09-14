@@ -90,5 +90,44 @@
       }
     },
     "cta": "Lên kế hoạch cho chuyến đi Ý của bạn"
+  },
+  "uffiziGallery": {
+    "title": "Phòng trưng bày Uffizi (Florence, Ý)",
+    "story": {
+      "title": "Câu chuyện & Lịch sử",
+      "content1": "Được xây dựng vào năm 1560, ban đầu được dùng làm văn phòng chính phủ (Uffizi = văn phòng) cho Florence.",
+      "content2": "Nơi đây lưu giữ bộ sưu tập các tác phẩm nghệ thuật quan trọng nhất của thời kỳ Phục hưng, là một trong những bảo tàng nghệ thuật nổi tiếng nhất thế giới."
+    },
+    "experience": {
+      "title": "Thị giác & Trải nghiệm",
+      "content1": "Phòng trưng bày có hơn 2.000 tác phẩm, bao gồm 'Sự ra đời của thần Vệ nữ' của Botticelli, các bản phác thảo của da Vinci và các bức tranh của Michelangelo.",
+      "content2": "Đi dạo qua các hành lang, bạn có thể thưởng ngoạn quang cảnh tuyệt đẹp của sông Arno và khu phố cổ của Florence."
+    },
+    "tips": {
+      "title": "Mẹo du lịch",
+      "content1": "Vị trí: Trung tâm thành phố Florence, có thể dễ dàng đi bộ đến.",
+      "content2": "Nên đặt vé trực tuyến trước, vì vé thường bán hết, đặc biệt là vào mùa cao điểm.",
+      "content3": "Thời gian tốt nhất để tham quan là vào buổi sáng để tránh đám đông."
+    },
+    "cta": "Mua vé & Tải ứng dụng"
+  },
+  "neuschwansteinCastle": {
+    "title": "Lâu đài Neuschwanstein (Đức)",
+    "story": {
+      "title": "Câu chuyện & Lịch sử",
+      "content1": "Được xây dựng vào thế kỷ 19 bởi Vua Ludwig II của Bavaria, được mệnh danh là 'Vua trong truyện cổ tích'.",
+      "content2": "Nó được lấy cảm hứng từ các truyền thuyết và vở opera của Đức và sau đó là nguồn cảm hứng cho thiết kế Lâu đài Người đẹp ngủ trong rừng của Disneyland."
+    },
+    "experience": {
+      "title": "Thị giác & Trải nghiệm",
+      "content1": "Nằm ở chân đồi Alpine, lâu đài màu trắng tương phản với núi và hồ tạo nên một khung cảnh cổ tích ngoài đời thực.",
+      "content2": "Nội thất được trang trí xa hoa, kết hợp giữa phong cách Gothic và Byzantine, với 'Sảnh Ca sĩ' đặc biệt ngoạn mục."
+    },
+    "tips": {
+      "title": "Mẹo du lịch",
+      "content1": "Ga tàu gần nhất: Füssen, cách Munich khoảng 2 giờ đi bằng tàu ICE/tàu khu vực.",
+      "content2": "Khi đến nơi, bạn có thể đi xe buýt hoặc đi bộ lên đồi. Nên đặt vé trực tuyến trước để tránh phải xếp hàng."
+    },
+    "cta": "Mua vé & Tải ứng dụng"
   }
 }
