@@ -83,9 +83,6 @@
       </div>
     </section>
 
-    <OurServicesSection />
-
-
     <!-- Download Section -->
     <section class="download-section">
       <div class="download-container">
