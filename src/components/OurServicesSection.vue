@@ -9,8 +9,7 @@
                     <div class="service-icon">🏰</div>
                     <h3>{{ $t('ourServices.neuschwanstein.title') }}</h3>
                     <ul>
-                        <li v-for="(feature, index) in $t('ourServices.neuschwanstein.features').split('|')"
-                            :key="index">
+                        <li v-for="(feature, index) in $tm('ourServices.neuschwanstein.features')" :key="index">
                             {{ feature }}
                         </li>
                     </ul>
@@ -20,7 +19,7 @@
                     <div class="service-icon">🚆</div>
                     <h3>{{ $t('ourServices.germanRail.title') }}</h3>
                     <ul>
-                        <li v-for="(feature, index) in $t('ourServices.germanRail.features').split('|')" :key="index">
+                        <li v-for="(feature, index) in $tm('ourServices.germanRail.features')" :key="index">
                             {{ feature }}
                         </li>
                     </ul>
@@ -31,7 +30,8 @@
 </template>
 
 <script setup lang="ts">
-// No script logic needed for this component yet
+import { useI18n } from 'vue-i18n';
+const { tm } = useI18n();
 </script>
 
 <style scoped>

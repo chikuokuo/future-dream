@@ -42,6 +42,8 @@
       </div>
     </section>
 
+    <ExploreGermanySection />
+
     <!-- Why Choose Section -->
     <section id="why-choose" class="why-choose-section">
       <div class="container">
@@ -104,6 +106,7 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '@vueuse/head'
 import OurServicesSection from './OurServicesSection.vue'
+import ExploreGermanySection from './ExploreGermanySection.vue'
 
 const { t } = useI18n()
 

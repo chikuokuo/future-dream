@@ -65,5 +65,25 @@
   "seo": {
     "title": "Vé Neuschwanstein & Tàu Đức | Future Dream",
     "description": "Dễ dàng đặt vé Lâu đài Neuschwanstein và vé tàu Đường sắt Đức (DB) với Ứng dụng Future Dream. Tận hưởng đặt vé trực tuyến 24/7, vé điện tử và hỗ trợ đa ngôn ngữ cho chuyến đi Đức của bạn."
+  },
+  "exploreGermany": {
+    "title": "Khám phá nước Đức bằng đường sắt",
+    "intro1": "Đức tự hào có một trong những mạng lưới đường sắt đúng giờ và thuận tiện nhất thế giới, cho phép khách du lịch dễ dàng đến các điểm tham quan chính, bao gồm cả Lâu đài Neuschwanstein.",
+    "intro2": "Dù đó là tàu cao tốc ICE, tàu liên thành phố IC hay tàu khu vực RB, hành trình của bạn sẽ thoải mái và hiệu quả.",
+    "features": {
+      "ice": {
+        "title": "Tàu cao tốc ICE",
+        "description": "Kết nối trực tiếp giữa các thành phố lớn trên toàn quốc. Nhanh chóng, tiết kiệm thời gian và hoàn hảo cho việc đi lại giữa các thành phố."
+      },
+      "scenic": {
+        "title": "Các tuyến đường và phong cảnh đẹp",
+        "description": "Hành trình từ Munich đến Neuschwanstein nổi tiếng với phong cảnh tuyệt đẹp, là một trong những tuyến tàu nổi tiếng nhất châu Âu."
+      },
+      "combo": {
+        "title": "Vé kết hợp Đường sắt + Lâu đài",
+        "description": "Đặt vé tàu và vé lâu đài cùng nhau để tiết kiệm thời gian, bỏ qua hàng đợi và tránh phải mua nhiều lần."
+      }
+    },
+    "cta": "Lên kế hoạch cho chuyến đi của bạn"
   }
 }

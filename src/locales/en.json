@@ -65,5 +65,25 @@
   "seo": {
     "title": "Neuschwanstein & German Train Tickets | Future Dream",
     "description": "Easily book your Neuschwanstein Castle and German Rail (DB) train tickets with the Future Dream App. Enjoy 24/7 online booking, e-tickets, and multi-language support for your Germany trip."
+  },
+  "exploreGermany": {
+    "title": "Explore Germany by Rail",
+    "intro1": "Germany boasts one of the world's most punctual and convenient rail networks, allowing travelers to easily reach major attractions, including Neuschwanstein Castle.",
+    "intro2": "Whether it's the high-speed ICE, InterCity IC, or regional RB trains, your journey will be comfortable and efficient.",
+    "features": {
+      "ice": {
+        "title": "High-Speed ICE Trains",
+        "description": "Direct connections between major cities nationwide. Fast, time-saving, and perfect for cross-city travel."
+      },
+      "scenic": {
+        "title": "Scenic Routes & Landscapes",
+        "description": "The journey from Munich to Neuschwanstein is famed for its beautiful scenery, one of Europe's most popular train routes."
+      },
+      "combo": {
+        "title": "Rail + Castle Combo Tickets",
+        "description": "Book your train and castle tickets together to save time, skip the lines, and avoid multiple purchases."
+      }
+    },
+    "cta": "Plan Your Train Trip"
   }
 }
