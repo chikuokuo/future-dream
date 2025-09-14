@@ -1,6 +1,6 @@
-# ticket_frontend
+# Future Dream - Italy Travel Platform
 
-This template should help get you started developing with Vue 3 in Vite.
+Future Dream is a comprehensive Italy travel solution offering curated travel packages, high-speed train tickets, and skip-the-line access to top attractions.
 
 ## Recommended IDE Setup
 
