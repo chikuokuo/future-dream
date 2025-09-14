@@ -1,46 +1,133 @@
 {
   "header": {
-    "language": "Ngôn ngữ",
-    "downloadApp": "Tải ứng dụng"
+    "brand": "🏰 Future Dream"
   },
   "hero": {
-    "badge": "👑 Đặt vé lâu đài Neuschwanstein dễ dàng",
-    "title": "Ứng dụng\nĐặt vé lâu đài",
-    "subtitle": "Người bạn đồng hành đáng tin cậy của bạn cho\nviệc đặt vé lâu đài Neuschwanstein",
+    "badge": "Tấm vé đến kho báu châu Âu của bạn",
+    "title": "Ý bằng tàu hỏa & Các địa danh biểu tượng của châu Âu",
+    "subtitle": "Đặt vé tàu cao tốc cho Ý một cách liền mạch và đảm bảo quyền vào cửa Phòng trưng bày Uffizi và Lâu đài Neuschwanstein.",
     "features": {
-      "booking": "Đặt vé trực tuyến 24/7",
-      "trusted": "Được du khách tin tưởng",
-      "downloads": "Hơn 100K lượt tải"
+      "booking": "Đặt vé tức thì 24/7",
+      "trusted": "Đối tác chính thức & đáng tin cậy",
+      "downloads": "Hơn 100 nghìn lượt tải xuống"
     },
-    "downloadApk": "Tải ứng dụng",
-    "learnMore": "Tìm hiểu thêm về tính năng ↓"
+    "downloadApk": "Tải ứng dụng (APK)",
+    "learnMore": "Tìm hiểu thêm"
   },
   "whyChoose": {
     "title": "Tại sao chọn ứng dụng của chúng tôi?",
-    "subtitle": "Một ứng dụng bán vé toàn diện được thiết kế cho du khách đến thăm\nlâu đài Neuschwanstein, cung cấp giải pháp đặt vé tiện lợi",
+    "subtitle": "Chúng tôi đơn giản hóa việc lập kế hoạch du lịch của bạn với một nền tảng nhanh chóng, an toàn và thân thiện với người dùng.<br>Tập trung vào trải nghiệm, không phải hậu cần.",
     "features": {
       "instantBooking": {
-        "title": "Đặt vé ngay lập tức",
-        "description": "Đặt vé mọi lúc, mọi nơi mà không cần xếp hàng chờ đợi"
+        "title": "Đặt vé tức thì",
+        "description": "Đặt vé của bạn trong vài phút, mọi lúc, mọi nơi. Kế hoạch du lịch của bạn chỉ cách vài cú chạm."
       },
       "digitalTickets": {
-        "title": "Vé điện tử",
-        "description": "Hiển thị vé điện tử trên điện thoại - thân thiện với môi trường và tiện lợi"
+        "title": "Vé điện tử kỹ thuật số",
+        "description": "Nhận vé trực tiếp trên điện thoại của bạn. Không cần in—chỉ cần hiển thị màn hình của bạn và đi."
       },
       "securePayment": {
         "title": "Thanh toán an toàn",
-        "description": "Thông tin thanh toán của bạn được bảo vệ với mức độ mã hóa cao nhất"
+        "description": "Thanh toán của bạn được bảo vệ với bảo mật hàng đầu. Chúng tôi hỗ trợ nhiều phương thức thanh toán."
       },
       "multiLanguage": {
         "title": "Hỗ trợ đa ngôn ngữ",
-        "description": "Có sẵn bằng tiếng Trung, tiếng Anh, tiếng Đức và nhiều ngôn ngữ khác"
+        "description": "Ứng dụng và hỗ trợ khách hàng của chúng tôi có sẵn bằng nhiều ngôn ngữ để hỗ trợ bạn tốt hơn."
       }
     }
   },
+  "ourServices": {
+    "title": "Dịch vụ hàng đầu của chúng tôi",
+    "subtitle": "Chúng tôi chuyên về vé cho các điểm đến được săn lùng nhiều nhất ở châu Âu.",
+    "italianRail": {
+      "title": "Vé tàu Ý (Trenitalia)",
+      "features": [
+        "Phủ sóng toàn quốc bằng tàu cao tốc.",
+        "Vé điện tử để đi lại thuận tiện."
+      ]
+    },
+    "neuschwanstein": {
+      "title": "Vé Lâu đài Neuschwanstein",
+      "features": [
+        "Đảm bảo vào cửa lâu đài cổ tích của Đức.",
+        "Bỏ qua hàng dài chờ đợi mua vé."
+      ]
+    },
+    "uffizi": {
+      "title": "Vé Phòng trưng bày Uffizi",
+      "features": [
+        "Tiếp cận các kiệt tác thời Phục hưng ở Florence.",
+        "Vào cửa theo giờ để tránh đám đông."
+      ]
+    }
+  },
   "download": {
-    "title": "Tải ngay",
-    "subtitle": "Tham gia cùng hơn 100.000 người dùng hài lòng",
-    "button": "Tải ứng dụng miễn phí",
-    "compatibility": "Hỗ trợ iOS 12.0+ và Android 8.0+"
+    "title": "Nhận vé của bạn mọi lúc mọi nơi",
+    "subtitle": "Tải xuống ứng dụng Future Dream để nhận các ưu đãi độc quyền và quản lý đặt chỗ của bạn một cách dễ dàng.",
+    "button": "Tải xuống cho Android",
+    "compatibility": "Yêu cầu Android 8.0 trở lên."
+  },
+  "seo": {
+    "title": "Vé tàu Ý, Uffizi & Neuschwanstein | Future Dream",
+    "description": "Đặt vé cho các chuyến tàu cao tốc của Ý (Trenitalia), Phòng trưng bày Uffizi ở Florence và Lâu đài Neuschwanstein. Ứng dụng duy nhất của bạn cho chuyến du lịch châu Âu."
+  },
+  "exploreItaly": {
+    "title": "Khám phá nước Ý bằng tàu hỏa",
+    "intro1": "Trải nghiệm những cảnh quan tuyệt đẹp và các thành phố sôi động của Ý với mạng lưới đường sắt cao tốc đẳng cấp thế giới, Trenitalia.",
+    "intro2": "Từ những con kênh của Venice đến trung tâm của Rome, đi du lịch bằng tàu hỏa là cách nhanh nhất và đẹp nhất để khám phá đất nước.",
+    "features": {
+      "ice": {
+        "title": "Tàu cao tốc Frecciarossa",
+        "description": "Kết nối các thành phố lớn như Rome, Florence và Milan chỉ trong vài giờ."
+      },
+      "scenic": {
+        "title": "Phong cảnh Tuscan",
+        "description": "Hành trình qua những ngọn đồi thoai thoải và những vườn nho đẹp như tranh vẽ trên đường đến Florence."
+      },
+      "combo": {
+        "title": "Combo nghệ thuật & đường sắt",
+        "description": "Đặt vé Phòng trưng bày Uffizi cùng với vé tàu đến Florence để có trải nghiệm văn hóa hợp lý."
+      }
+    },
+    "cta": "Lên kế hoạch cho chuyến đi Ý của bạn"
+  },
+  "uffiziGallery": {
+    "title": "Phòng trưng bày Uffizi (Florence, Ý)",
+    "story": {
+      "title": "Câu chuyện & Lịch sử",
+      "content1": "Được xây dựng vào năm 1560, ban đầu được dùng làm văn phòng chính phủ (Uffizi = văn phòng) cho Florence.",
+      "content2": "Nơi đây lưu giữ bộ sưu tập các tác phẩm nghệ thuật quan trọng nhất của thời kỳ Phục hưng, là một trong những bảo tàng nghệ thuật nổi tiếng nhất thế giới."
+    },
+    "experience": {
+      "title": "Thị giác & Trải nghiệm",
+      "content1": "Phòng trưng bày có hơn 2.000 tác phẩm, bao gồm 'Sự ra đời của thần Vệ nữ' của Botticelli, các bản phác thảo của da Vinci và các bức tranh của Michelangelo.",
+      "content2": "Đi dạo qua các hành lang, bạn có thể thưởng ngoạn quang cảnh tuyệt đẹp của sông Arno và khu phố cổ của Florence."
+    },
+    "tips": {
+      "title": "Mẹo du lịch",
+      "content1": "Vị trí: Trung tâm thành phố Florence, có thể dễ dàng đi bộ đến.",
+      "content2": "Nên đặt vé trực tuyến trước, vì vé thường bán hết, đặc biệt là vào mùa cao điểm.",
+      "content3": "Thời gian tốt nhất để tham quan là vào buổi sáng để tránh đám đông."
+    },
+    "cta": "Mua vé & Tải ứng dụng"
+  },
+  "neuschwansteinCastle": {
+    "title": "Lâu đài Neuschwanstein (Đức)",
+    "story": {
+      "title": "Câu chuyện & Lịch sử",
+      "content1": "Được xây dựng vào thế kỷ 19 bởi Vua Ludwig II của Bavaria, được mệnh danh là 'Vua trong truyện cổ tích'.",
+      "content2": "Nó được lấy cảm hứng từ các truyền thuyết và vở opera của Đức và sau đó là nguồn cảm hứng cho thiết kế Lâu đài Người đẹp ngủ trong rừng của Disneyland."
+    },
+    "experience": {
+      "title": "Thị giác & Trải nghiệm",
+      "content1": "Nằm ở chân đồi Alpine, lâu đài màu trắng tương phản với núi và hồ tạo nên một khung cảnh cổ tích ngoài đời thực.",
+      "content2": "Nội thất được trang trí xa hoa, kết hợp giữa phong cách Gothic và Byzantine, với 'Sảnh Ca sĩ' đặc biệt ngoạn mục."
+    },
+    "tips": {
+      "title": "Mẹo du lịch",
+      "content1": "Ga tàu gần nhất: Füssen, cách Munich khoảng 2 giờ đi bằng tàu ICE/tàu khu vực.",
+      "content2": "Khi đến nơi, bạn có thể đi xe buýt hoặc đi bộ lên đồi. Nên đặt vé trực tuyến trước để tránh phải xếp hàng."
+    },
+    "cta": "Mua vé & Tải ứng dụng"
   }
 }

@@ -42,6 +42,11 @@
       </div>
     </section>
 
+    <UffiziGallerySection />
+    <NeuschwansteinCastleSection />
+    <ExploreItalySection />
+    <OurServicesSection />
+
     <!-- Why Choose Section -->
     <section id="why-choose" class="why-choose-section">
       <div class="container">
@@ -77,6 +82,8 @@
       </div>
     </section>
 
+    <OurServicesSection />
+
 
     <!-- Download Section -->
     <section class="download-section">
@@ -84,16 +91,13 @@
         <div class="download-icon">📱</div>
         <h2 class="download-title">{{ $t('download.title') }}</h2>
         <p class="download-subtitle">{{ $t('download.subtitle') }}</p>
-        
-        <a 
-          href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk"
-          class="download-btn"
-          download="NeuschwansteinCastle-App.apk"
-        >
+
+        <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk" class="download-btn"
+          download="NeuschwansteinCastle-App.apk">
           <span class="download-btn-icon">⬇️</span>
           {{ $t('download.button') }}
         </a>
-        
+
         <p class="compatibility">{{ $t('download.compatibility') }}</p>
       </div>
     </section>
@@ -101,6 +105,33 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useHead } from '@vueuse/head'
+import OurServicesSection from './OurServicesSection.vue'
+import ExploreItalySection from './ExploreItalySection.vue'
+import UffiziGallerySection from './UffiziGallerySection.vue'
+import NeuschwansteinCastleSection from './NeuschwansteinCastleSection.vue'
+
+
+const { t } = useI18n()
+
+// SEO Meta Tags
+useHead({
+  title: computed(() => t('seo.title')),
+  meta: [
+    {
+      name: 'description',
+      content: computed(() => t('seo.description'))
+    },
+    {
+      name: 'keywords',
+      content:
+        '新天鵝堡, 德國火車票, 德國旅遊, 德鐵, DB 火車票, 新天鵝堡門票, Neuschwanstein Castle, 門票預訂, 德國國鐵, 德國自由行, ドイツ鉄道チケット, ノイシュヴァンシュタイン城, 독일 기차표, 노이슈반슈타인 성, vé tàu Đức, Lâu đài Neuschwanstein'
+    }
+  ]
+})
+
 // Smooth scroll to Why Choose section
 const scrollToWhyChoose = () => {
   const element = document.getElementById('why-choose')
@@ -150,7 +181,8 @@ const scrollToWhyChoose = () => {
   color: white;
   max-width: 800px;
   padding: 2rem;
-  margin-top: 80px; /* Offset for fixed header */
+  margin-top: 80px;
+  /* Offset for fixed header */
 }
 
 .hero-badge {
@@ -341,6 +373,12 @@ const scrollToWhyChoose = () => {
   text-align: center;
 }
 
+/* German Rail Section */
+.german-rail-section {
+  padding: 5rem 0;
+  background: white;
+}
+
 .download-container {
   max-width: 600px;
   margin: 0 auto;
@@ -423,9 +461,10 @@ const scrollToWhyChoose = () => {
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-content {
-    margin-top: 60px; /* Smaller offset for mobile */
+    margin-top: 60px;
+    /* Smaller offset for mobile */
   }
-  
+
   .hero-title {
     font-size: 2.5rem;
   }
@@ -487,7 +526,8 @@ const scrollToWhyChoose = () => {
 @media (max-width: 480px) {
   .hero-content {
     padding: 1rem;
-    margin-top: 50px; /* Even smaller offset for very small screens */
+    margin-top: 50px;
+    /* Even smaller offset for very small screens */
   }
 
   .hero-title {
