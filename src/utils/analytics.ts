@@ -15,19 +15,15 @@ export function trackEvent(eventName: string, eventParams: Record<string, unknow
   try {
     window.dataLayer = window.dataLayer || []
 
-    // For GTM, we push an object with an 'event' key.
-    // gtag('event', ...) does this under the hood.
-    if (typeof window.gtag === 'function') {
-      window.gtag('event', eventName, eventParams)
-      console.log('GA4 Event Sent:', eventName, eventParams)
-    } else {
-        // Fallback for when gtag is not there, maybe push directly to dataLayer
-        window.dataLayer.push({
-            event: eventName,
-            ...eventParams
-        });
-      console.warn('gtag is not defined. Pushed directly to dataLayer.')
+    // Always push to dataLayer for GTM to handle.
+    // GTM will then be responsible for firing the GA4 tag with the dynamic event name.
+    const dataLayerObject = {
+      event: eventName, // This will be 'click' or 'view'
+      ...eventParams
     }
+
+    window.dataLayer.push(dataLayerObject)
+    console.log('DataLayer Event Pushed for GTM:', dataLayerObject)
   } catch (error) {
     console.warn('Analytics tracking error:', error)
   }
