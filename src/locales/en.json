@@ -1,89 +1,94 @@
 {
   "header": {
-    "language": "Language",
-    "downloadApp": "Download App",
     "brand": "🏰 Future Dream"
   },
   "hero": {
-    "badge": "👑 German Castle & Train Tickets Made Easy",
-    "title": "Your Germany<br>Travel App",
-    "subtitle": "Your trusted companion for<br>German rail & Neuschwanstein Castle tickets",
+    "badge": "Your Ticket to Europe's Treasures",
+    "title": "Italy by Train & Europe's Iconic Landmarks",
+    "subtitle": "Seamlessly book high-speed train tickets for Italy, and secure your entry to the Uffizi Gallery and Neuschwanstein Castle.",
     "features": {
-      "booking": "24/7 Online Booking",
-      "trusted": "Trusted by Travelers",
-      "downloads": "100K+ Downloads"
+      "booking": "24/7 Instant Booking",
+      "trusted": "Official & Trusted Partner",
+      "downloads": "100k+ Downloads"
     },
-    "downloadApk": "Download App",
-    "learnMore": "Learn More About Features ↓"
+    "downloadApk": "Download the App (APK)",
+    "learnMore": "Learn More"
   },
   "whyChoose": {
     "title": "Why Choose Our App?",
-    "subtitle": "A comprehensive ticketing app designed for travelers visiting\nNeuschwanstein Castle, providing convenient booking solutions",
+    "subtitle": "We simplify your travel planning with a fast, secure, and user-friendly platform.<br>Focus on the experience, not the logistics.",
     "features": {
       "instantBooking": {
         "title": "Instant Booking",
-        "description": "Book tickets anytime, anywhere without waiting in line"
+        "description": "Book your tickets in minutes, anytime, anywhere. Your travel plans are just a few taps away."
       },
       "digitalTickets": {
-        "title": "Digital Tickets",
-        "description": "Show digital tickets on your phone - eco-friendly and convenient"
+        "title": "Digital E-Tickets",
+        "description": "Receive your tickets directly on your phone. No printing needed—just show your screen and go."
       },
       "securePayment": {
         "title": "Secure Payment",
-        "description": "Your payment information is protected with the highest level of encryption"
+        "description": "Your payments are protected with top-tier security. We support multiple payment methods."
       },
       "multiLanguage": {
-        "title": "Multi-language Support",
-        "description": "Available in Chinese, English, German, and many other languages"
+        "title": "Multi-Language Support",
+        "description": "Our app and customer support are available in multiple languages to assist you better."
       }
     }
   },
-  "download": {
-    "title": "Download Now",
-    "subtitle": "Join over 100,000 satisfied users",
-    "button": "Download App for Free",
-    "compatibility": "Supports iOS 12.0+ and Android 8.0+"
-  },
   "ourServices": {
-    "title": "Our Services",
-    "subtitle": "From Germany's fairytale castles to its efficient railway network,<br>we provide a one-stop booking solution for your travels.",
+    "title": "Our Premier Services",
+    "subtitle": "We specialize in tickets for Europe's most sought-after destinations.",
+    "italianRail": {
+      "title": "Italian Rail (Trenitalia) Tickets",
+      "features": [
+        "Nationwide high-speed coverage.",
+        "E-tickets for convenient travel."
+      ]
+    },
     "neuschwanstein": {
       "title": "Neuschwanstein Castle Tickets",
       "features": [
-        "Skip the long queues with guaranteed entry.",
-        "Instant confirmation and digital e-tickets."
+        "Guaranteed entry to Germany's fairytale castle.",
+        "Skip the notoriously long ticket lines."
       ]
     },
-    "germanRail": {
-      "title": "German Rail (DB) Tickets",
+    "uffizi": {
+      "title": "Uffizi Gallery Tickets",
       "features": [
-        "Covering all major cities and scenic routes.",
-        "Find the best fares, from early bird to regional passes."
+        "Access to Renaissance masterpieces in Florence.",
+        "Timed entry to avoid the crowds."
       ]
     }
   },
-  "seo": {
-    "title": "Neuschwanstein & German Train Tickets | Future Dream",
-    "description": "Easily book your Neuschwanstein Castle and German Rail (DB) train tickets with the Future Dream App. Enjoy 24/7 online booking, e-tickets, and multi-language support for your Germany trip."
+  "download": {
+    "title": "Get Your Tickets on the Go",
+    "subtitle": "Download the Future Dream app for exclusive deals and manage your bookings effortlessly.",
+    "button": "Download for Android",
+    "compatibility": "Requires Android 8.0 or later."
   },
-  "exploreGermany": {
-    "title": "Explore Germany by Rail",
-    "intro1": "Germany boasts one of the world's most punctual and convenient rail networks, allowing travelers to easily reach major attractions, including Neuschwanstein Castle.",
-    "intro2": "Whether it's the high-speed ICE, InterCity IC, or regional RB trains, your journey will be comfortable and efficient.",
+  "seo": {
+    "title": "Italy Train Tickets, Uffizi & Neuschwanstein | Future Dream",
+    "description": "Book tickets for Italy's high-speed trains (Trenitalia), the Uffizi Gallery in Florence, and Neuschwanstein Castle. Your one-stop app for European travel."
+  },
+  "exploreItaly": {
+    "title": "Discover Italy by Train",
+    "intro1": "Experience Italy's stunning landscapes and vibrant cities with its world-class high-speed rail network, Trenitalia.",
+    "intro2": "From the canals of Venice to the heart of Rome, traveling by train is the fastest and most scenic way to explore the country.",
     "features": {
       "ice": {
-        "title": "High-Speed ICE Trains",
-        "description": "Direct connections between major cities nationwide. Fast, time-saving, and perfect for cross-city travel."
+        "title": "High-Speed Frecciarossa",
+        "description": "Connects major cities like Rome, Florence, and Milan in just a few hours."
       },
       "scenic": {
-        "title": "Scenic Routes & Landscapes",
-        "description": "The journey from Munich to Neuschwanstein is famed for its beautiful scenery, one of Europe's most popular train routes."
+        "title": "Tuscan Landscapes",
+        "description": "Journey through rolling hills and picturesque vineyards on your way to Florence."
       },
       "combo": {
-        "title": "Rail + Castle Combo Tickets",
-        "description": "Book your train and castle tickets together to save time, skip the lines, and avoid multiple purchases."
+        "title": "Art & Rail Combo",
+        "description": "Book your Uffizi Gallery ticket along with your train to Florence for a streamlined cultural experience."
       }
     },
-    "cta": "Plan Your Train Trip"
+    "cta": "Plan Your Italian Journey"
   }
 }

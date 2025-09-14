@@ -1,37 +1,37 @@
 <template>
     <section class="explore-section">
         <div class="container">
-            <h2 class="section-title">{{ $t('exploreGermany.title') }}</h2>
-            <p class="section-intro">{{ $t('exploreGermany.intro1') }}</p>
-            <p class="section-intro">{{ $t('exploreGermany.intro2') }}</p>
+            <h2 class="section-title">{{ $t('exploreItaly.title') }}</h2>
+            <p class="section-intro">{{ $t('exploreItaly.intro1') }}</p>
+            <p class="section-intro">{{ $t('exploreItaly.intro2') }}</p>
 
             <div class="main-content">
                 <div class="features-column">
                     <div class="feature-item">
                         <div class="feature-icon">🚄</div>
                         <div class="feature-text">
-                            <h3>{{ $t('exploreGermany.features.ice.title') }}</h3>
-                            <p>{{ $t('exploreGermany.features.ice.description') }}</p>
+                            <h3>{{ $t('exploreItaly.features.ice.title') }}</h3>
+                            <p>{{ $t('exploreItaly.features.ice.description') }}</p>
                         </div>
                     </div>
                     <div class="feature-item">
                         <div class="feature-icon">🏞️</div>
                         <div class="feature-text">
-                            <h3>{{ $t('exploreGermany.features.scenic.title') }}</h3>
-                            <p>{{ $t('exploreGermany.features.scenic.description') }}</p>
+                            <h3>{{ $t('exploreItaly.features.scenic.title') }}</h3>
+                            <p>{{ $t('exploreItaly.features.scenic.description') }}</p>
                         </div>
                     </div>
                     <div class="feature-item">
                         <div class="feature-icon">🎟️</div>
                         <div class="feature-text">
-                            <h3>{{ $t('exploreGermany.features.combo.title') }}</h3>
-                            <p>{{ $t('exploreGermany.features.combo.description') }}</p>
+                            <h3>{{ $t('exploreItaly.features.combo.title') }}</h3>
+                            <p>{{ $t('exploreItaly.features.combo.description') }}</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="visual-column">
-                    <img src="@/assets/images/GermanyRail.png" alt="Map of German Rail network" class="rail-map-image">
+                    <img src="@/assets/images/ItalyRail.png" alt="Map of Italian Rail network" class="rail-map-image">
                 </div>
             </div>
 
@@ -39,7 +39,7 @@
                 <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk"
                     class="cta-button" download="FutureDream-App.apk">
                     <span class="btn-icon">⬇️</span>
-                    {{ $t('exploreGermany.cta') }}
+                    {{ $t('exploreItaly.cta') }}
                 </a>
             </div>
         </div>
@@ -135,6 +135,25 @@
 
 .rail-map-image:hover {
     transform: scale(1.03);
+}
+
+.visual-placeholder {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    background-color: #f3f4f6;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #9ca3af;
+    border: 2px dashed #d1d5db;
+}
+
+.map-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
 }
 
 .cta-container {

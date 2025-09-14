@@ -1,89 +1,94 @@
 {
   "header": {
-    "language": "Ngôn ngữ",
-    "downloadApp": "Tải ứng dụng",
     "brand": "🏰 Future Dream"
   },
   "hero": {
-    "badge": "👑 Đặt vé Lâu đài & Tàu ở Đức thật dễ dàng",
-    "title": "Ứng dụng Du lịch<br>Đức của bạn",
-    "subtitle": "Người bạn đồng hành tin cậy cho<br>vé tàu Đức & Lâu đài Neuschwanstein",
+    "badge": "Tấm vé đến kho báu châu Âu của bạn",
+    "title": "Ý bằng tàu hỏa & Các địa danh biểu tượng của châu Âu",
+    "subtitle": "Đặt vé tàu cao tốc cho Ý một cách liền mạch và đảm bảo quyền vào cửa Phòng trưng bày Uffizi và Lâu đài Neuschwanstein.",
     "features": {
-      "booking": "Đặt vé trực tuyến 24/7",
-      "trusted": "Được du khách tin tưởng",
-      "downloads": "Hơn 100K lượt tải"
+      "booking": "Đặt vé tức thì 24/7",
+      "trusted": "Đối tác chính thức & đáng tin cậy",
+      "downloads": "Hơn 100 nghìn lượt tải xuống"
     },
-    "downloadApk": "Tải ứng dụng",
-    "learnMore": "Tìm hiểu thêm về tính năng ↓"
+    "downloadApk": "Tải ứng dụng (APK)",
+    "learnMore": "Tìm hiểu thêm"
   },
   "whyChoose": {
     "title": "Tại sao chọn ứng dụng của chúng tôi?",
-    "subtitle": "Một ứng dụng bán vé toàn diện được thiết kế cho du khách đến thăm\nlâu đài Neuschwanstein, cung cấp giải pháp đặt vé tiện lợi",
+    "subtitle": "Chúng tôi đơn giản hóa việc lập kế hoạch du lịch của bạn với một nền tảng nhanh chóng, an toàn và thân thiện với người dùng.<br>Tập trung vào trải nghiệm, không phải hậu cần.",
     "features": {
       "instantBooking": {
-        "title": "Đặt vé ngay lập tức",
-        "description": "Đặt vé mọi lúc, mọi nơi mà không cần xếp hàng chờ đợi"
+        "title": "Đặt vé tức thì",
+        "description": "Đặt vé của bạn trong vài phút, mọi lúc, mọi nơi. Kế hoạch du lịch của bạn chỉ cách vài cú chạm."
       },
       "digitalTickets": {
-        "title": "Vé điện tử",
-        "description": "Hiển thị vé điện tử trên điện thoại - thân thiện với môi trường và tiện lợi"
+        "title": "Vé điện tử kỹ thuật số",
+        "description": "Nhận vé trực tiếp trên điện thoại của bạn. Không cần in—chỉ cần hiển thị màn hình của bạn và đi."
       },
       "securePayment": {
         "title": "Thanh toán an toàn",
-        "description": "Thông tin thanh toán của bạn được bảo vệ với mức độ mã hóa cao nhất"
+        "description": "Thanh toán của bạn được bảo vệ với bảo mật hàng đầu. Chúng tôi hỗ trợ nhiều phương thức thanh toán."
       },
       "multiLanguage": {
         "title": "Hỗ trợ đa ngôn ngữ",
-        "description": "Có sẵn bằng tiếng Trung, tiếng Anh, tiếng Đức và nhiều ngôn ngữ khác"
+        "description": "Ứng dụng và hỗ trợ khách hàng của chúng tôi có sẵn bằng nhiều ngôn ngữ để hỗ trợ bạn tốt hơn."
       }
     }
   },
-  "download": {
-    "title": "Tải ngay",
-    "subtitle": "Tham gia cùng hơn 100.000 người dùng hài lòng",
-    "button": "Tải ứng dụng miễn phí",
-    "compatibility": "Hỗ trợ iOS 12.0+ và Android 8.0+"
-  },
   "ourServices": {
-    "title": "Dịch vụ của chúng tôi",
-    "subtitle": "Từ những lâu đài cổ tích của Đức đến mạng lưới đường sắt hiệu quả,<br>chúng tôi cung cấp giải pháp đặt vé một cửa cho chuyến đi của bạn.",
+    "title": "Dịch vụ hàng đầu của chúng tôi",
+    "subtitle": "Chúng tôi chuyên về vé cho các điểm đến được săn lùng nhiều nhất ở châu Âu.",
+    "italianRail": {
+      "title": "Vé tàu Ý (Trenitalia)",
+      "features": [
+        "Phủ sóng toàn quốc bằng tàu cao tốc.",
+        "Vé điện tử để đi lại thuận tiện."
+      ]
+    },
     "neuschwanstein": {
       "title": "Vé Lâu đài Neuschwanstein",
       "features": [
-        "Bỏ qua hàng dài chờ đợi với vé vào cửa được đảm bảo.",
-        "Xác nhận ngay lập tức và vé điện tử."
+        "Đảm bảo vào cửa lâu đài cổ tích của Đức.",
+        "Bỏ qua hàng dài chờ đợi mua vé."
       ]
     },
-    "germanRail": {
-      "title": "Vé tàu Đức (DB)",
+    "uffizi": {
+      "title": "Vé Phòng trưng bày Uffizi",
       "features": [
-        "Bao gồm tất cả các thành phố lớn và các tuyến đường đẹp.",
-        "Tìm giá vé tốt nhất, từ vé đặt sớm đến vé khu vực."
+        "Tiếp cận các kiệt tác thời Phục hưng ở Florence.",
+        "Vào cửa theo giờ để tránh đám đông."
       ]
     }
   },
-  "seo": {
-    "title": "Vé Neuschwanstein & Tàu Đức | Future Dream",
-    "description": "Dễ dàng đặt vé Lâu đài Neuschwanstein và vé tàu Đường sắt Đức (DB) với Ứng dụng Future Dream. Tận hưởng đặt vé trực tuyến 24/7, vé điện tử và hỗ trợ đa ngôn ngữ cho chuyến đi Đức của bạn."
+  "download": {
+    "title": "Nhận vé của bạn mọi lúc mọi nơi",
+    "subtitle": "Tải xuống ứng dụng Future Dream để nhận các ưu đãi độc quyền và quản lý đặt chỗ của bạn một cách dễ dàng.",
+    "button": "Tải xuống cho Android",
+    "compatibility": "Yêu cầu Android 8.0 trở lên."
   },
-  "exploreGermany": {
-    "title": "Khám phá nước Đức bằng đường sắt",
-    "intro1": "Đức tự hào có một trong những mạng lưới đường sắt đúng giờ và thuận tiện nhất thế giới, cho phép khách du lịch dễ dàng đến các điểm tham quan chính, bao gồm cả Lâu đài Neuschwanstein.",
-    "intro2": "Dù đó là tàu cao tốc ICE, tàu liên thành phố IC hay tàu khu vực RB, hành trình của bạn sẽ thoải mái và hiệu quả.",
+  "seo": {
+    "title": "Vé tàu Ý, Uffizi & Neuschwanstein | Future Dream",
+    "description": "Đặt vé cho các chuyến tàu cao tốc của Ý (Trenitalia), Phòng trưng bày Uffizi ở Florence và Lâu đài Neuschwanstein. Ứng dụng duy nhất của bạn cho chuyến du lịch châu Âu."
+  },
+  "exploreItaly": {
+    "title": "Khám phá nước Ý bằng tàu hỏa",
+    "intro1": "Trải nghiệm những cảnh quan tuyệt đẹp và các thành phố sôi động của Ý với mạng lưới đường sắt cao tốc đẳng cấp thế giới, Trenitalia.",
+    "intro2": "Từ những con kênh của Venice đến trung tâm của Rome, đi du lịch bằng tàu hỏa là cách nhanh nhất và đẹp nhất để khám phá đất nước.",
     "features": {
       "ice": {
-        "title": "Tàu cao tốc ICE",
-        "description": "Kết nối trực tiếp giữa các thành phố lớn trên toàn quốc. Nhanh chóng, tiết kiệm thời gian và hoàn hảo cho việc đi lại giữa các thành phố."
+        "title": "Tàu cao tốc Frecciarossa",
+        "description": "Kết nối các thành phố lớn như Rome, Florence và Milan chỉ trong vài giờ."
       },
       "scenic": {
-        "title": "Các tuyến đường và phong cảnh đẹp",
-        "description": "Hành trình từ Munich đến Neuschwanstein nổi tiếng với phong cảnh tuyệt đẹp, là một trong những tuyến tàu nổi tiếng nhất châu Âu."
+        "title": "Phong cảnh Tuscan",
+        "description": "Hành trình qua những ngọn đồi thoai thoải và những vườn nho đẹp như tranh vẽ trên đường đến Florence."
       },
       "combo": {
-        "title": "Vé kết hợp Đường sắt + Lâu đài",
-        "description": "Đặt vé tàu và vé lâu đài cùng nhau để tiết kiệm thời gian, bỏ qua hàng đợi và tránh phải mua nhiều lần."
+        "title": "Combo nghệ thuật & đường sắt",
+        "description": "Đặt vé Phòng trưng bày Uffizi cùng với vé tàu đến Florence để có trải nghiệm văn hóa hợp lý."
       }
     },
-    "cta": "Lên kế hoạch cho chuyến đi của bạn"
+    "cta": "Lên kế hoạch cho chuyến đi Ý của bạn"
   }
 }
