@@ -144,7 +144,7 @@ const truncateText = (text: string, maxLength: number): string => {
 
 <style scoped>
 .popular-tours-section {
-  padding: 5rem 0;
+  padding: 4rem 0;
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 }
 
@@ -166,7 +166,7 @@ const truncateText = (text: string, maxLength: number): string => {
 .section-subtitle {
   font-size: 1.2rem;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   color: #6b7280;
   max-width: 600px;
   margin-left: auto;
@@ -175,21 +175,21 @@ const truncateText = (text: string, maxLength: number): string => {
 
 .tours-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.2rem;
   justify-items: center;
   padding: 0 1rem;
 }
 
 .tour-card {
   background: white;
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(0, 0, 0, 0.04);
   transition: all 0.3s ease;
-  max-width: 380px;
+  max-width: 360px;
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -203,7 +203,7 @@ const truncateText = (text: string, maxLength: number): string => {
 .card-image {
   position: relative;
   width: 100%;
-  height: 220px;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -238,16 +238,16 @@ const truncateText = (text: string, maxLength: number): string => {
 }
 
 .card-content {
-  padding: 1.5rem;
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
 .tour-title {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   color: #1f2937;
   line-height: 1.4;
   display: -webkit-box;
@@ -258,11 +258,11 @@ const truncateText = (text: string, maxLength: number): string => {
 }
 
 .tour-intro {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #6b7280;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  height: 4.8rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  height: 4.2rem;
   overflow: hidden;
 }
 
@@ -295,14 +295,14 @@ const truncateText = (text: string, maxLength: number): string => {
   background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-size: 0.9rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 2px 6px rgba(59, 130, 246, 0.2);
 }
 
 .view-more-btn:hover {
@@ -314,8 +314,8 @@ const truncateText = (text: string, maxLength: number): string => {
 /* Responsive Design */
 @media (max-width: 1200px) {
   .tours-grid {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
   }
 }
 
@@ -339,7 +339,7 @@ const truncateText = (text: string, maxLength: number): string => {
 
   .tours-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 0;
   }
 
@@ -358,7 +358,7 @@ const truncateText = (text: string, maxLength: number): string => {
   }
 
   .card-content {
-    padding: 1.25rem;
+    padding: 1rem;
   }
 
   .card-footer {
