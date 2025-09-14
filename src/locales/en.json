@@ -1,11 +1,12 @@
 {
   "header": {
-    "brand": "🏰 Future Dream"
+    "brand": "🏰 Future Dream",
+    "downloadApp": "Download the App"
   },
   "hero": {
-    "badge": "Your Ticket to Europe's Treasures",
-    "title": "Italy by Train & Europe's Iconic Landmarks",
-    "subtitle": "Seamlessly book high-speed train tickets for Italy, and secure your entry to the Uffizi Gallery and Neuschwanstein Castle.",
+    "badge": "Your Complete Italy Travel Solution",
+    "title": "Italy Travel Packages, Train Tickets & Attraction Passes",
+    "subtitle": "Discover Italy with our curated travel packages, book high-speed train tickets, and secure skip-the-line access to top attractions like the Uffizi Gallery and Neuschwanstein Castle.",
     "features": {
       "booking": "24/7 Instant Booking",
       "trusted": "Official & Trusted Partner",
@@ -70,6 +71,15 @@
   "seo": {
     "title": "Italy Train Tickets, Uffizi & Neuschwanstein | Future Dream",
     "description": "Book tickets for Italy's high-speed trains (Trenitalia), the Uffizi Gallery in Florence, and Neuschwanstein Castle. Your one-stop app for European travel."
+  },
+  "popularTours": {
+    "title": "Popular Travel Packages",
+    "subtitle": "Discover the most sought-after tours and experiences",
+    "milan": "Milan",
+    "florence": "Florence",
+    "viewMore": "View More",
+    "from": "From",
+    "eur": "EUR"
   },
   "exploreItaly": {
     "title": "Discover Italy by Train",

@@ -1,11 +1,12 @@
 {
   "header": {
-    "brand": "🏰 Future Dream"
+    "brand": "🏰 Future Dream",
+    "downloadApp": "Tải ứng dụng"
   },
   "hero": {
-    "badge": "Tấm vé đến kho báu châu Âu của bạn",
-    "title": "Ý bằng tàu hỏa & Các địa danh biểu tượng của châu Âu",
-    "subtitle": "Đặt vé tàu cao tốc cho Ý một cách liền mạch và đảm bảo quyền vào cửa Phòng trưng bày Uffizi và Lâu đài Neuschwanstein.",
+    "badge": "Giải pháp du lịch Ý toàn diện",
+    "title": "Gói du lịch Ý, Vé tàu hỏa & Vé tham quan",
+    "subtitle": "Khám phá Ý với các gói du lịch được tuyển chọn, đặt vé tàu cao tốc và đảm bảo quyền vào tham quan ưu tiên tại các điểm du lịch hàng đầu như Phòng trưng bày Uffizi và Lâu đài Neuschwanstein.",
     "features": {
       "booking": "Đặt vé tức thì 24/7",
       "trusted": "Đối tác chính thức & đáng tin cậy",
@@ -70,6 +71,15 @@
   "seo": {
     "title": "Vé tàu Ý, Uffizi & Neuschwanstein | Future Dream",
     "description": "Đặt vé cho các chuyến tàu cao tốc của Ý (Trenitalia), Phòng trưng bày Uffizi ở Florence và Lâu đài Neuschwanstein. Ứng dụng duy nhất của bạn cho chuyến du lịch châu Âu."
+  },
+  "popularTours": {
+    "title": "Gói du lịch phổ biến",
+    "subtitle": "Khám phá những tour du lịch và trải nghiệm được săn đón nhất",
+    "milan": "Milan",
+    "florence": "Florence",
+    "viewMore": "Xem thêm",
+    "from": "Từ",
+    "eur": "EUR"
   },
   "exploreItaly": {
     "title": "Khám phá nước Ý bằng tàu hỏa",

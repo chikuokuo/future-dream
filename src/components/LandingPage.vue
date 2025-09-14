@@ -35,13 +35,14 @@
             </a>
           </div>
 
-          <button class="learn-more-btn" @click="scrollToWhyChoose">
+          <button class="learn-more-btn" @click="scrollToNextSection">
             {{ $t('hero.learnMore') }}
           </button>
         </div>
       </div>
     </section>
 
+    <PopularToursSection />
     <UffiziGallerySection />
     <NeuschwansteinCastleSection />
     <ExploreItalySection />
@@ -108,6 +109,7 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '@vueuse/head'
+import PopularToursSection from './PopularToursSection.vue'
 import OurServicesSection from './OurServicesSection.vue'
 import ExploreItalySection from './ExploreItalySection.vue'
 import UffiziGallerySection from './UffiziGallerySection.vue'
@@ -131,6 +133,17 @@ useHead({
     }
   ]
 })
+
+// Smooth scroll to next section (Popular Tours)
+const scrollToNextSection = () => {
+  const element = document.getElementById('popular-tours')
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  }
+}
 
 // Smooth scroll to Why Choose section
 const scrollToWhyChoose = () => {
@@ -165,7 +178,7 @@ const scrollToWhyChoose = () => {
 }
 
 .hero-background {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
     url('@/assets/images/Bg-NeuschwansteinCastle.jpg') center/cover;
   width: 100%;
   min-height: 100vh;
@@ -183,6 +196,7 @@ const scrollToWhyChoose = () => {
   padding: 2rem;
   margin-top: 80px;
   /* Offset for fixed header */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .hero-badge {
@@ -193,6 +207,9 @@ const scrollToWhyChoose = () => {
   font-size: 0.9rem;
   margin-bottom: 2rem;
   display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  text-shadow: none;
 }
 
 .hero-title {
@@ -200,13 +217,15 @@ const scrollToWhyChoose = () => {
   font-weight: bold;
   margin-bottom: 1rem;
   line-height: 1.1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .hero-subtitle {
   font-size: 1.5rem;
   margin-bottom: 3rem;
-  opacity: 0.9;
+  opacity: 0.95;
   line-height: 1.4;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .hero-features {
@@ -222,6 +241,8 @@ const scrollToWhyChoose = () => {
   align-items: center;
   gap: 0.5rem;
   font-size: 1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
 }
 
 .feature-icon {
@@ -251,6 +272,8 @@ const scrollToWhyChoose = () => {
   gap: 0.5rem;
   transition: all 0.3s ease;
   text-decoration: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.25), 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary:link,
@@ -261,7 +284,8 @@ const scrollToWhyChoose = () => {
 
 .btn-primary:hover {
   background: #2563eb;
-  transform: translateY(-2px);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3), 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .btn-secondary {
@@ -285,19 +309,25 @@ const scrollToWhyChoose = () => {
 }
 
 .learn-more-btn {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.1);
   color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.4);
   padding: 0.75rem 1.5rem;
   border-radius: 25px;
   font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .learn-more-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Why Choose Section */
