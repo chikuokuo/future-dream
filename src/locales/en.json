@@ -1,12 +1,13 @@
 {
   "header": {
     "language": "Language",
-    "downloadApp": "Download App"
+    "downloadApp": "Download App",
+    "brand": "🏰 Future Dream"
   },
   "hero": {
-    "badge": "👑 Neuschwanstein Castle Booking Made Easy",
-    "title": "Castle\nBooking App",
-    "subtitle": "Your trusted companion for\nNeuschwanstein Castle ticket booking",
+    "badge": "👑 German Castle & Train Tickets Made Easy",
+    "title": "Your Germany<br>Travel App",
+    "subtitle": "Your trusted companion for<br>German rail & Neuschwanstein Castle tickets",
     "features": {
       "booking": "24/7 Online Booking",
       "trusted": "Trusted by Travelers",
@@ -42,5 +43,27 @@
     "subtitle": "Join over 100,000 satisfied users",
     "button": "Download App for Free",
     "compatibility": "Supports iOS 12.0+ and Android 8.0+"
+  },
+  "ourServices": {
+    "title": "Our Services",
+    "subtitle": "From Germany's fairytale castles to its efficient railway network,<br>we provide a one-stop booking solution for your travels.",
+    "neuschwanstein": {
+      "title": "Neuschwanstein Castle Tickets",
+      "features": [
+        "Skip the long queues with guaranteed entry.",
+        "Instant confirmation and digital e-tickets."
+      ]
+    },
+    "germanRail": {
+      "title": "German Rail (DB) Tickets",
+      "features": [
+        "Covering all major cities and scenic routes.",
+        "Find the best fares, from early bird to regional passes."
+      ]
+    }
+  },
+  "seo": {
+    "title": "Neuschwanstein & German Train Tickets | Future Dream",
+    "description": "Easily book your Neuschwanstein Castle and German Rail (DB) train tickets with the Future Dream App. Enjoy 24/7 online booking, e-tickets, and multi-language support for your Germany trip."
   }
 }

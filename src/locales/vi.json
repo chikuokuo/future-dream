@@ -1,12 +1,13 @@
 {
   "header": {
     "language": "Ngôn ngữ",
-    "downloadApp": "Tải ứng dụng"
+    "downloadApp": "Tải ứng dụng",
+    "brand": "🏰 Future Dream"
   },
   "hero": {
-    "badge": "👑 Đặt vé lâu đài Neuschwanstein dễ dàng",
-    "title": "Ứng dụng\nĐặt vé lâu đài",
-    "subtitle": "Người bạn đồng hành đáng tin cậy của bạn cho\nviệc đặt vé lâu đài Neuschwanstein",
+    "badge": "👑 Đặt vé Lâu đài & Tàu ở Đức thật dễ dàng",
+    "title": "Ứng dụng Du lịch<br>Đức của bạn",
+    "subtitle": "Người bạn đồng hành tin cậy cho<br>vé tàu Đức & Lâu đài Neuschwanstein",
     "features": {
       "booking": "Đặt vé trực tuyến 24/7",
       "trusted": "Được du khách tin tưởng",
@@ -42,5 +43,27 @@
     "subtitle": "Tham gia cùng hơn 100.000 người dùng hài lòng",
     "button": "Tải ứng dụng miễn phí",
     "compatibility": "Hỗ trợ iOS 12.0+ và Android 8.0+"
+  },
+  "ourServices": {
+    "title": "Dịch vụ của chúng tôi",
+    "subtitle": "Từ những lâu đài cổ tích của Đức đến mạng lưới đường sắt hiệu quả,<br>chúng tôi cung cấp giải pháp đặt vé một cửa cho chuyến đi của bạn.",
+    "neuschwanstein": {
+      "title": "Vé Lâu đài Neuschwanstein",
+      "features": [
+        "Bỏ qua hàng dài chờ đợi với vé vào cửa được đảm bảo.",
+        "Xác nhận ngay lập tức và vé điện tử."
+      ]
+    },
+    "germanRail": {
+      "title": "Vé tàu Đức (DB)",
+      "features": [
+        "Bao gồm tất cả các thành phố lớn và các tuyến đường đẹp.",
+        "Tìm giá vé tốt nhất, từ vé đặt sớm đến vé khu vực."
+      ]
+    }
+  },
+  "seo": {
+    "title": "Vé Neuschwanstein & Tàu Đức | Future Dream",
+    "description": "Dễ dàng đặt vé Lâu đài Neuschwanstein và vé tàu Đường sắt Đức (DB) với Ứng dụng Future Dream. Tận hưởng đặt vé trực tuyến 24/7, vé điện tử và hỗ trợ đa ngôn ngữ cho chuyến đi Đức của bạn."
   }
 }

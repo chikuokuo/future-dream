@@ -1,12 +1,13 @@
 {
   "header": {
     "language": "언어",
-    "downloadApp": "앱 다운로드"
+    "downloadApp": "앱 다운로드",
+    "brand": "🏰 Future Dream"
   },
   "hero": {
-    "badge": "👑 노이슈반슈타인 성 예약이 쉬워졌습니다",
-    "title": "성\n예약 앱",
-    "subtitle": "노이슈반슈타인 성 티켓 예약을 위한\n신뢰할 수 있는 동반자",
+    "badge": "👑 독일 성 & 기차표 예매를 손쉽게",
+    "title": "독일 여행<br>필수 앱",
+    "subtitle": "독일 철도 & 노이슈반슈타인 성 티켓을 위한<br>믿음직한 동반자",
     "features": {
       "booking": "24시간 온라인 예약",
       "trusted": "여행자들이 신뢰하는",
@@ -42,5 +43,27 @@
     "subtitle": "10만 명 이상의 만족한 사용자와 함께하세요",
     "button": "무료로 앱 다운로드",
     "compatibility": "iOS 12.0+ 및 Android 8.0+ 지원"
+  },
+  "ourServices": {
+    "title": "우리의 서비스",
+    "subtitle": "독일의 동화 같은 성부터 효율적인 철도망까지,<br>우리는 당신의 여행을 위한 원스톱 예약 솔루션을 제공합니다.",
+    "neuschwanstein": {
+      "title": "노이슈반슈타인 성 티켓",
+      "features": [
+        "긴 줄을 건너뛰고 입장을 보장받으세요.",
+        "즉시 확인 및 디지털 e-티켓."
+      ]
+    },
+    "germanRail": {
+      "title": "독일 철도 (DB) 티켓",
+      "features": [
+        "모든 주요 도시와 경치 좋은 노선을 포함합니다.",
+        "조기 예약부터 지역 패스까지 최고의 요금을 찾아보세요."
+      ]
+    }
+  },
+  "seo": {
+    "title": "노이슈반슈타인 & 독일 기차표 | Future Dream",
+    "description": "Future Dream 앱으로 노이슈반슈타인 성 및 독일 철도(DB) 기차표를 쉽게 예약하세요. 연중무휴 온라인 예약, 전자 항공권, 다국어 지원으로 독일 여행을 즐겨보세요."
   }
 }
