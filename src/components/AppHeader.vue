@@ -10,14 +10,15 @@
       <!-- Download App Button -->
       <div class="header-actions">
         <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk"
-          class="download-app-btn" download="NeuschwansteinCastle-App.apk">
+          class="download-app-btn" download="NeuschwansteinCastle-App.apk"
+          @click="() => trackButtonClick('downloadAppBtn', { download_type: 'apk', location: 'header' })">
           <span class="download-icon">📱</span>
           <span class="download-text">{{ $t('header.downloadApp') }}</span>
         </a>
 
         <!-- Language Selector -->
         <div class="language-selector">
-          <button class="language-button" @click="toggleLanguageMenu" :aria-expanded="isLanguageMenuOpen"
+          <button class="language-button" @click="handleLanguageButtonClick" :aria-expanded="isLanguageMenuOpen"
             aria-haspopup="true">
             <span class="current-language">
               <span class="language-flag">{{ currentLanguage.flag }}</span>
@@ -54,6 +55,7 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { availableLocales } from '@/i18n'
+import { trackButtonClick } from '@/utils/analytics'
 
 const { locale } = useI18n()
 const isLanguageMenuOpen = ref(false)
@@ -65,6 +67,11 @@ const currentLanguage = computed(() => availableLocales.find(lang => lang.code =
 
 const toggleLanguageMenu = () => {
   isLanguageMenuOpen.value = !isLanguageMenuOpen.value
+}
+
+const handleLanguageButtonClick = () => {
+  trackButtonClick('languageButton', { action: 'toggle_menu', current_language: currentLocale.value })
+  toggleLanguageMenu()
 }
 
 const closeLanguageMenu = () => {

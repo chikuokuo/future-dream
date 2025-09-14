@@ -19,7 +19,7 @@
                 <span class="price-label">{{ $t('popularTours.from') }}</span>
                 <span class="price-amount">{{ $t('popularTours.eur') }} {{ tour.price_eur }}</span>
               </div>
-              <button class="view-more-btn">{{ $t('popularTours.viewMore') }}</button>
+              <button class="view-more-btn" @click="() => handleViewMoreClick(tour)">{{ $t('popularTours.viewMore') }}</button>
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@
                 <span class="price-label">{{ $t('popularTours.from') }}</span>
                 <span class="price-amount">{{ $t('popularTours.eur') }} {{ tour.price_eur }}</span>
               </div>
-              <button class="view-more-btn">{{ $t('popularTours.viewMore') }}</button>
+              <button class="view-more-btn" @click="() => handleViewMoreClick(tour)">{{ $t('popularTours.viewMore') }}</button>
             </div>
           </div>
         </div>
@@ -58,6 +58,7 @@ import milanLeonardoImg from '@/assets/images/TravelCard/milan_leonardo_codex_at
 import italyPrivateTourImg from '@/assets/images/TravelCard/italy_private_tour_5days_rome_florence_venice.jpg'
 import florenceDayTripImg from '@/assets/images/TravelCard/florence_daytrip_from_rome_train.jpg'
 import florenceRenaissanceImg from '@/assets/images/TravelCard/florence_smallgroup_renaissance_tour.jpg'
+import { trackButtonClick } from '@/utils/analytics'
 
 // Product data
 const toursData = {
@@ -139,6 +140,23 @@ const florenceTours = computed(() => toursData.florence_top5_highest_price.slice
 const truncateText = (text: string, maxLength: number): string => {
   if (text.length <= maxLength) return text
   return text.slice(0, maxLength) + '...'
+}
+
+interface Tour {
+  _id: string;
+  name: string;
+  location: string;
+  price_eur: string;
+}
+
+const handleViewMoreClick = (tour: Tour) => {
+  trackButtonClick('viewMoreBtn', {
+    tour_id: tour._id,
+    tour_name: tour.name,
+    tour_location: tour.location,
+    tour_price: tour.price_eur,
+    section: 'popular_tours'
+  })
 }
 </script>
 

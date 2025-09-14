@@ -29,13 +29,14 @@
 
           <div class="hero-buttons">
             <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk"
-              class="btn-primary" download="NeuschwansteinCastle-App.apk">
+              class="btn-primary" download="NeuschwansteinCastle-App.apk"
+              @click="() => trackButtonClick('btnPrimary', { download_type: 'apk', location: 'hero_section' })">
               <span class="btn-icon">📱</span>
               {{ $t('hero.downloadApk') }}
             </a>
           </div>
 
-          <button class="learn-more-btn" @click="scrollToNextSection">
+          <button class="learn-more-btn" @click="handleLearnMoreClick">
             {{ $t('hero.learnMore') }}
           </button>
         </div>
@@ -91,7 +92,8 @@
         <p class="download-subtitle">{{ $t('download.subtitle') }}</p>
 
         <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk" class="download-btn"
-          download="NeuschwansteinCastle-App.apk">
+          download="NeuschwansteinCastle-App.apk"
+          @click="() => trackButtonClick('downloadBtn', { download_type: 'apk', location: 'download_section' })">
           <span class="download-btn-icon">⬇️</span>
           {{ $t('download.button') }}
         </a>
@@ -106,6 +108,7 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '@vueuse/head'
+import { trackButtonClick } from '@/utils/analytics'
 import PopularToursSection from './PopularToursSection.vue'
 import OurServicesSection from './OurServicesSection.vue'
 import ExploreItalySection from './ExploreItalySection.vue'
@@ -140,6 +143,11 @@ const scrollToNextSection = () => {
       block: 'start'
     })
   }
+}
+
+const handleLearnMoreClick = () => {
+  trackButtonClick('learnMoreBtn', { scroll_target: 'popular_tours', location: 'hero_section' })
+  scrollToNextSection()
 }
 
 </script>
