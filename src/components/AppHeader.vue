@@ -3,6 +3,7 @@
     <div class="header-container">
       <!-- Logo/Brand -->
       <div class="header-brand">
+        <img src="/FutureDreamLogo.png" alt="Future Dream Logo" class="brand-logo" />
         <h1 class="brand-title">{{ $t('header.brand') }}</h1>
       </div>
 
@@ -147,6 +148,21 @@ onUnmounted(() => {
 .header-brand {
   display: flex;
   align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  transition: all 0.3s ease;
+}
+
+.brand-logo:hover {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+  transform: scale(1.05);
 }
 
 .brand-title {
@@ -155,6 +171,33 @@ onUnmounted(() => {
   color: #ffffff;
   margin: 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .brand-logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .brand-title {
+    font-size: 1.25rem;
+  }
+
+  .header-brand {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-title {
+    font-size: 1.125rem;
+  }
+
+  .brand-logo {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 /* Header Actions */

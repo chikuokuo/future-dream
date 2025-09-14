@@ -145,16 +145,6 @@ const scrollToNextSection = () => {
   }
 }
 
-// Smooth scroll to Why Choose section
-const scrollToWhyChoose = () => {
-  const element = document.getElementById('why-choose')
-  if (element) {
-    element.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  }
-}
 </script>
 
 <style scoped>
@@ -168,7 +158,7 @@ const scrollToWhyChoose = () => {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)),
-    url('/ticket_frontend/images/Bg-NeuschwansteinCastle.jpg') center/cover;
+    url('@/assets/images/heroBackground.jpg') center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -179,7 +169,7 @@ const scrollToWhyChoose = () => {
 
 .hero-background {
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
-    url('@/assets/images/Bg-NeuschwansteinCastle.jpg') center/cover;
+    url('@/assets/images/heroBackground.jpg') center/cover;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -192,7 +182,7 @@ const scrollToWhyChoose = () => {
 .hero-content {
   text-align: center;
   color: white;
-  max-width: 800px;
+  max-width: 1400px;
   padding: 2rem;
   margin-top: 80px;
   /* Offset for fixed header */
