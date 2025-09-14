@@ -8,24 +8,25 @@ declare global {
 
 /**
  * Push event to Google Analytics / Tag Manager dataLayer
- * @param eventName - Event name for GA4 (e.g., 'button_click')
+ * @param eventName - The event name for the dataLayer ('click', 'view', etc.)
  * @param eventParams - Parameters for the event
  */
 export function trackEvent(eventName: string, eventParams: Record<string, unknown> = {}) {
   try {
-    // Ensure dataLayer and gtag exist
     window.dataLayer = window.dataLayer || []
 
-    // Check if gtag is defined
+    // For GTM, we push an object with an 'event' key.
+    // gtag('event', ...) does this under the hood.
     if (typeof window.gtag === 'function') {
-      window.gtag('event', eventName, {
-        page: 'futureDream',
-        timestamp: new Date().toISOString(),
-        ...eventParams
-      })
-      console.log('GA4 Event:', eventName, eventParams)
+      window.gtag('event', eventName, eventParams)
+      console.log('GA4 Event Sent:', eventName, eventParams)
     } else {
-      console.warn('gtag is not defined. Analytics event not sent.')
+        // Fallback for when gtag is not there, maybe push directly to dataLayer
+        window.dataLayer.push({
+            event: eventName,
+            ...eventParams
+        });
+      console.warn('gtag is not defined. Pushed directly to dataLayer.')
     }
   } catch (error) {
     console.warn('Analytics tracking error:', error)
@@ -34,30 +35,30 @@ export function trackEvent(eventName: string, eventParams: Record<string, unknow
 
 /**
  * Track button click events
- * @param buttonClass - CSS class name of the button (in camelCase)
+ * @param buttonContent - A descriptor for the button (camelCased from class name)
  * @param additionalData - Additional tracking data
  */
-export function trackButtonClick(buttonClass: string, additionalData: Record<string, unknown> = {}) {
-  const eventName = `click_${buttonClass}`
-
-  trackEvent(eventName, {
-    button_class: buttonClass,
+export function trackButtonClick(buttonContent: string, additionalData: Record<string, unknown> = {}) {
+  trackEvent('click', { // Event name is 'click' to match GTM trigger
+    page: 'futureDream',
     type: 'btn',
+    action: 'click',
+    content: buttonContent, // e.g., 'btnPrimary'
     ...additionalData
   })
 }
 
 /**
  * Track button view events (for impression tracking)
- * @param buttonClass - CSS class name of the button (in camelCase)
+ * @param buttonContent - A descriptor for the button (camelCased from class name)
  * @param additionalData - Additional tracking data
  */
-export function trackButtonView(buttonClass: string, additionalData: Record<string, unknown> = {}) {
-  const eventName = `view_${buttonClass}`
-
-  trackEvent(eventName, {
-    button_class: buttonClass,
+export function trackButtonView(buttonContent: string, additionalData: Record<string, unknown> = {}) {
+    trackEvent('view', { // Event name is 'view' to match GTM trigger
+    page: 'futureDream',
     type: 'btn',
+    action: 'view',
+    content: buttonContent, // e.g., 'btnPrimary'
     ...additionalData
   })
 }
