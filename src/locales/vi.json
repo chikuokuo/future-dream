@@ -83,6 +83,14 @@
     "from": "Từ",
     "eur": "EUR"
   },
+  "promotion": {
+    "title": "Biến Mọi Vé Thành Bất Ngờ Du Lịch",
+    "subtitle": "Mỗi lần mua hàng sẽ đưa bạn đến gần hơn với những bất ngờ du lịch đặc biệt từ chúng tôi — đặt hôm nay và mở khóa nhiều hơn chỉ một chuyến đi.",
+    "feature1": "Bất ngờ du lịch độc quyền với mỗi lần đặt chỗ",
+    "feature2": "Phần thưởng đặc biệt cho khách hàng trung thành",
+    "feature3": "Mở khóa trải nghiệm độc đáo vượt ngoài vé của bạn",
+    "cta": "Khám Phá Bất Ngờ Của Bạn"
+  },
   "exploreItaly": {
     "title": "Khám phá nước Ý bằng tàu hỏa",
     "intro1": "Trải nghiệm những cảnh quan tuyệt đẹp và các thành phố sôi động của Ý với mạng lưới đường sắt cao tốc đẳng cấp thế giới, Trenitalia.",

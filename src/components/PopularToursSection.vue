@@ -4,31 +4,20 @@
       <h2 class="section-title">{{ $t('popularTours.title') }}</h2>
       <p class="section-subtitle">{{ $t('popularTours.subtitle') }}</p>
 
-      <div class="tours-grid">
-        <!-- Milan Tours -->
-        <div v-for="tour in milanTours" :key="tour._id" class="tour-card">
-          <div class="card-image">
-            <img :src="tour.images[0]" :alt="tour.name" />
-            <div class="location-badge">{{ $t('popularTours.milan') }}</div>
-          </div>
-          <div class="card-content">
-            <h3 class="tour-title">{{ tour.name }}</h3>
-            <p class="tour-intro">{{ truncateText(tour.intro, 120) }}</p>
-            <div class="card-footer">
-              <div class="price">
-                <span class="price-label">{{ $t('popularTours.from') }}</span>
-                <span class="price-amount">{{ $t('popularTours.eur') }} {{ tour.price_eur }}</span>
-              </div>
-              <button class="view-more-btn" @click="() => handleViewMoreClick(tour)">{{ $t('popularTours.viewMore') }}</button>
-            </div>
-          </div>
-        </div>
+      <div class="tabs-container">
+        <button class="tab-btn" :class="{ active: selectedCountry === 'italy' }" @click="selectedCountry = 'italy'">
+          {{ $t('popularTours.countries.italy') }}
+        </button>
+        <button class="tab-btn" :class="{ active: selectedCountry === 'germany' }" @click="selectedCountry = 'germany'">
+          {{ $t('popularTours.countries.germany') }}
+        </button>
+      </div>
 
-        <!-- Florence Tours -->
-        <div v-for="tour in florenceTours" :key="tour._id" class="tour-card">
+      <div class="tours-grid">
+        <div v-for="tour in filteredTours" :key="tour._id" class="tour-card">
           <div class="card-image">
             <img :src="tour.images[0]" :alt="tour.name" />
-            <div class="location-badge florence">{{ $t('popularTours.florence') }}</div>
+            <div class="location-badge" :class="tour.location.toLowerCase()">{{ tour.location }}</div>
           </div>
           <div class="card-content">
             <h3 class="tour-title">{{ tour.name }}</h3>
@@ -36,7 +25,7 @@
             <div class="card-footer">
               <div class="price">
                 <span class="price-label">{{ $t('popularTours.from') }}</span>
-                <span class="price-amount">{{ $t('popularTours.eur') }} {{ tour.price_eur }}</span>
+                <span class="price-amount">{{ formatCurrency(parseFloat(tour.price_eur)) }}</span>
               </div>
               <button class="view-more-btn" @click="() => handleViewMoreClick(tour)">{{ $t('popularTours.viewMore') }}</button>
             </div>
@@ -48,8 +37,9 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useCurrency } from '@/composables/useCurrency'
 
 
 // Import images
@@ -59,13 +49,17 @@ import milanLeonardoImg from '@/assets/images/TravelCard/milan_leonardo_codex_at
 import italyPrivateTourImg from '@/assets/images/TravelCard/italy_private_tour_5days_rome_florence_venice.jpg'
 import florenceDayTripImg from '@/assets/images/TravelCard/florence_daytrip_from_rome_train.jpg'
 import florenceRenaissanceImg from '@/assets/images/TravelCard/florence_smallgroup_renaissance_tour.jpg'
+import neuschwansteinImg from '@/assets/images/NeuschwansteinCastle.png'
 import { trackButtonClick } from '@/utils/analytics'
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
+const { format: formatCurrency } = useCurrency()
+
+const selectedCountry = ref('italy')
 
 // Product data
-const toursData = {
-  milan_top5_highest_price: [
+const toursData = computed(() => ({
+  italy: [
     {
       "_id": "TR__33060P7",
       "name": "Milan Duomo Rooftop Tour Including Free Virtual Reality Jump into the Past",
@@ -75,7 +69,7 @@ const toursData = {
       "images": [
         milanDuomoImg
       ],
-      "location": "Milan"
+      "location": t('popularTours.milan')
     },
     {
       "_id": "TR__7842P32",
@@ -86,7 +80,7 @@ const toursData = {
       "images": [
         milanPhotographyImg
       ],
-      "location": "Milan"
+      "location": t('popularTours.milan')
     },
     {
       "_id": "TR__40358P1",
@@ -97,10 +91,8 @@ const toursData = {
       "images": [
         milanLeonardoImg
       ],
-      "location": "Milan"
-    }
-  ],
-  florence_top5_highest_price: [
+      "location": t('popularTours.milan')
+    },
     {
       "_id": "TR__8434P12",
       "name": "5-Day Italy Private Tour: Rome, Florence and Venice",
@@ -110,7 +102,7 @@ const toursData = {
       "images": [
         italyPrivateTourImg
       ],
-      "location": "Florence"
+      "location": t('popularTours.florence')
     },
     {
       "_id": "TR__5034ROMFLOSHUTTLE",
@@ -121,7 +113,7 @@ const toursData = {
       "images": [
         florenceDayTripImg
       ],
-      "location": "Florence"
+      "location": t('popularTours.florence')
     },
     {
       "_id": "TR__8515P5",
@@ -132,13 +124,25 @@ const toursData = {
       "images": [
         florenceRenaissanceImg
       ],
-      "location": "Florence"
+      "location": t('popularTours.florence')
+    }
+  ],
+  germany: [
+    {
+      "_id": "TR__NCS_01",
+      "name": "Neuschwanstein Castle Skip-the-Line Ticket",
+      "intro": "Visit the fairytale castle of King Ludwig II, nestled in the Bavarian Alps. This ticket provides skip-the-line access to one of the most famous castles in the world.",
+      "highlights": "",
+      "price_eur": "21.0",
+      "images": [
+        neuschwansteinImg
+      ],
+      "location": t('popularTours.germany')
     }
   ]
-}
+}))
 
-const milanTours = computed(() => toursData.milan_top5_highest_price.slice(0, 3))
-const florenceTours = computed(() => toursData.florence_top5_highest_price.slice(0, 3))
+const filteredTours = computed(() => toursData.value[selectedCountry.value] || [])
 
 const truncateText = (text: string, maxLength: number): string => {
   if (text.length <= maxLength) return text
@@ -193,6 +197,38 @@ const handleViewMoreClick = (tour: Tour) => {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  gap: 1rem;
+}
+
+.tab-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+  background-color: white;
+  color: #4b5563;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tab-btn.active {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.tab-btn:hover:not(.active) {
+  background-color: #f3f4f6;
+  color: #1f2937;
 }
 
 .tours-grid {
@@ -257,6 +293,11 @@ const handleViewMoreClick = (tour: Tour) => {
 .location-badge.florence {
   background: #10b981;
   box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+}
+
+.location-badge.germany {
+  background: #f59e0b;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
 }
 
 .card-content {

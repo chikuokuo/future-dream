@@ -57,6 +57,14 @@
     "eur": "€",
     "viewMore": "Details ansehen"
   },
+  "promotion": {
+    "title": "Verwandeln Sie Jedes Ticket in eine Reiseüberraschung",
+    "subtitle": "Jeder Kauf bringt Sie näher zu besonderen Reiseüberraschungen von uns — buchen Sie heute und entsperren Sie mehr als nur eine Reise.",
+    "feature1": "Exklusive Reiseüberraschungen bei jeder Buchung",
+    "feature2": "Besondere Belohnungen für treue Kunden",
+    "feature3": "Einzigartige Erlebnisse jenseits Ihres Tickets freischalten",
+    "cta": "Entdecken Sie Ihre Überraschungen"
+  },
   "ourServices": {
     "title": "Unsere Dienstleistungen",
     "subtitle": "Umfassende Reiseleistungen für Ihr europäisches Abenteuer",

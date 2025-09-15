@@ -2,7 +2,8 @@
   "header": {
     "brand": "Future Dream",
     "language": "Language",
-    "downloadApp": "Download App"
+    "downloadApp": "Download App",
+    "about": "About Us"
   },
   "hero": {
     "badge": "Your Complete Italy Travel Solution",
@@ -79,9 +80,22 @@
     "subtitle": "Discover the most sought-after tours and experiences",
     "milan": "Milan",
     "florence": "Florence",
+    "germany": "Germany",
     "viewMore": "View More",
     "from": "From",
-    "eur": "EUR"
+    "eur": "EUR",
+    "countries": {
+      "italy": "Italy",
+      "germany": "Germany"
+    }
+  },
+  "promotion": {
+    "title": "Turn Every Ticket into a Travel Surprise",
+    "subtitle": "Every purchase brings you closer to special travel surprises from us — book today and unlock more than just a trip.",
+    "feature1": "Exclusive travel surprises with every booking",
+    "feature2": "Special rewards for loyal customers",
+    "feature3": "Unlock unique experiences beyond your ticket",
+    "cta": "Discover Your Surprises"
   },
   "exploreItaly": {
     "title": "Discover Italy by Train",
@@ -141,5 +155,34 @@
       "content2": "Upon arrival, you can take a bus or walk up the hill. Booking tickets online in advance is recommended to avoid queues."
     },
     "cta": "Buy Tickets & Download App"
+  },
+  "paymentMethods": {
+    "title": "Flexible Payment Options",
+    "subtitle": "We support a variety of payment methods for your convenience.",
+    "creditCard": {
+      "title": "Credit Card",
+      "description": "We accept major credit cards including Visa, JCB, and MasterCard for secure and fast payment."
+    },
+    "bankTransfer": {
+      "title": "Bank Transfer",
+      "description": "You can also pay via bank transfer. Please follow the instructions at checkout."
+    }
+  },
+  "about": {
+    "title": "About Future Dream",
+    "hero": {
+      "title": "Our Journey, Your Adventure",
+      "subtitle": "Connecting travelers to the heart of Europe's culture and history."
+    },
+    "brand": {
+      "title": "Our Brand",
+      "paragraph1": "Future Dream was founded with a simple mission: to make European travel seamless and accessible for everyone. We believe that exploring the rich history and vibrant culture of Europe should be a joy, not a hassle.",
+      "paragraph2": "Our team is passionate about travel and technology, and we work tirelessly to create an app that is both powerful and easy to use. We partner with official ticket providers to ensure that you always get authentic tickets at the best prices."
+    },
+    "product": {
+      "title": "Our Product",
+      "paragraph1": "The Future Dream app is your one-stop shop for booking train tickets, and admission to top attractions across Italy and Germany. We offer a curated selection of the best travel experiences, from high-speed trains to iconic landmarks like the Uffizi Gallery and Neuschwanstein Castle.",
+      "paragraph2": "With features like instant booking, digital e-tickets, and multi-language support, our app is designed to take the stress out of travel planning. Whether you're a seasoned traveler or a first-time visitor, Future Dream is your trusted partner for an unforgettable European adventure."
+    }
   }
 }

@@ -43,6 +43,7 @@
       </div>
     </section>
 
+    <PromotionSection />
     <PopularToursSection />
     <UffiziGallerySection />
     <NeuschwansteinCastleSection />
@@ -84,6 +85,8 @@
       </div>
     </section>
 
+    <PaymentMethodsSection />
+
     <!-- Download Section -->
     <section class="download-section">
       <div class="download-container">
@@ -109,11 +112,13 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useHead } from '@vueuse/head'
 import { trackButtonClick } from '@/utils/analytics'
-import PopularToursSection from './PopularToursSection.vue'
-import OurServicesSection from './OurServicesSection.vue'
-import ExploreItalySection from './ExploreItalySection.vue'
-import UffiziGallerySection from './UffiziGallerySection.vue'
-import NeuschwansteinCastleSection from './NeuschwansteinCastleSection.vue'
+import PromotionSection from '../components/PromotionSection.vue'
+import PopularToursSection from '../components/PopularToursSection.vue'
+import OurServicesSection from '../components/OurServicesSection.vue'
+import ExploreItalySection from '../components/ExploreItalySection.vue'
+import UffiziGallerySection from '../components/UffiziGallerySection.vue'
+import NeuschwansteinCastleSection from '../components/NeuschwansteinCastleSection.vue'
+import PaymentMethodsSection from '../components/PaymentMethodsSection.vue'
 
 
 const { t, locale } = useI18n()

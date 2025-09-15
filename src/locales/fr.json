@@ -57,6 +57,14 @@
     "eur": "€",
     "viewMore": "Voir les détails"
   },
+  "promotion": {
+    "title": "Transformez Chaque Billet en Surprise de Voyage",
+    "subtitle": "Chaque achat vous rapproche de surprises de voyage spéciales de notre part — réservez aujourd'hui et débloquez plus qu'un simple voyage.",
+    "feature1": "Surprises de voyage exclusives avec chaque réservation",
+    "feature2": "Récompenses spéciales pour les clients fidèles",
+    "feature3": "Débloquez des expériences uniques au-delà de votre billet",
+    "cta": "Découvrez Vos Surprises"
+  },
   "ourServices": {
     "title": "Nos Services",
     "subtitle": "Solutions de voyage complètes pour votre aventure européenne",

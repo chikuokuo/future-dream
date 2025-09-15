@@ -2,19 +2,48 @@
   <header class="app-header" :class="{ 'scrolled': isScrolled }">
     <div class="header-container">
       <!-- Logo/Brand -->
-      <div class="header-brand">
-        <img src="/FutureDreamLogo.png" alt="Future Dream Logo" class="brand-logo" />
+      <RouterLink to="/" class="header-brand">
+        <img src="@/assets/images/logo-futureDream.svg" alt="Future Dream Logo" class="brand-logo" />
         <h1 class="brand-title">{{ $t('header.brand') }}</h1>
-      </div>
+      </RouterLink>
 
       <!-- Download App Button -->
       <div class="header-actions">
+        <RouterLink to="/about" class="nav-link">{{ $t('header.about') }}</RouterLink>
         <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/future-dream-travel.apk "
           class="download-app-btn" download="NeuschwansteinCastle-App.apk"
           @click="() => trackButtonClick('downloadAppBtn', { download_type: 'apk', location: 'header' })">
           <span class="download-icon">📱</span>
           <span class="download-text">{{ $t('header.downloadApp') }}</span>
         </a>
+
+        <!-- Currency Selector -->
+        <div class="currency-selector">
+          <button class="currency-button" @click="handleCurrencyButtonClick" :aria-expanded="isCurrencyMenuOpen"
+            aria-haspopup="true">
+            <span class="current-currency">
+              <span class="currency-symbol">{{ currentCurrency.symbol }}</span>
+              <span class="currency-code">{{ currentCurrency.code }}</span>
+            </span>
+            <svg class="dropdown-icon" :class="{ 'rotate': isCurrencyMenuOpen }" width="16" height="16"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6,9 12,15 18,9"></polyline>
+            </svg>
+          </button>
+
+          <!-- Currency Dropdown Menu -->
+          <div class="currency-menu" :class="{ 'show': isCurrencyMenuOpen }" role="menu">
+            <button v-for="currency in currencies" :key="currency.code" class="currency-option"
+              :class="{ 'active': currency.code === selectedCurrency }" @click="changeCurrency(currency.code)" role="menuitem">
+              <span class="currency-symbol">{{ currency.symbol }}</span>
+              <span class="currency-name">{{ currency.name }}</span>
+              <svg v-if="currency.code === selectedCurrency" class="check-icon" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20,6 9,17 4,12"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
 
         <!-- Language Selector -->
         <div class="language-selector">
@@ -47,18 +76,23 @@
     </div>
 
     <!-- Overlay for mobile -->
-    <div v-if="isLanguageMenuOpen" class="overlay" @click="closeLanguageMenu"></div>
+    <div v-if="isLanguageMenuOpen || isCurrencyMenuOpen" class="overlay" @click="() => { closeLanguageMenu(); closeCurrencyMenu(); }"></div>
   </header>
 </template>
 
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { RouterLink } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { availableLocales } from '@/i18n'
 import { trackButtonClick } from '@/utils/analytics'
+import { useCurrency } from '@/composables/useCurrency'
 
 const { locale } = useI18n()
+const { currencies, currentCurrency, selectedCurrency, setCurrency } = useCurrency()
+
 const isLanguageMenuOpen = ref(false)
+const isCurrencyMenuOpen = ref(false)
 const isScrolled = ref(false)
 
 const currentLocale = computed(() => locale.value)
@@ -67,6 +101,16 @@ const currentLanguage = computed(() => availableLocales.find(lang => lang.code =
 
 const toggleLanguageMenu = () => {
   isLanguageMenuOpen.value = !isLanguageMenuOpen.value
+  if (isLanguageMenuOpen.value) {
+    isCurrencyMenuOpen.value = false
+  }
+}
+
+const toggleCurrencyMenu = () => {
+  isCurrencyMenuOpen.value = !isCurrencyMenuOpen.value
+  if (isCurrencyMenuOpen.value) {
+    isLanguageMenuOpen.value = false
+  }
 }
 
 const handleLanguageButtonClick = () => {
@@ -74,8 +118,17 @@ const handleLanguageButtonClick = () => {
   toggleLanguageMenu()
 }
 
+const handleCurrencyButtonClick = () => {
+  trackButtonClick('currencyButton', { action: 'toggle_menu', current_currency: selectedCurrency.value })
+  toggleCurrencyMenu()
+}
+
 const closeLanguageMenu = () => {
   isLanguageMenuOpen.value = false
+}
+
+const closeCurrencyMenu = () => {
+  isCurrencyMenuOpen.value = false
 }
 
 const changeLanguage = (langCode: string) => {
@@ -89,13 +142,24 @@ const changeLanguage = (langCode: string) => {
   }, 100)
 }
 
+const changeCurrency = (currencyCode: string) => {
+  setCurrency(currencyCode)
+  closeCurrencyMenu()
+  trackButtonClick('currencyChange', { new_currency: currencyCode, old_currency: selectedCurrency.value })
+}
+
 // Close menu when clicking outside
 const handleClickOutside = (event: Event) => {
   const target = event.target as HTMLElement
   const languageSelector = document.querySelector('.language-selector')
+  const currencySelector = document.querySelector('.currency-selector')
 
   if (languageSelector && !languageSelector.contains(target)) {
     closeLanguageMenu()
+  }
+
+  if (currencySelector && !currencySelector.contains(target)) {
+    closeCurrencyMenu()
   }
 }
 
@@ -103,6 +167,7 @@ const handleClickOutside = (event: Event) => {
 const handleEscapeKey = (event: KeyboardEvent) => {
   if (event.key === 'Escape') {
     closeLanguageMenu()
+    closeCurrencyMenu()
   }
 }
 
@@ -156,11 +221,12 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  text-decoration: none;
 }
 
 .brand-logo {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border-radius: 6px;
   object-fit: contain;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
@@ -232,6 +298,20 @@ onUnmounted(() => {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   min-height: 44px;
   /* 統一高度 */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .download-app-btn:link,
@@ -390,6 +470,128 @@ onUnmounted(() => {
   color: #3b82f6;
 }
 
+/* Currency Selector */
+.currency-selector {
+  position: relative;
+}
+
+.currency-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  color: #ffffff;
+  min-width: 100px;
+  backdrop-filter: blur(10px);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  min-height: 44px;
+}
+
+.currency-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.currency-button:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+.current-currency {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.currency-symbol {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.currency-code {
+  font-weight: 500;
+}
+
+/* Currency Menu */
+.currency-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+  z-index: 1001;
+}
+
+.currency-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.currency-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  color: #1f2937;
+  text-align: left;
+  font-weight: 500;
+}
+
+.currency-option:first-child {
+  border-radius: 12px 12px 0 0;
+}
+
+.currency-option:last-child {
+  border-radius: 0 0 12px 12px;
+}
+
+.currency-option:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.currency-option.active {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+}
+
+.currency-option .currency-symbol {
+  font-size: 1.2rem;
+  font-weight: 600;
+  min-width: 1.5rem;
+  text-align: center;
+}
+
+.currency-option .currency-name {
+  flex: 1;
+  font-weight: 500;
+}
+
 /* Overlay for mobile */
 .overlay {
   position: fixed;
@@ -446,6 +648,30 @@ onUnmounted(() => {
   }
 
   .language-option {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .currency-button {
+    min-width: 90px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+    min-height: 40px;
+    border-radius: 6px;
+  }
+
+  .currency-symbol {
+    font-size: 1rem;
+  }
+
+  .currency-menu {
+    right: 0;
+    left: auto;
+    min-width: 180px;
+    top: calc(100% + 0.25rem);
+  }
+
+  .currency-option {
     padding: 0.6rem 0.8rem;
     font-size: 0.85rem;
   }
@@ -524,6 +750,40 @@ onUnmounted(() => {
   .language-option .language-flag {
     font-size: 1.3rem;
   }
+
+  .currency-button {
+    min-width: 44px;
+    padding: 0.5rem;
+    min-height: 36px;
+    border-radius: 6px;
+    justify-content: center;
+  }
+
+  .currency-code {
+    display: none;
+  }
+
+  .current-currency {
+    justify-content: center;
+  }
+
+  .currency-symbol {
+    font-size: 1.1rem;
+  }
+
+  .currency-menu {
+    min-width: 160px;
+    right: -10px;
+  }
+
+  .currency-option {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .currency-option .currency-symbol {
+    font-size: 1.3rem;
+  }
 }
 
 /* Extra small screens */
@@ -541,14 +801,16 @@ onUnmounted(() => {
   }
 
   .download-app-btn,
-  .language-button {
+  .language-button,
+  .currency-button {
     min-width: 40px;
     min-height: 32px;
     padding: 0.4rem;
   }
 
   .download-icon,
-  .language-flag {
+  .language-flag,
+  .currency-symbol {
     font-size: 1rem;
   }
 

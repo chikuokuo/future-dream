@@ -1,12 +1,12 @@
 <script setup lang="ts">
+import { RouterView } from 'vue-router'
 import AppHeader from '@/components/AppHeader.vue'
-import LandingPage from '@/components/LandingPage.vue'
 </script>
 
 <template>
   <div id="app">
     <AppHeader />
-    <LandingPage />
+    <RouterView />
   </div>
 </template>
 
