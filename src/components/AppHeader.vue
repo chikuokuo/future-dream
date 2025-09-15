@@ -3,7 +3,7 @@
     <div class="header-container">
       <!-- Logo/Brand -->
       <RouterLink to="/" class="header-brand">
-        <img src="@/assets/images/logo-futureDream.svg" alt="Future Dream Logo" class="brand-logo" />
+        <LogoIcon class="brand-logo" />
         <h1 class="brand-title">{{ $t('header.brand') }}</h1>
       </RouterLink>
 
@@ -87,6 +87,7 @@ import { useI18n } from 'vue-i18n'
 import { availableLocales } from '@/i18n'
 import { trackButtonClick } from '@/utils/analytics'
 import { useCurrency } from '@/composables/useCurrency'
+import LogoIcon from '@/components/icons/LogoIcon.vue'
 
 const { locale } = useI18n()
 const { currencies, currentCurrency, selectedCurrency, setCurrency } = useCurrency()
@@ -196,16 +197,17 @@ onUnmounted(() => {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(15px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
+  color: var(--color-white);
 }
 
 .app-header.scrolled {
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--bg-paper);
+  border-bottom: 1px solid var(--border-light);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  color: var(--text-primary);
 }
 
 .header-container {
@@ -222,28 +224,29 @@ onUnmounted(() => {
   align-items: center;
   gap: 0.75rem;
   text-decoration: none;
+  color: inherit;
 }
 
 .brand-logo {
   width: 40px;
   height: 40px;
-  border-radius: 6px;
-  object-fit: contain;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
   transition: all 0.3s ease;
 }
 
 .brand-logo:hover {
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
   transform: scale(1.05);
 }
 
-.brand-title {
+.app-header .brand-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: inherit;
   margin: 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 2px 4px var(--color-shadow-black54);
+}
+
+.app-header.scrolled .brand-title {
+  text-shadow: none;
 }
 
 /* Responsive Design */
@@ -287,31 +290,49 @@ onUnmounted(() => {
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   background: rgba(255, 255, 255, 0.15);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
-  color: #ffffff;
+  color: inherit;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
   transition: all 0.2s ease;
   backdrop-filter: blur(10px);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 2px var(--color-shadow-dark);
   min-height: 44px;
   /* 統一高度 */
 }
 
+.app-header.scrolled .download-app-btn,
+.app-header.scrolled .nav-link,
+.app-header.scrolled .language-button,
+.app-header.scrolled .currency-button {
+  background-color: var(--bg-default);
+  border-color: var(--border-medium);
+  text-shadow: none;
+}
+
+.app-header.scrolled .download-app-btn:hover,
+.app-header.scrolled .nav-link:hover,
+.app-header.scrolled .language-button:hover,
+.app-header.scrolled .currency-button:hover {
+  background-color: var(--border-light);
+  border-color: var(--border-dark);
+}
+
 .nav-link {
-  color: white;
+  color: inherit;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   transition: background-color 0.3s ease;
+  text-shadow: 0 1px 2px var(--color-shadow-dark);
 }
 
 .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .download-app-btn:link,
@@ -320,9 +341,9 @@ onUnmounted(() => {
 }
 
 .download-app-btn:hover {
-  background: rgba(255, 255, 255, 0.25);
-  border-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 12px var(--color-shadow-medium);
   transform: translateY(-1px);
 }
 
@@ -349,30 +370,34 @@ onUnmounted(() => {
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   background: rgba(255, 255, 255, 0.15);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: 0.9rem;
-  color: #ffffff;
+  color: inherit;
   min-width: 140px;
   backdrop-filter: blur(10px);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 2px var(--color-shadow-dark);
   min-height: 44px;
   /* 統一高度 */
 }
 
 .language-button:hover {
-  background: rgba(255, 255, 255, 0.25);
-  border-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 12px var(--color-shadow-medium);
 }
 
 .language-button:focus {
   outline: none;
-  background: rgba(255, 255, 255, 0.25);
-  border-color: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 3px var(--color-shadow-medium);
+}
+
+.app-header.scrolled .language-button:focus {
+  box-shadow: 0 0 0 3px var(--md-primary-container);
 }
 
 .current-language {
@@ -392,7 +417,7 @@ onUnmounted(() => {
 
 .dropdown-icon {
   transition: transform 0.2s ease;
-  color: rgba(255, 255, 255, 0.8);
+  color: inherit;
 }
 
 .dropdown-icon.rotate {
@@ -404,11 +429,11 @@ onUnmounted(() => {
   position: absolute;
   top: calc(100% + 0.5rem);
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--md-surface);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--md-outline-variant);
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 25px var(--color-shadow-dark);
   min-width: 180px;
   opacity: 0;
   visibility: hidden;
@@ -434,7 +459,7 @@ onUnmounted(() => {
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: 0.9rem;
-  color: #1f2937;
+  color: var(--md-on-surface);
   text-align: left;
   font-weight: 500;
 }
@@ -448,13 +473,13 @@ onUnmounted(() => {
 }
 
 .language-option:hover {
-  background-color: rgba(59, 130, 246, 0.1);
-  color: #3b82f6;
+  background-color: var(--md-primary-container);
+  color: var(--md-on-primary-container);
 }
 
 .language-option.active {
-  background-color: rgba(59, 130, 246, 0.15);
-  color: #3b82f6;
+  background-color: var(--md-primary-container);
+  color: var(--md-on-primary-container);
 }
 
 .language-option .language-flag {
@@ -467,7 +492,7 @@ onUnmounted(() => {
 }
 
 .check-icon {
-  color: #3b82f6;
+  color: var(--md-primary);
 }
 
 /* Currency Selector */
@@ -481,29 +506,33 @@ onUnmounted(() => {
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   background: rgba(255, 255, 255, 0.15);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: 0.9rem;
-  color: #ffffff;
+  color: inherit;
   min-width: 100px;
   backdrop-filter: blur(10px);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 2px var(--color-shadow-dark);
   min-height: 44px;
 }
 
 .currency-button:hover {
-  background: rgba(255, 255, 255, 0.25);
-  border-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 12px var(--color-shadow-medium);
 }
 
 .currency-button:focus {
   outline: none;
-  background: rgba(255, 255, 255, 0.25);
-  border-color: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 3px var(--color-shadow-medium);
+}
+
+.app-header.scrolled .currency-button:focus {
+  box-shadow: 0 0 0 3px var(--md-primary-container);
 }
 
 .current-currency {
@@ -527,11 +556,11 @@ onUnmounted(() => {
   position: absolute;
   top: calc(100% + 0.5rem);
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: var(--md-surface);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--md-outline-variant);
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 25px var(--color-shadow-dark);
   min-width: 200px;
   opacity: 0;
   visibility: hidden;
@@ -557,7 +586,7 @@ onUnmounted(() => {
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: 0.9rem;
-  color: #1f2937;
+  color: var(--md-on-surface);
   text-align: left;
   font-weight: 500;
 }
@@ -571,13 +600,13 @@ onUnmounted(() => {
 }
 
 .currency-option:hover {
-  background-color: rgba(59, 130, 246, 0.1);
-  color: #3b82f6;
+  background-color: var(--md-primary-container);
+  color: var(--md-on-primary-container);
 }
 
 .currency-option.active {
-  background-color: rgba(59, 130, 246, 0.15);
-  color: #3b82f6;
+  background-color: var(--md-primary-container);
+  color: var(--md-on-primary-container);
 }
 
 .currency-option .currency-symbol {
@@ -599,7 +628,7 @@ onUnmounted(() => {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: var(--color-shadow-light);
   z-index: 999;
 }
 

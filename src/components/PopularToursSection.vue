@@ -14,7 +14,7 @@
       </div>
 
       <div class="tours-grid">
-        <div v-for="tour in filteredTours" :key="tour._id" class="tour-card">
+        <div v-for="tour in filteredTours" :key="tour._id" class="tour-card" @click="() => handleViewMoreClick(tour)">
           <div class="card-image">
             <img :src="tour.images[0]" :alt="tour.name" />
             <div class="location-badge" :class="tour.location.toLowerCase()">{{ tour.location }}</div>
@@ -27,7 +27,7 @@
                 <span class="price-label">{{ $t('popularTours.from') }}</span>
                 <span class="price-amount">{{ formatCurrency(parseFloat(tour.price_eur)) }}</span>
               </div>
-              <button class="view-more-btn" @click="() => handleViewMoreClick(tour)">{{ $t('popularTours.viewMore') }}</button>
+              <div class="view-more-btn">{{ $t('popularTours.viewMore') }}</div>
             </div>
           </div>
         </div>
@@ -40,109 +40,22 @@
 import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useCurrency } from '@/composables/useCurrency'
-
-
-// Import images
-import milanDuomoImg from '@/assets/images/TravelCard/milan_duomo_rooftop_vr.jpg'
-import milanPhotographyImg from '@/assets/images/TravelCard/milan_private_photography_tour.jpg'
-import milanLeonardoImg from '@/assets/images/TravelCard/milan_leonardo_codex_atlanticus.jpg'
-import italyPrivateTourImg from '@/assets/images/TravelCard/italy_private_tour_5days_rome_florence_venice.jpg'
-import florenceDayTripImg from '@/assets/images/TravelCard/florence_daytrip_from_rome_train.jpg'
-import florenceRenaissanceImg from '@/assets/images/TravelCard/florence_smallgroup_renaissance_tour.jpg'
-import neuschwansteinImg from '@/assets/images/NeuschwansteinCastle.png'
+import { useTours } from '@/composables/useTours'
 import { trackButtonClick } from '@/utils/analytics'
 
 const { locale, t } = useI18n()
 const { format: formatCurrency } = useCurrency()
+const { toursData } = useTours()
 
 const selectedCountry = ref<'italy' | 'germany'>('italy')
 
-// Product data
-const toursData = computed(() => ({
-  italy: [
-    {
-      "_id": "TR__33060P7",
-      "name": "Milan Duomo Rooftop Tour Including Free Virtual Reality Jump into the Past",
-      "intro": "Enjoy an amazing view of Milan from above visiting the terraces of the Duomo with professional local guides. During this 1-hour tour you'll get spectacular views over the city of Milan while walking on the rooftop of this majestic monument. You will also be impressed of the countless Gothic statues, spires and bizarre gargoyles decorating the outside of the cathedral while your personal guide teaches you about facts and anecdotes of the most iconic symbol of the city. Then take your chance to live a unique immersive experience wearing a 3-D virtual reality headset. Enhancing your visit is a free included option.",
-      "highlights": "",
-      "price_eur": "39.0",
-      "images": [
-        milanDuomoImg
-      ],
-      "location": t('popularTours.milan')
-    },
-    {
-      "_id": "TR__7842P32",
-      "name": "Private Photography Tour of Milan",
-      "intro": "Rich in historical architecture and brimming with next season's haute couture, Milan provides endless photo opportunities. It's fast and determined during rush hours, but there are spots that were made for people watching. Follow along with your professional photographer-guide on your private tour as you explore the most captivating angles of Milan. You will demystify the complexities of your camera and find the best spots to capture the perfect shot. Choose from one of 2 departure times and durations when you book.",
-      "highlights": "",
-      "price_eur": "175.0",
-      "images": [
-        milanPhotographyImg
-      ],
-      "location": t('popularTours.milan')
-    },
-    {
-      "_id": "TR__40358P1",
-      "name": "Leonardo da Vinci's Codex Atlanticus Admission in Milan",
-      "intro": "See the original notes and drawings of Leonardo da Vinci, which are displayed at Milan's Codex Atlanticus exhibit in the Pinacoteca Ambrosiana. The entry ticket includes access to both the museum and the exhibition, where pages from the artist's notebook are given pride of place. Visit the ancient library where the full Codex Atlanticus is stored, and admire art by Caravaggio, Raphael, Titian, and more. Allow yourself 1.5 hours for a visit.",
-      "highlights": "",
-      "price_eur": "16.5",
-      "images": [
-        milanLeonardoImg
-      ],
-      "location": t('popularTours.milan')
-    },
-    {
-      "_id": "TR__8434P12",
-      "name": "5-Day Italy Private Tour: Rome, Florence and Venice",
-      "intro": "Discover the three most famous and visited cities of Italy with this private 5 days tour around the 'Bel Paese'. Starting from Rome, the Italian capital, this tour will stop in Florence and Venice. Enjoy the magical atmosphere of these cities, walking through their narrow alleys and visiting their top attractions.",
-      "highlights": "",
-      "price_eur": "999.0",
-      "images": [
-        italyPrivateTourImg
-      ],
-      "location": t('popularTours.florence')
-    },
-    {
-      "_id": "TR__5034ROMFLOSHUTTLE",
-      "name": "Florence Day Trip from Rome by High-Speed Train",
-      "intro": "Spend a day in Florence on this day trip from Rome by high-speed train. After starting the experience with a hotel pickup, travel from Rome Termini Station to Florence Santa Maria Novella Railway Station in roughly 1.5 hours. Then, explore the city with a walking tour and skip-the-line entrance ticket to the impressive Uffizi Gallery — home to a wealth of Renaissance artwork. Lunch at a traditional Florentine restaurant is included, as well as some free time in the afternoon, before making your way back to Rome.",
-      "highlights": "",
-      "price_eur": "155.0",
-      "images": [
-        florenceDayTripImg
-      ],
-      "location": t('popularTours.florence')
-    },
-    {
-      "_id": "TR__8515P5",
-      "name": "Small Group Tour: Florence the Cradle of the Renaissance from Rome",
-      "intro": "Explore the Renaissance cities of Florence on a full-day tour from Rome. The city tour will start from Piazzale Michelangelo where you will see a beautiful view of Ponte Vecchio. Here you will meet your guide who will show you the Santa Maria's del Fiore Cathedral with its beautiful Dome by Brunelleschi. Other treasure, the Baptistery and Giotto's Bell Tower can also be admired before reaching Piazza della Signoria. Then your guide will take you to the Accademia Gallery and show you where our star used to stand outside the doors.",
-      "highlights": "",
-      "price_eur": "168.0",
-      "images": [
-        florenceRenaissanceImg
-      ],
-      "location": t('popularTours.florence')
-    }
-  ],
-  germany: [
-    {
-      "_id": "TR__NCS_01",
-      "name": "Neuschwanstein Castle Skip-the-Line Ticket",
-      "intro": "Visit the fairytale castle of King Ludwig II, nestled in the Bavarian Alps. This ticket provides skip-the-line access to one of the most famous castles in the world.",
-      "highlights": "",
-      "price_eur": "21.0",
-      "images": [
-        neuschwansteinImg
-      ],
-      "location": t('popularTours.germany')
-    }
-  ]
-}))
-
-const filteredTours = computed(() => toursData.value[selectedCountry.value] || [])
+const filteredTours = computed(() => {
+  const tours = toursData.value[selectedCountry.value] || [];
+  return tours.map(tour => ({
+    ...tour,
+    category: selectedCountry.value === 'italy' ? 'Tours • Italy' : 'Tours • Germany'
+  }));
+});
 
 const truncateText = (text: string, maxLength: number): string => {
   if (text.length <= maxLength) return text
@@ -171,7 +84,7 @@ const handleViewMoreClick = (tour: Tour) => {
 <style scoped>
 .popular-tours-section {
   padding: 4rem 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  background-color: var(--bg-default);
 }
 
 .container {
@@ -185,15 +98,15 @@ const handleViewMoreClick = (tour: Tour) => {
   font-weight: bold;
   text-align: center;
   margin-bottom: 1rem;
-  color: #1f2937;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: var(--text-primary);
+  text-shadow: 0 1px 2px var(--color-shadow-light);
 }
 
 .section-subtitle {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 3rem;
-  color: #6b7280;
+  color: var(--text-secondary);
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -211,51 +124,50 @@ const handleViewMoreClick = (tour: Tour) => {
   font-size: 1rem;
   font-weight: 600;
   border: 2px solid transparent;
-  background-color: white;
-  color: #4b5563;
+  background-color: var(--bg-paper);
+  color: var(--text-secondary);
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px var(--color-shadow-light);
 }
 
 .tab-btn.active {
-  background-color: #3b82f6;
-  color: white;
-  border-color: #3b82f6;
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  background-color: var(--md-primary);
+  color: var(--md-on-primary);
+  border-color: var(--md-primary);
+  box-shadow: 0 4px 15px var(--color-shadow-medium);
 }
 
 .tab-btn:hover:not(.active) {
-  background-color: #f3f4f6;
-  color: #1f2937;
+  background-color: var(--bg-default);
+  color: var(--text-primary);
 }
 
 .tours-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.2rem;
+  gap: 2rem;
   justify-items: center;
   padding: 0 1rem;
 }
 
 .tour-card {
-  background: white;
-  border-radius: 12px;
+  background: var(--bg-paper);
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
   transition: all 0.3s ease;
-  max-width: 360px;
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-light);
   display: flex;
   flex-direction: column;
-  height: 100%;
+  cursor: pointer;
 }
 
 .tour-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(0, 0, 0, 0.06);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
 .card-image {
@@ -280,49 +192,54 @@ const handleViewMoreClick = (tour: Tour) => {
   position: absolute;
   top: 12px;
   left: 12px;
-  background: #3b82f6;
-  color: white;
-  padding: 0.5rem 1rem;
+  background: var(--md-primary);
+  color: var(--md-on-primary);
+  padding: 0.3rem 0.8rem;
   border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
 }
 
 .location-badge.florence {
-  background: #10b981;
-  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+  background: var(--color-success-700);
 }
 
 .location-badge.germany {
-  background: #f59e0b;
-  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+  background: var(--color-warning-700);
 }
 
 .card-content {
-  padding: 1.2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
+.tour-category {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
 .tour-title {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 0.8rem;
-  color: #1f2937;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
   line-height: 1.4;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  min-height: 2.8em; /* Ensure space for 2 lines */
 }
 
 .tour-intro {
   font-size: 0.9rem;
-  color: #6b7280;
+  color: var(--text-secondary);
   line-height: 1.5;
   margin-bottom: 1.2rem;
   height: 4.2rem;
@@ -330,55 +247,39 @@ const handleViewMoreClick = (tour: Tour) => {
 }
 
 .card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-light);
 }
 
 .price {
   display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  align-items: baseline;
+  gap: 0.5rem;
 }
 
 .price-label {
-  font-size: 0.8rem;
-  color: #9ca3af;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
   font-weight: 500;
 }
 
 .price-amount {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--md-primary);
 }
 
+/* Remove view more button */
 .view-more-btn {
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
-  color: white;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 6px rgba(59, 130, 246, 0.2);
-}
-
-.view-more-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  display: none;
 }
 
 /* Responsive Design */
 @media (max-width: 1200px) {
   .tours-grid {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
   }
 }
 
@@ -397,12 +298,12 @@ const handleViewMoreClick = (tour: Tour) => {
 
   .section-subtitle {
     font-size: 1.1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
   }
 
   .tours-grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 0;
   }
 
@@ -412,6 +313,17 @@ const handleViewMoreClick = (tour: Tour) => {
 
   .card-image {
     height: 200px;
+  }
+
+  .card-footer {
+    flex-direction: row;
+    gap: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .view-more-btn {
+    display: none;
   }
 }
 

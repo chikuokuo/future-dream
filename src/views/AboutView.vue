@@ -49,6 +49,19 @@
           </div>
         </div>
       </section>
+
+      <!-- Investors Section -->
+      <section class="investors-section">
+        <div class="investor-layout">
+          <div class="investor-photo-container">
+            <img src="@/assets/images/aboutUs-investor-1.jpg" alt="Future Dream Investors" class="investor-photo" />
+          </div>
+          <div class="investor-text-content">
+            <h2 class="section-heading">{{ $t('about.investors.title') }}</h2>
+            <p class="section-paragraph">{{ $t('about.investors.subtitle') }}</p>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </template>
@@ -61,20 +74,21 @@ const { t } = useI18n()
 
 <style scoped>
 .about-page {
-  background-color: #f8fafc;
-  color: #374151;
+  background-color: var(--bg-default);
+  color: var(--text-primary);
 }
 
 .hero-section {
-  height: 60vh;
+  height: 50vh; /* Reduced height from 60vh */
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('@/assets/images/Bg-aboutUs.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: var(--color-white);
   padding: 0 2rem;
+  margin-bottom: 4rem;
 }
 
 .hero-content {
@@ -84,15 +98,14 @@ const { t } = useI18n()
 .hero-title {
   font-size: 3.5rem;
   font-weight: bold;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   margin-bottom: 1rem;
 }
 
 .hero-subtitle {
   font-size: 1.5rem;
   font-weight: 300;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-  color: #ffffff;
+  text-shadow: 0 1px 3px var(--color-shadow-black54);
+  color: var(--color-white);
 }
 
 .content-container {
@@ -110,64 +123,106 @@ const { t } = useI18n()
 
 .about-intro-section,
 .mission-section,
-.promise-section {
+.promise-section,
+.investors-section {
   text-align: center;
   margin-bottom: 6rem;
 }
 
+.investors-section {
+  text-align: left;
+}
+
 .section-heading {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  color: #3b82f6; /* Changed to brand blue */
+  color: var(--text-primary);
   margin-bottom: 1rem;
 }
 
 .section-subheading {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  color: #1f2937;
+  color: var(--text-primary);
   margin-bottom: 1.5rem;
 }
 
 .section-paragraph {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.8;
   max-width: 800px;
   margin: 0 auto;
-  color: #6b7280;
+  color: var(--text-secondary);
+}
+
+.investor-layout {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.investor-photo-container {
+  flex: 1;
+}
+
+.investor-text-content {
+  flex: 1;
+}
+
+.investor-photo {
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
 }
 
 .promise-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .promise-card {
-  padding: 2rem;
+  padding: 2.5rem 2rem;
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  background-color: var(--bg-paper);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.promise-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
 }
 
 .card-icon {
   margin-bottom: 1.5rem;
-  color: #3b82f6; /* Changed to brand blue */
+  color: var(--md-primary);
 }
 
 .card-icon svg {
-  width: 56px;
-  height: 56px;
+  width: 48px;
+  height: 48px;
 }
 
 .promise-title {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  color: #1f2937;
-  margin-bottom: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
 }
 
 .promise-card p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .investor-layout {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 </style>

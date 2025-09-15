@@ -202,6 +202,10 @@
         }
       }
     },
+    "investors": {
+      "title": "Our Investors",
+      "subtitle": "We're proudly supported by some of the world's biggest investment firms."
+    },
     "brand": {
       "title": "Our Brand",
       "paragraph1": "Future Dream was founded with a simple mission: to make European travel seamless and accessible for everyone. We believe that exploring the rich history and vibrant culture of Europe should be a joy, not a hassle.",
@@ -219,5 +223,26 @@
     "contactUs": "Contact Us",
     "followUs": "Follow Us",
     "allRightsReserved": "All rights reserved."
+  },
+  "brandValues": {
+    "title": "Brand Core Values",
+    "convenience": {
+      "title": "Convenience",
+      "description": "One-stop ticketing that simplifies travel planning."
+    },
+    "trust": {
+      "title": "Trust",
+      "description": "Transparent pricing and clear terms to avoid hidden traps."
+    },
+    "discovery": {
+      "title": "Discovery",
+      "description": "Through gamified promotions and bundled packages, every journey feels like an adventure."
+    }
+  },
+  "search": {
+    "destination": "Destination",
+    "date": "Date",
+    "people": "Number of people",
+    "button": "Search"
   }
 }

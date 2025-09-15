@@ -223,8 +223,8 @@
 :root {
   /* Text Colors */
   --text-primary: var(--color-neutral-900);
-  --text-secondary: var(--color-neutral-600);
-  --text-disabled: var(--color-neutral-400);
+  --text-secondary: var(--color-neutral-700);
+  --text-disabled: var(--color-neutral-500);
   --text-inverse: var(--color-white);
 
   /* Background Colors */
@@ -249,8 +249,8 @@
    ======================================== */
 [data-theme="dark"] {
   --text-primary: var(--color-neutral-100);
-  --text-secondary: var(--color-neutral-300);
-  --text-disabled: var(--color-neutral-600);
+  --text-secondary: var(--color-neutral-200);
+  --text-disabled: var(--color-neutral-400);
   --text-inverse: var(--color-neutral-900);
 
   --bg-default: var(--color-neutral-900);

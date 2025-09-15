@@ -27,6 +27,8 @@
             </div>
           </div>
 
+          <SearchBar />
+
           <div class="hero-buttons">
             <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/future-dream-travel.apk"
               class="btn-primary" download="NeuschwansteinCastle-App.apk"
@@ -104,6 +106,7 @@
         <p class="compatibility">{{ $t('download.compatibility') }}</p>
       </div>
     </section>
+    <BrandValuesSection />
   </div>
 </template>
 
@@ -119,6 +122,8 @@ import ExploreItalySection from '../components/ExploreItalySection.vue'
 import UffiziGallerySection from '../components/UffiziGallerySection.vue'
 import NeuschwansteinCastleSection from '../components/NeuschwansteinCastleSection.vue'
 import PaymentMethodsSection from '../components/PaymentMethodsSection.vue'
+import BrandValuesSection from '../components/BrandValuesSection.vue'
+import SearchBar from '../components/SearchBar.vue'
 
 
 const { t, locale } = useI18n()
@@ -173,7 +178,16 @@ const handleLearnMoreClick = () => {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+}
+
+/* Ensure all hero text renders white */
+.hero-section,
+.hero-section .hero-title,
+.hero-section .hero-subtitle,
+.hero-section .hero-badge,
+.hero-section .feature-item,
+.hero-section .feature-item .feature-icon {
+  color: var(--color-white);
 }
 
 .hero-background {
@@ -190,16 +204,15 @@ const handleLearnMoreClick = () => {
 
 .hero-content {
   text-align: center;
-  color: white;
   max-width: 1400px;
   padding: 2rem;
   margin-top: 80px;
   /* Offset for fixed header */
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 .hero-badge {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   border-radius: 25px;
   padding: 0.5rem 1.5rem;
@@ -207,24 +220,24 @@ const handleLearnMoreClick = () => {
   margin-bottom: 2rem;
   display: inline-block;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px var(--color-shadow-light);
   text-shadow: none;
 }
 
-.hero-title {
+.hero-section .hero-title {
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 1rem;
   line-height: 1.1;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  color: white;
 }
 
-.hero-subtitle {
+.hero-section .hero-subtitle {
   font-size: 1.5rem;
   margin-bottom: 3rem;
   opacity: 0.95;
   line-height: 1.4;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
 }
 
 .hero-features {
@@ -235,12 +248,17 @@ const handleLearnMoreClick = () => {
   flex-wrap: wrap;
 }
 
+.search-bar-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .feature-item {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 1rem;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 2px var(--color-shadow-dark);
   font-weight: 500;
 }
 
@@ -257,8 +275,8 @@ const handleLearnMoreClick = () => {
 }
 
 .btn-primary {
-  background: #3b82f6;
-  color: white;
+  background: var(--md-primary);
+  color: var(--md-on-primary);
   border: none;
   padding: 1rem 2rem;
   border-radius: 12px;
@@ -271,25 +289,25 @@ const handleLearnMoreClick = () => {
   gap: 0.5rem;
   transition: all 0.3s ease;
   text-decoration: none;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.25), 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 2px var(--color-shadow-medium);
+  box-shadow: 0 2px 8px var(--color-shadow-medium), 0 1px 3px var(--color-shadow-light);
 }
 
 .btn-primary:link,
 .btn-primary:visited {
   text-decoration: none;
-  color: white;
+  color: var(--md-on-primary);
 }
 
 .btn-primary:hover {
-  background: #2563eb;
+  background: var(--color-primary-600);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3), 0 2px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px var(--color-shadow-dark), 0 2px 6px var(--color-shadow-light);
 }
 
 .btn-secondary {
-  background: #fbbf24;
-  color: #1f2937;
+  background: var(--md-secondary);
+  color: var(--md-on-secondary);
   border: none;
   padding: 1rem 2rem;
   border-radius: 12px;
@@ -303,36 +321,34 @@ const handleLearnMoreClick = () => {
 }
 
 .btn-secondary:hover {
-  background: #f59e0b;
+  background: var(--color-secondary-600);
   transform: translateY(-2px);
 }
 
 .learn-more-btn {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 0.75rem 1.5rem;
   border-radius: 25px;
   font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   font-weight: 500;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 .learn-more-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Why Choose Section */
 .why-choose-section {
   padding: 5rem 0;
-  background: #f8fafc;
+  background: var(--bg-default);
 }
 
 .container {
@@ -346,13 +362,13 @@ const handleLearnMoreClick = () => {
   font-weight: bold;
   text-align: center;
   margin-bottom: 1rem;
-  color: #1f2937;
+  color: var(--text-primary);
 }
 
 .section-subtitle {
   font-size: 1.1rem;
   text-align: center;
-  color: #6b7280;
+  color: var(--text-secondary);
   margin-bottom: 4rem;
   line-height: 1.6;
 }
@@ -364,17 +380,17 @@ const handleLearnMoreClick = () => {
 }
 
 .feature-card {
-  background: white;
+  background: var(--bg-paper);
   padding: 2rem;
   border-radius: 16px;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 6px var(--color-shadow-light);
   transition: all 0.3s ease;
 }
 
 .feature-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px var(--color-shadow-light);
 }
 
 .feature-icon-large {
@@ -386,11 +402,11 @@ const handleLearnMoreClick = () => {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #1f2937;
+  color: var(--text-primary);
 }
 
 .feature-card p {
-  color: #6b7280;
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 
@@ -417,7 +433,7 @@ const handleLearnMoreClick = () => {
 .download-icon {
   font-size: 3rem;
   margin-bottom: 1rem;
-  background: white;
+  background: var(--bg-paper);
   width: 80px;
   height: 80px;
   border-radius: 16px;
@@ -430,20 +446,20 @@ const handleLearnMoreClick = () => {
 .download-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: white;
+  color: var(--color-white);
   margin-bottom: 0.75rem;
 }
 
 .download-subtitle {
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-white);
   margin-bottom: 2rem;
 }
 
 .download-btn {
-  background: #6b7280;
-  color: #ffffff;
-  border: 2px solid #9ca3af;
+  background: var(--color-neutral-600);
+  color: var(--color-white);
+  border: 2px solid var(--color-neutral-400);
   padding: 1.25rem 3rem;
   border-radius: 12px;
   font-size: 1.2rem;
@@ -454,7 +470,7 @@ const handleLearnMoreClick = () => {
   gap: 0.75rem;
   transition: all 0.3s ease;
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 12px rgba(107, 114, 128, 0.2);
+  box-shadow: 0 4px 12px var(--color-shadow-medium);
   text-decoration: none;
   justify-content: center;
 }
@@ -462,16 +478,16 @@ const handleLearnMoreClick = () => {
 .download-btn:link,
 .download-btn:visited {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .download-btn:hover {
-  background: #4b5563;
-  border-color: #d1d5db;
+  background: var(--color-neutral-700);
+  border-color: var(--color-neutral-300);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(107, 114, 128, 0.3);
+  box-shadow: 0 6px 20px var(--color-shadow-dark);
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .download-btn:active {
@@ -483,7 +499,7 @@ const handleLearnMoreClick = () => {
 }
 
 .compatibility {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-white);
   font-size: 0.9rem;
 }
 
@@ -654,5 +670,9 @@ const handleLearnMoreClick = () => {
   .download-container {
     padding: 0 0.75rem;
   }
+}
+
+.our-services-section, .uffizi-gallery-section, .explore-italy-section, .why-choose-section, .brand-values-section {
+  background-color: var(--bg-default);
 }
 </style>

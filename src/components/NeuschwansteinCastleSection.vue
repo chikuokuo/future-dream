@@ -54,12 +54,12 @@ const { t, locale } = useI18n()
 /* Using shared styles with Uffizi section for consistency, but with minor tweaks */
 .destination-section {
     padding: 5rem 0;
-    background-color: #ffffff;
+    background-color: var(--bg-paper);
     /* White background */
 }
 
 .alternate-bg {
-    background-color: #ffffff;
+    background-color: var(--bg-paper);
     /* White background */
 }
 
@@ -82,9 +82,9 @@ const { t, locale } = useI18n()
 .destination-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #1f2937;
+    color: var(--text-primary);
     margin-bottom: 2rem;
-    border-bottom: 3px solid #3b82f6;
+    border-bottom: 3px solid var(--md-primary);
     padding-bottom: 0.5rem;
     display: inline-block;
 }
@@ -96,14 +96,14 @@ const { t, locale } = useI18n()
 .info-block h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #374151;
+    color: var(--text-primary);
     margin-bottom: 1rem;
 }
 
 .info-block p,
 .info-block ul {
     font-size: 1rem;
-    color: #4b5563;
+    color: var(--text-secondary);
     line-height: 1.7;
     padding-left: 0;
 }
@@ -125,8 +125,8 @@ const { t, locale } = useI18n()
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-    background-color: #3b82f6;
-    color: white;
+    background-color: var(--md-primary);
+    color: var(--md-on-primary);
     border: none;
     padding: 0.9rem 2rem;
     border-radius: 12px;
@@ -134,14 +134,14 @@ const { t, locale } = useI18n()
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 4px 15px var(--color-shadow-medium);
     text-decoration: none;
 }
 
 .cta-button:hover {
-    background-color: #2563eb;
+    background-color: var(--color-primary-600);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 6px 20px var(--color-shadow-dark);
 }
 
 .visual-column {
@@ -157,7 +157,7 @@ const { t, locale } = useI18n()
     aspect-ratio: 3 / 4;
     object-fit: cover;
     border-radius: 16px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 30px var(--color-shadow-medium);
     transition: transform 0.3s ease;
 }
 
@@ -169,14 +169,14 @@ const { t, locale } = useI18n()
     width: 100%;
     max-width: 350px;
     aspect-ratio: 3 / 4;
-    background-color: #e5e7eb;
+    background-color: var(--bg-default);
     border-radius: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #9ca3af;
-    border: 2px dashed #d1d5db;
+    color: var(--text-disabled);
+    border: 2px dashed var(--border-medium);
 }
 
 .icon {

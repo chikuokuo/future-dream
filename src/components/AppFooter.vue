@@ -42,8 +42,8 @@
 
 <style scoped>
 .app-footer {
-  background-color: #111827;
-  color: #d1d5db;
+  background-color: var(--md-inverse-surface);
+  color: var(--md-on-inverse-surface);
   padding: 4rem 0 0;
   font-family: 'Poppins', sans-serif;
 }
@@ -59,13 +59,13 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 3rem;
   padding-bottom: 3rem;
-  border-bottom: 1px solid #374151;
+  border-bottom: 1px solid var(--md-outline-variant);
 }
 
 .footer-section .footer-heading {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--md-on-inverse-surface);
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -86,7 +86,7 @@
 .footer-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .footer-section p {
@@ -105,14 +105,14 @@
 }
 
 .footer-section a {
-  color: #d1d5db;
+  color: var(--md-on-inverse-surface);
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 0.95rem;
 }
 
 .footer-section a:hover {
-  color: #3b82f6;
+  color: var(--md-primary);
 }
 
 .contact-item {
@@ -122,7 +122,7 @@
 }
 
 .contact-item svg {
-  color: #9ca3af;
+  color: var(--text-disabled);
 }
 
 .social-links {
@@ -133,12 +133,12 @@
 .social-links a svg {
   width: 24px;
   height: 24px;
-  color: #d1d5db;
+  color: var(--md-on-inverse-surface);
   transition: all 0.3s ease;
 }
 
 .social-links a:hover svg {
-  color: #3b82f6;
+  color: var(--md-primary);
   transform: scale(1.1);
 }
 
@@ -146,7 +146,7 @@
   padding: 2rem 0;
   text-align: center;
   font-size: 0.85rem;
-  color: #9ca3af;
+  color: var(--text-disabled);
 }
 
 @media (max-width: 768px) {

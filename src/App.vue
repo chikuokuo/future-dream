@@ -21,8 +21,7 @@ import AppFooter from '@/components/AppFooter.vue'
 
 #app {
   min-height: 100vh;
-  background-color: #ffffff;
-  color: #1f2937;
+  background-color: var(--md-background);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -33,5 +32,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--md-on-background);
 }
 </style>

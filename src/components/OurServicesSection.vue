@@ -49,7 +49,7 @@ const { tm } = useI18n();
 <style scoped>
 .our-services-section {
     padding: 5rem 0;
-    background: #f8fafc;
+    background: var(--bg-default);
 }
 
 .container {
@@ -63,13 +63,13 @@ const { tm } = useI18n();
     font-weight: bold;
     text-align: center;
     margin-bottom: 1rem;
-    color: #1f2937;
+    color: var(--text-primary);
 }
 
 .section-subtitle {
     font-size: 1.1rem;
     text-align: center;
-    color: #6b7280;
+    color: var(--text-secondary);
     margin-bottom: 4rem;
     line-height: 1.6;
 }
@@ -82,18 +82,18 @@ const { tm } = useI18n();
 }
 
 .service-card {
-    background: white;
+    background: var(--bg-paper);
     padding: 2.5rem 2rem;
     border-radius: 16px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 4px 15px var(--color-shadow-light);
     transition: all 0.3s ease;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--border-light);
 }
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 30px var(--color-shadow-medium);
 }
 
 .service-icon {
@@ -105,14 +105,14 @@ const { tm } = useI18n();
     font-size: 1.4rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #1f2937;
+    color: var(--text-primary);
 }
 
 .service-card ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    color: #4b5563;
+    color: var(--text-secondary);
 }
 
 .service-card ul li {
