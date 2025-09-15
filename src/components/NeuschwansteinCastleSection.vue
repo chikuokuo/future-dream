@@ -30,9 +30,9 @@
                     </div>
 
                     <div class="cta-container">
-                        <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk"
+                        <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/future-dream-travel.apk"
                             class="cta-button" download="FutureDream-App.apk"
-                            @click="() => trackButtonClick('ctaButton', { download_type: 'apk', location: 'neuschwanstein_castle_section' })">
+                            @click="() => trackButtonClick('ctaButton', { download_type: 'apk', location: 'neuschwanstein_castle_section', current_language: locale })">
                             <span class="btn-icon">🎟️</span>
                             {{ $t('neuschwansteinCastle.cta') }}
                         </a>
@@ -47,7 +47,7 @@
 import { trackButtonClick } from '@/utils/analytics'
 import { useI18n } from 'vue-i18n'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 </script>
 
 <style scoped>
