@@ -152,6 +152,7 @@ const handleLearnMoreClick = () => {
 
 /* Hero Section */
 .hero-section {
+  padding-top: 80px; /* Add padding to account for the fixed header */
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)),
