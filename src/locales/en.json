@@ -172,8 +172,8 @@
   "about": {
     "title": "About Future Dream",
     "hero": {
-      "title": "Fun Starts Here",
-      "subtitle": "Let Future Dream lead you to discover your own world of fun."
+      "title": "Turn every ticket into a travel surprise",
+      "subtitle": "Discover your world of fun."
     },
     "intro": {
       "title": "About Future Dream",
@@ -205,6 +205,11 @@
     "investors": {
       "title": "Our Investors",
       "subtitle": "We're proudly supported by some of the world's biggest investment firms."
+    },
+    "partnerships": {
+      "title": "Corporate Partnerships",
+      "subtitle": "Collaborating with leading companies to deliver exceptional travel experiences.",
+      "content": "Our management team works closely with major corporations and industry leaders to expand our reach and enhance our services. Through strategic partnerships, we continue to innovate and provide seamless travel solutions for customers worldwide."
     },
     "brand": {
       "title": "Our Brand",
@@ -240,7 +245,7 @@
     }
   },
   "search": {
-    "destination": "Destination",
+    "destination": "義大利城市列表",
     "date": "Date",
     "people": "Number of people",
     "button": "Search"

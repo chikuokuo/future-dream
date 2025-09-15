@@ -6,7 +6,17 @@
         <!-- Convenience -->
         <div class="value-card">
           <div class="card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="url(#grad-conv)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <defs>
+                <linearGradient id="grad-conv" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#3B82F6"/>
+                  <stop offset="50%" stop-color="#06B6D4"/>
+                  <stop offset="100%" stop-color="#8B5CF6"/>
+                </linearGradient>
+              </defs>
+              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+              <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+            </svg>
           </div>
           <h3 class="value-title">{{ $t('brandValues.convenience.title') }}</h3>
           <p class="value-description">{{ $t('brandValues.convenience.description') }}</p>
@@ -15,7 +25,15 @@
         <!-- Trust -->
         <div class="value-card">
           <div class="card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="url(#grad-trust)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <defs>
+                <linearGradient id="grad-trust" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#0EA5E9"/>
+                  <stop offset="100%" stop-color="#10B981"/>
+                </linearGradient>
+              </defs>
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
           </div>
           <h3 class="value-title">{{ $t('brandValues.trust.title') }}</h3>
           <p class="value-description">{{ $t('brandValues.trust.description') }}</p>
@@ -24,7 +42,19 @@
         <!-- Discovery -->
         <div class="value-card">
           <div class="card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"></path><path d="M12 12L16 10"></path><path d="M12 12L10 16"></path><path d="M12 12L18 14"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="url(#grad-disc)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <defs>
+                <linearGradient id="grad-disc" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#F59E0B"/>
+                  <stop offset="50%" stop-color="#EC4899"/>
+                  <stop offset="100%" stop-color="#6366F1"/>
+                </linearGradient>
+              </defs>
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 12L16 10"></path>
+              <path d="M12 12L10 16"></path>
+              <path d="M12 12L18 14"></path>
+            </svg>
           </div>
           <h3 class="value-title">{{ $t('brandValues.discovery.title') }}</h3>
           <p class="value-description">{{ $t('brandValues.discovery.description') }}</p>
@@ -81,7 +111,13 @@ const { t } = useI18n()
 
 .card-icon {
   margin-bottom: 1.5rem;
-  color: var(--md-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icon svg {
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.12));
 }
 
 .value-title {

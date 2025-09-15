@@ -1,5 +1,5 @@
 <template>
-  <header class="app-header" :class="{ 'scrolled': isScrolled }">
+  <header class="app-header" :class="{ 'scrolled': isScrolled || isForceDark }">
     <div class="header-container">
       <!-- Logo/Brand -->
       <RouterLink to="/" class="header-brand">
@@ -9,7 +9,7 @@
 
       <!-- Download App Button -->
       <div class="header-actions">
-        <RouterLink to="/about" class="nav-link">{{ $t('header.about') }}</RouterLink>
+        <RouterLink to="/about" class="nav-link desktop-only">{{ $t('header.about') }}</RouterLink>
         <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/future-dream-travel.apk "
           class="download-app-btn" download="NeuschwansteinCastle-App.apk"
           @click="() => trackButtonClick('downloadAppBtn', { download_type: 'apk', location: 'header' })">
@@ -82,12 +82,14 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from 'vue'
-import { RouterLink } from 'vue-router'
+import { RouterLink, useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { availableLocales } from '@/i18n'
 import { trackButtonClick } from '@/utils/analytics'
 import { useCurrency } from '@/composables/useCurrency'
 import LogoIcon from '@/components/icons/LogoIcon.vue'
+
+const route = useRoute()
 
 const { locale } = useI18n()
 const { currencies, currentCurrency, selectedCurrency, setCurrency } = useCurrency()
@@ -99,6 +101,8 @@ const isScrolled = ref(false)
 const currentLocale = computed(() => locale.value)
 const currentLanguage = computed(() => availableLocales.find(lang => lang.code === currentLocale.value) || availableLocales[0]
 )
+
+const isForceDark = computed(() => route.name === 'search')
 
 const toggleLanguageMenu = () => {
   isLanguageMenuOpen.value = !isLanguageMenuOpen.value
@@ -251,29 +255,24 @@ onUnmounted(() => {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .brand-logo {
-    width: 28px;
-    height: 28px;
-  }
-
-  .brand-title {
-    font-size: 1.25rem;
-  }
-
-  .header-brand {
-    gap: 0.5rem;
-  }
+  .header-container { padding: 0.6rem 1rem; }
+  .brand-title { font-size: 1.05rem; }
+  .nav-link { font-size: 0.85rem; padding: 0.4rem 0.75rem; }
 }
 
 @media (max-width: 480px) {
-  .brand-title {
-    font-size: 1.125rem;
-  }
+  .header-container { padding: 0.5rem 0.75rem; }
+  .brand-title { font-size: 0.85rem; }
+  .brand-logo { width: 28px; height: 28px; }
+  .download-text { display: none; }
+  .download-app-btn { padding: 0.45rem 0.6rem; }
+  .language-button, .currency-button { padding: 0.45rem 0.6rem; min-width: auto; }
+  .nav-link { font-size: 0.8rem; }
+}
 
-  .brand-logo {
-    width: 24px;
-    height: 24px;
-  }
+@media (max-width: 360px) {
+  .brand-title { font-size: 0.8rem; }
+  .brand-logo { width: 24px; height: 24px; }
 }
 
 /* Header Actions */
@@ -866,5 +865,12 @@ onUnmounted(() => {
 
 .language-option.active {
   animation: languageChange 0.3s ease;
+}
+
+/* Hide About Us on mobile */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
 }
 </style>

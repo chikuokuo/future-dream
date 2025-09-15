@@ -50,6 +50,21 @@
         </div>
       </section>
 
+      <!-- Partnerships Section -->
+      <section class="partnerships-section">
+        <div class="partnership-layout">
+          <div class="partnership-text-content">
+            <h2 class="section-heading">{{ $t('about.partnerships.title') }}</h2>
+            <p class="section-paragraph">{{ $t('about.partnerships.subtitle') }}</p>
+            <p class="section-paragraph">{{ $t('about.partnerships.content') }}</p>
+          </div>
+          <div class="partnership-photos-container">
+            <img src="@/assets/images/aboutUs-cowork-1.jpg" alt="Corporate Partnership 1" class="partnership-photo" />
+            <img src="@/assets/images/aboutUs-cowork-2.jpg" alt="Corporate Partnership 2" class="partnership-photo" />
+          </div>
+        </div>
+      </section>
+
       <!-- Investors Section -->
       <section class="investors-section">
         <div class="investor-layout">
@@ -124,11 +139,13 @@ const { t } = useI18n()
 .about-intro-section,
 .mission-section,
 .promise-section,
+.partnerships-section,
 .investors-section {
   text-align: center;
   margin-bottom: 6rem;
 }
 
+.partnerships-section,
 .investors-section {
   text-align: left;
 }
@@ -167,6 +184,29 @@ const { t } = useI18n()
 
 .investor-text-content {
   flex: 1;
+}
+
+.partnership-layout {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.partnership-text-content {
+  flex: 1;
+}
+
+.partnership-photos-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.partnership-photo {
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
 }
 
 .investor-photo {
@@ -220,6 +260,7 @@ const { t } = useI18n()
 }
 
 @media (max-width: 768px) {
+  .partnership-layout,
   .investor-layout {
     flex-direction: column;
     text-align: center;

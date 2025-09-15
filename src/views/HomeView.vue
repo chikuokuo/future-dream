@@ -89,23 +89,6 @@
 
     <PaymentMethodsSection />
 
-    <!-- Download Section -->
-    <section class="download-section">
-      <div class="download-container">
-        <div class="download-icon">📱</div>
-        <h2 class="download-title">{{ $t('download.title') }}</h2>
-        <p class="download-subtitle">{{ $t('download.subtitle') }}</p>
-
-        <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk" class="download-btn"
-          download="NeuschwansteinCastle-App.apk"
-          @click="() => trackButtonClick('downloadBtn', { download_type: 'apk', location: 'download_section', current_language: locale })">
-          <span class="download-btn-icon">⬇️</span>
-          {{ $t('download.button') }}
-        </a>
-
-        <p class="compatibility">{{ $t('download.compatibility') }}</p>
-      </div>
-    </section>
     <BrandValuesSection />
   </div>
 </template>
@@ -504,42 +487,55 @@ const handleLearnMoreClick = () => {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-section .hero-title {
+    font-size: 3.2rem;
+  }
+
+  .hero-section .hero-subtitle {
+    font-size: 1.4rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-content {
-    margin-top: 60px;
+    margin-top: 40px;
     /* Smaller offset for mobile */
   }
 
-  .hero-title {
-    font-size: 2.5rem;
+  .hero-section .hero-title {
+    font-size: 2.2rem;
+    line-height: 1.2;
   }
 
-  .hero-subtitle {
-    font-size: 1.2rem;
+  .hero-section .hero-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin-bottom: 2.5rem;
   }
 
   .hero-features {
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.75rem;
   }
 
   .hero-buttons {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0.75rem;
   }
 
   .btn-primary,
   .btn-secondary {
     width: 100%;
     max-width: 300px;
-    margin: 0 auto;
+    margin: 0.25rem auto 0;
   }
 
   .learn-more-btn {
     width: 100%;
     max-width: 280px;
-    padding: 0.75rem 1rem;
+    padding: 0.6rem 0.9rem;
     font-size: 0.9rem;
   }
 
@@ -570,13 +566,19 @@ const handleLearnMoreClick = () => {
 
 @media (max-width: 480px) {
   .hero-content {
-    padding: 1rem;
-    margin-top: 50px;
+    padding: 0.75rem;
+    margin-top: 38px;
     /* Even smaller offset for very small screens */
   }
 
-  .hero-title {
+  .hero-section .hero-title {
     font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-section .hero-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.3;
   }
 
   .container {
@@ -623,12 +625,15 @@ const handleLearnMoreClick = () => {
     margin-top: 45px;
   }
 
-  .hero-title {
+  .hero-section .hero-title {
     font-size: 1.75rem;
+    line-height: 1.2;
   }
 
-  .hero-subtitle {
+  .hero-section .hero-subtitle {
     font-size: 1rem;
+    line-height: 1.3;
+    margin-bottom: 2rem;
   }
 
   .btn-primary,

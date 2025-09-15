@@ -4,7 +4,6 @@
       <div class="search-input-group">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
         <select v-model="destination">
-          <option value="" disabled>{{ $t('search.destination') }}</option>
           <option value="italy">{{ $t('popularTours.countries.italy') }}</option>
           <option value="germany">{{ $t('popularTours.countries.germany') }}</option>
         </select>
@@ -31,7 +30,7 @@ import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
-const destination = ref('')
+const destination = ref<'italy' | 'germany'>('italy')
 const date = ref('')
 const people = ref(1)
 
@@ -49,10 +48,10 @@ const handleSearch = () => {
 
 <style scoped>
 .search-bar-container {
-  padding: 0.5rem;
+  padding: 0.1rem;
   background-color: var(--color-warning-800); /* Dark warm background */
   border-radius: 9999px; /* Fully rounded */
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -63,59 +62,65 @@ const handleSearch = () => {
   border-radius: 9999px;
   padding: 0.5rem;
   box-shadow: 0 4px 15px var(--color-shadow-light);
+  gap: 0.25rem;
 }
 
 .search-input-group {
   display: flex;
   align-items: center;
   flex: 1;
-  padding: 0 1rem;
+  padding: 0 0.75rem;
+  min-width: 0; /* allow shrink */
 }
 
 .search-icon {
   color: var(--text-secondary);
-  margin-right: 0.75rem;
+  margin-right: 0.5rem;
+  flex: 0 0 auto;
 }
 
-.search-input-group input {
-  border: none;
-  outline: none;
-  width: 100%;
-  font-size: 1rem;
-  background: var(--color-transparent);
-}
-
+.search-input-group input,
 .search-input-group select {
   border: none;
   outline: none;
   width: 100%;
   font-size: 1rem;
   background: var(--color-transparent);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  cursor: pointer;
 }
 
-.divider {
-  width: 1px;
-  height: 24px;
-  background-color: var(--border-light);
-}
+.divider { width: 1px; height: 24px; background-color: var(--border-light); }
 
 .search-button {
   background-color: var(--color-warning); /* Warm button */
   color: var(--color-white);
   border: none;
   border-radius: 9999px;
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  flex: 0 0 auto;
 }
 
-.search-button:hover {
-  background-color: var(--color-warning-600);
+.search-button:hover { background-color: var(--color-warning-600); }
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .search-bar-container { padding: 0.35rem; }
+  .search-bar { padding: 0.35rem; border-radius: 32px; }
+  .search-input-group { padding: 0 0.5rem; }
+  .search-icon { width: 20px; height: 20px; }
+  .divider { display: none; }
+}
+
+@media (max-width: 480px) {
+  .search-input-group input,
+  .search-input-group select { font-size: 0.95rem; }
+  .search-button { padding: 0.5rem 0.9rem; font-size: 0.9rem; }
+}
+
+@media (max-width: 360px) {
+  .search-button { padding: 0.45rem 0.8rem; font-size: 0.85rem; }
 }
 </style>

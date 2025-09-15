@@ -33,6 +33,10 @@
     </div>
     <div class="footer-bottom">
       <p>&copy; {{ new Date().getFullYear() }} Future Dream. {{ $t('footer.allRightsReserved') }}</p>
+      <a class="footer-download" href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk" download="NeuschwansteinCastle-App.apk" aria-label="Download Android App">
+        <span class="footer-download-icon">⬇️</span>
+        {{ $t('download.button') }}
+      </a>
     </div>
   </footer>
 </template>
@@ -147,6 +151,29 @@
   text-align: center;
   font-size: 0.85rem;
   color: var(--text-disabled);
+}
+
+.footer-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding: 0.7rem 1.1rem;
+  border-radius: 10px;
+  background: var(--md-primary);
+  color: var(--md-on-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.footer-download:hover {
+  background: var(--color-primary-600);
+  transform: translateY(-1px);
+}
+
+.footer-download-icon {
+  font-size: 1.1rem;
 }
 
 @media (max-width: 768px) {
