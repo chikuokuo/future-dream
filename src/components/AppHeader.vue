@@ -76,7 +76,11 @@
     </div>
 
     <!-- Overlay for mobile -->
-    <div v-if="isLanguageMenuOpen || isCurrencyMenuOpen" class="overlay" @click="() => { closeLanguageMenu(); closeCurrencyMenu(); }"></div>
+    <div
+      class="overlay"
+      :class="{ 'is-active': isLanguageMenuOpen || isCurrencyMenuOpen }"
+      @click="() => { closeLanguageMenu(); closeCurrencyMenu(); }">
+    </div>
   </header>
 </template>
 
@@ -627,8 +631,16 @@ onUnmounted(() => {
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--color-shadow-light);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.is-active {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Responsive Design */
