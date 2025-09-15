@@ -2,11 +2,13 @@
 
 ## 功能概述 (Feature Overview)
 
-這個應用程式現在支援四種語言的國際化功能：
+這個應用程式現在支援六種語言的國際化功能：
 - 🇺🇸 English (英文)
 - 🇻🇳 Tiếng Việt (越南文)
 - 🇰🇷 한국어 (韓文)
 - 🇯🇵 日本語 (日文)
+- 🇩🇪 Deutsch (德文)
+- 🇫🇷 Français (法文)
 
 ## 使用方式 (How to Use)
 
@@ -35,7 +37,9 @@ src/
 │   ├── en.json                # 英文翻譯
 │   ├── vi.json                # 越南文翻譯
 │   ├── ko.json                # 韓文翻譯
-│   └── ja.json                # 日文翻譯
+│   ├── ja.json                # 日文翻譯
+│   ├── de.json                # 德文翻譯
+│   └── fr.json                # 法文翻譯
 └── main.ts                    # 主應用程式（已整合 i18n）
 ```
 

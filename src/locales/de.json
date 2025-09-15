@@ -1,0 +1,150 @@
+{
+  "header": {
+    "language": "Sprache",
+    "downloadApp": "App herunterladen"
+  },
+  "hero": {
+    "badge": "👑 Neuschwanstein Schloss Buchung leicht gemacht",
+    "title": "Schloss\nBuchungs-App",
+    "subtitle": "Ihr vertrauenswürdiger Begleiter für\nNeuschwanstein Schloss Ticketbuchung",
+    "features": {
+      "booking": "24/7 Online-Buchung",
+      "trusted": "Vertraut von Reisenden",
+      "downloads": "100K+ Downloads"
+    },
+    "downloadApk": "App herunterladen",
+    "learnMore": "Mehr über Funktionen erfahren ↓"
+  },
+  "whyChoose": {
+    "title": "Warum unsere App wählen?",
+    "subtitle": "Eine umfassende Ticketing-App für Reisende, die das\nNeuschwanstein Schloss besuchen, mit bequemen Buchungslösungen",
+    "features": {
+      "instantBooking": {
+        "title": "Sofortbuchung",
+        "description": "Buchen Sie Tickets jederzeit und überall, ohne in der Schlange zu warten"
+      },
+      "digitalTickets": {
+        "title": "Digitale Tickets",
+        "description": "Zeigen Sie digitale Tickets auf Ihrem Handy - umweltfreundlich und bequem"
+      },
+      "securePayment": {
+        "title": "Sichere Zahlung",
+        "description": "Ihre Zahlungsinformationen sind mit höchster Verschlüsselung geschützt"
+      },
+      "multiLanguage": {
+        "title": "Mehrsprachige Unterstützung",
+        "description": "Verfügbar in Chinesisch, Englisch, Deutsch und vielen anderen Sprachen"
+      }
+    }
+  },
+  "download": {
+    "title": "Jetzt herunterladen",
+    "subtitle": "Schließen Sie sich über 100.000 zufriedenen Nutzern an",
+    "button": "App kostenlos herunterladen",
+    "compatibility": "Unterstützt iOS 12.0+ und Android 8.0+"
+  },
+  "seo": {
+    "title": "Neuschwanstein Schloss Tickets | Offizielle Buchungs-App",
+    "description": "Buchen Sie Neuschwanstein Schloss Tickets einfach mit unserer offiziellen App. Überspringen Sie die Warteschlangen, sichere Zahlung und sofortige Bestätigung. Jetzt herunterladen!",
+    "keywords": "Neuschwanstein Schloss, deutsche Bahntickets, Deutschland Reisen, DB Bahntickets, Schloss Tickets, Ticket Buchung, deutsche Bahn, Deutschland Reisen, italienische Bahntickets, Uffizien Galerie, Florenz, Europa Reisen"
+  },
+  "popularTours": {
+    "title": "Beliebte Touren & Erlebnisse",
+    "subtitle": "Entdecken Sie die begehrtesten Reiseziele und Erfahrungen",
+    "milan": "Mailand",
+    "florence": "Florenz",
+    "from": "Ab",
+    "eur": "€",
+    "viewMore": "Details ansehen"
+  },
+  "ourServices": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Umfassende Reiseleistungen für Ihr europäisches Abenteuer",
+    "italianRail": {
+      "title": "Italienische Bahntickets",
+      "features": [
+        "Hochgeschwindigkeitszug-Reservierungen",
+        "Flexible Buchungsoptionen",
+        "Echtzeit-Fahrplan-Updates",
+        "Mobile Ticket-Zustellung"
+      ]
+    },
+    "neuschwanstein": {
+      "title": "Neuschwanstein Schloss",
+      "features": [
+        "Tickets ohne Anstehen",
+        "Audioguide inklusive",
+        "Flexible Stornierung",
+        "Bestpreisgarantie"
+      ]
+    },
+    "uffizi": {
+      "title": "Uffizien Galerie",
+      "features": [
+        "Prioritätszugang-Tickets",
+        "Expertenführungen",
+        "Kleingruppen-Erlebnisse",
+        "Kunstgeschichte-Einblicke"
+      ]
+    }
+  },
+  "uffiziGallery": {
+    "title": "Uffizien Galerie - Florenz",
+    "story": {
+      "title": "Ein Renaissance-Meisterwerk",
+      "content1": "Die Uffizien Galerie beherbergt eine der weltweit wichtigsten Sammlungen der Renaissance-Kunst mit Meisterwerken von Botticelli, Michelangelo und Leonardo da Vinci.",
+      "content2": "Im 16. Jahrhundert erbaut, war dieses architektonische Wunderwerk ursprünglich als Büros für florentinische Magistrate konzipiert, daher der Name 'Uffizi', was auf Italienisch 'Büros' bedeutet."
+    },
+    "experience": {
+      "title": "Ihr Besuchserlebnis",
+      "content1": "Überspringen Sie die langen Warteschlangen mit unseren Prioritätszugang-Tickets und tauchen Sie in jahrhundertelange künstlerische Brillanz ein. Unsere Audioguides bieten faszinierende Einblicke in jedes Meisterwerk.",
+      "content2": "Planen Sie 2-3 Stunden ein, um die Sammlung vollständig zu würdigen. Die Galerie kann überfüllt sein, daher werden frühe Morgen- oder späte Nachmittagsbesuche empfohlen."
+    },
+    "tips": {
+      "title": "Besuchertipps",
+      "content1": "Buchen Sie Tickets im Voraus, besonders während der Hochsaison (April-Oktober)",
+      "content2": "Fotografieren ist in den meisten Bereichen erlaubt, aber Blitzlicht ist verboten",
+      "content3": "Tragen Sie bequeme Schuhe, da Sie längere Zeit gehen und stehen werden"
+    },
+    "cta": "Uffizien Tickets buchen"
+  },
+  "neuschwansteinCastle": {
+    "title": "Neuschwanstein Schloss - Bayern",
+    "story": {
+      "title": "Das Märchenschloss",
+      "content1": "Erbaut von König Ludwig II. von Bayern, ist Neuschwanstein Schloss die Inspiration für Disneys Dornröschen-Schloss. Dieser romanische Wiederbelebungspalast aus dem 19. Jahrhundert steht majestätisch in den bayerischen Alpen.",
+      "content2": "Das Schloss war als persönlicher Rückzugsort für den zurückgezogenen König gedacht, wurde aber kurz nach seinem Tod 1886 für die Öffentlichkeit geöffnet. Heute ist es eines der meistbesuchten Schlösser der Welt."
+    },
+    "experience": {
+      "title": "Schlossführung-Erlebnis",
+      "content1": "Erkunden Sie die prunkvoll dekorierten Räume, einschließlich der Thronsaal und des Sängersaals, während Sie die tragische Geschichte von König Ludwig II. durch unsere geführten Touren erfahren.",
+      "content2": "Die 35-minütige Tour führt Sie durch 14 Räume und zeigt mittelalterliche Legenden und Wagners Opern, die die Vision des Königs inspirierten."
+    },
+    "tips": {
+      "title": "Besuchsplanung",
+      "content1": "Vorab-Buchung ist unerlässlich - Tickets sind oft wochenlang im Voraus ausverkauft",
+      "content2": "Kommen Sie früh für die besten Fotos und um Menschenmassen am Marienbrücke-Aussichtspunkt zu vermeiden"
+    },
+    "cta": "Schloss Tickets buchen"
+  },
+  "exploreItaly": {
+    "title": "Italien mit der Bahn erkunden",
+    "intro1": "Erleben Sie die Schönheit Italiens durch sein umfangreiches Eisenbahnnetz. Von den romantischen Kanälen Venedigs bis zu den antiken Ruinen Roms bieten italienische Züge Komfort, Geschwindigkeit und spektakuläre Landschaften.",
+    "intro2": "Unsere umfassende Buchungsplattform macht es einfach, Ihr italienisches Bahnabenteuer mit Echtzeit-Fahrplänen, Sitzplatzreservierungen und mobilen Tickets zu planen.",
+    "features": {
+      "ice": {
+        "title": "Hochgeschwindigkeitszüge",
+        "description": "Reisen Sie mit Geschwindigkeiten bis zu 300 km/h in Frecciarossa- und Italo-Zügen, die große italienische Städte in Komfort und Stil verbinden."
+      },
+      "scenic": {
+        "title": "Landschaftsrouten",
+        "description": "Genießen Sie atemberaubende Ausblicke auf die italienische Landschaft, Küstenlinien und Bergpässe durch panoramische Zugfenster."
+      },
+      "combo": {
+        "title": "Kombi-Pakete",
+        "description": "Sparen Sie Geld mit unseren Zug + Attraktion-Paketen, die Bahnreisen mit Tickets zu beliebten Zielen wie der Uffizien Galerie und Neuschwanstein Schloss kombinieren."
+      }
+    },
+    "cta": "Italienische Bahnpässe buchen"
+  }
+}

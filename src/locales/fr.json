@@ -1,0 +1,150 @@
+{
+  "header": {
+    "language": "Langue",
+    "downloadApp": "Télécharger l'app"
+  },
+  "hero": {
+    "badge": "👑 Réservation du château de Neuschwanstein simplifiée",
+    "title": "App de\nRéservation de Château",
+    "subtitle": "Votre compagnon de confiance pour\nla réservation de billets du château de Neuschwanstein",
+    "features": {
+      "booking": "Réservation en ligne 24h/24",
+      "trusted": "Approuvé par les voyageurs",
+      "downloads": "100K+ téléchargements"
+    },
+    "downloadApk": "Télécharger l'app",
+    "learnMore": "En savoir plus sur les fonctionnalités ↓"
+  },
+  "whyChoose": {
+    "title": "Pourquoi choisir notre app ?",
+    "subtitle": "Une application de billetterie complète conçue pour les voyageurs visitant\nle château de Neuschwanstein, offrant des solutions de réservation pratiques",
+    "features": {
+      "instantBooking": {
+        "title": "Réservation instantanée",
+        "description": "Réservez des billets à tout moment, n'importe où, sans faire la queue"
+      },
+      "digitalTickets": {
+        "title": "Billets numériques",
+        "description": "Affichez les billets numériques sur votre téléphone - écologique et pratique"
+      },
+      "securePayment": {
+        "title": "Paiement sécurisé",
+        "description": "Vos informations de paiement sont protégées avec le plus haut niveau de chiffrement"
+      },
+      "multiLanguage": {
+        "title": "Support multilingue",
+        "description": "Disponible en chinois, anglais, allemand et de nombreuses autres langues"
+      }
+    }
+  },
+  "download": {
+    "title": "Télécharger maintenant",
+    "subtitle": "Rejoignez plus de 100 000 utilisateurs satisfaits",
+    "button": "Télécharger l'app gratuitement",
+    "compatibility": "Compatible avec iOS 12.0+ et Android 8.0+"
+  },
+  "seo": {
+    "title": "Billets Château de Neuschwanstein | App de Réservation Officielle",
+    "description": "Réservez facilement vos billets pour le Château de Neuschwanstein avec notre app officielle. Évitez les files d'attente, paiement sécurisé et confirmation instantanée. Téléchargez maintenant !",
+    "keywords": "Château de Neuschwanstein, billets de train allemands, voyage en Allemagne, billets DB, billets de château, réservation de billets, chemin de fer allemand, voyage en Allemagne, billets de train italiens, Galerie des Offices, Florence, voyage en Europe"
+  },
+  "popularTours": {
+    "title": "Tours & Expériences Populaires",
+    "subtitle": "Découvrez les destinations et expériences les plus recherchées",
+    "milan": "Milan",
+    "florence": "Florence",
+    "from": "Dès",
+    "eur": "€",
+    "viewMore": "Voir les détails"
+  },
+  "ourServices": {
+    "title": "Nos Services",
+    "subtitle": "Solutions de voyage complètes pour votre aventure européenne",
+    "italianRail": {
+      "title": "Billets de Train Italien",
+      "features": [
+        "Réservations de trains à grande vitesse",
+        "Options de réservation flexibles",
+        "Mises à jour d'horaires en temps réel",
+        "Livraison de billets mobiles"
+      ]
+    },
+    "neuschwanstein": {
+      "title": "Château de Neuschwanstein",
+      "features": [
+        "Billets coupe-file",
+        "Guide audio inclus",
+        "Annulation flexible",
+        "Garantie du meilleur prix"
+      ]
+    },
+    "uffizi": {
+      "title": "Galerie des Offices",
+      "features": [
+        "Billets d'accès prioritaire",
+        "Visites guidées par des experts",
+        "Expériences en petits groupes",
+        "Aperçus d'histoire de l'art"
+      ]
+    }
+  },
+  "uffiziGallery": {
+    "title": "Galerie des Offices - Florence",
+    "story": {
+      "title": "Un Chef-d'œuvre de la Renaissance",
+      "content1": "La Galerie des Offices abrite l'une des collections d'art de la Renaissance les plus importantes au monde, avec des chefs-d'œuvre de Botticelli, Michel-Ange et Léonard de Vinci.",
+      "content2": "Construite au 16ème siècle, cette merveille architecturale était à l'origine conçue comme bureaux pour les magistrats florentins, d'où le nom 'Uffizi' signifiant 'bureaux' en italien."
+    },
+    "experience": {
+      "title": "Votre Expérience de Visite",
+      "content1": "Évitez les longues files d'attente avec nos billets d'accès prioritaire et plongez-vous dans des siècles de brillance artistique. Nos guides audio offrent des aperçus fascinants sur chaque chef-d'œuvre.",
+      "content2": "Prévoyez 2-3 heures pour apprécier pleinement la collection. La galerie peut être bondée, donc les visites tôt le matin ou en fin d'après-midi sont recommandées."
+    },
+    "tips": {
+      "title": "Conseils aux Visiteurs",
+      "content1": "Réservez les billets à l'avance, surtout pendant la haute saison (avril-octobre)",
+      "content2": "La photographie est autorisée dans la plupart des zones, mais le flash est interdit",
+      "content3": "Portez des chaussures confortables car vous marcherez et resterez debout pendant de longues périodes"
+    },
+    "cta": "Réserver Billets Offices"
+  },
+  "neuschwansteinCastle": {
+    "title": "Château de Neuschwanstein - Bavière",
+    "story": {
+      "title": "Le Château de Conte de Fées",
+      "content1": "Construit par le roi Louis II de Bavière, le château de Neuschwanstein est l'inspiration du château de la Belle au Bois Dormant de Disney. Ce palais de style néo-roman du 19ème siècle se dresse majestueusement dans les Alpes bavaroises.",
+      "content2": "Le château était destiné à être un refuge personnel pour le roi reclus, mais il a ouvert au public peu après sa mort en 1886. Aujourd'hui, c'est l'un des châteaux les plus visités au monde."
+    },
+    "experience": {
+      "title": "Expérience de Visite du Château",
+      "content1": "Explorez les salles somptueusement décorées, y compris la Salle du Trône et la Salle des Chanteurs, tout en apprenant l'histoire tragique du roi Louis II grâce à nos visites guidées.",
+      "content2": "La visite de 35 minutes vous mène à travers 14 salles, présentant les légendes médiévales et les opéras de Wagner qui ont inspiré la vision du roi."
+    },
+    "tips": {
+      "title": "Planifier Votre Visite",
+      "content1": "La réservation à l'avance est essentielle - les billets sont souvent épuisés des semaines à l'avance",
+      "content2": "Arrivez tôt pour les meilleures photos et pour éviter les foules au point de vue de Marienbrücke"
+    },
+    "cta": "Réserver Billets Château"
+  },
+  "exploreItaly": {
+    "title": "Explorer l'Italie en Train",
+    "intro1": "Découvrez la beauté de l'Italie à travers son vaste réseau ferroviaire. Des canaux romantiques de Venise aux ruines antiques de Rome, les trains italiens offrent confort, vitesse et paysages spectaculaires.",
+    "intro2": "Notre plateforme de réservation complète facilite la planification de votre aventure ferroviaire italienne avec des horaires en temps réel, des réservations de sièges et des billets mobiles.",
+    "features": {
+      "ice": {
+        "title": "Trains à Grande Vitesse",
+        "description": "Voyagez à des vitesses allant jusqu'à 300 km/h dans les trains Frecciarossa et Italo reliant les grandes villes italiennes avec confort et style."
+      },
+      "scenic": {
+        "title": "Routes Panoramiques",
+        "description": "Profitez de vues à couper le souffle sur la campagne italienne, les lignes côtières et les cols de montagne à travers les fenêtres panoramiques des trains."
+      },
+      "combo": {
+        "title": "Forfaits Combo",
+        "description": "Économisez de l'argent avec nos forfaits train + attraction, combinant les voyages en train avec des billets pour des destinations populaires comme la Galerie des Offices et le Château de Neuschwanstein."
+      }
+    },
+    "cta": "Réserver Pass Ferroviaires Italiens"
+  }
+}

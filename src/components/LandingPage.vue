@@ -128,8 +128,7 @@ useHead({
     },
     {
       name: 'keywords',
-      content:
-        '新天鵝堡, 德國火車票, 德國旅遊, 德鐵, DB 火車票, 新天鵝堡門票, Neuschwanstein Castle, 門票預訂, 德國國鐵, 德國自由行, ドイツ鉄道チケット, ノイシュヴァンシュタイン城, 독일 기차표, 노이슈반슈타인 성, vé tàu Đức, Lâu đài Neuschwanstein'
+      content: computed(() => t('seo.keywords'))
     }
   ]
 })

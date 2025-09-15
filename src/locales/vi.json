@@ -1,6 +1,7 @@
 {
   "header": {
     "brand": "Future Dream",
+    "language": "Ngôn ngữ",
     "downloadApp": "Tải ứng dụng"
   },
   "hero": {
@@ -70,7 +71,8 @@
   },
   "seo": {
     "title": "Vé tàu Ý, Uffizi & Neuschwanstein | Future Dream",
-    "description": "Đặt vé cho các chuyến tàu cao tốc của Ý (Trenitalia), Phòng trưng bày Uffizi ở Florence và Lâu đài Neuschwanstein. Ứng dụng duy nhất của bạn cho chuyến du lịch châu Âu."
+    "description": "Đặt vé cho các chuyến tàu cao tốc của Ý (Trenitalia), Phòng trưng bày Uffizi ở Florence và Lâu đài Neuschwanstein. Ứng dụng duy nhất của bạn cho chuyến du lịch châu Âu.",
+    "keywords": "Lâu đài Neuschwanstein, vé tàu Đức, du lịch Đức, vé tàu DB, vé lâu đài, đặt vé, đường sắt Đức, du lịch Đức, vé tàu Ý, Phòng trưng bày Uffizi, Florence, du lịch châu Âu"
   },
   "popularTours": {
     "title": "Gói du lịch phổ biến",

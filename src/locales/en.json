@@ -1,7 +1,8 @@
 {
   "header": {
     "brand": "Future Dream",
-    "downloadApp": "Download the App"
+    "language": "Language",
+    "downloadApp": "Download App"
   },
   "hero": {
     "badge": "Your Complete Italy Travel Solution",
@@ -70,7 +71,8 @@
   },
   "seo": {
     "title": "Future Dream | Italy Train Tickets, Uffizi & Neuschwanstein",
-    "description": "Book tickets for Italy's high-speed trains (Trenitalia), the Uffizi Gallery in Florence, and Neuschwanstein Castle. Your one-stop app for European travel."
+    "description": "Book tickets for Italy's high-speed trains (Trenitalia), the Uffizi Gallery in Florence, and Neuschwanstein Castle. Your one-stop app for European travel.",
+    "keywords": "Neuschwanstein Castle, German train tickets, Germany travel, DB train tickets, castle tickets, ticket booking, German rail, Germany travel, Italy train tickets, Uffizi Gallery, Florence, European travel"
   },
   "popularTours": {
     "title": "Popular Travel Packages",
