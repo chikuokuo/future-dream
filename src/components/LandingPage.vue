@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-background">
-        <div class="hero-content">app-release
+        <div class="hero-content">
           <div class="hero-badge">
             {{ $t('hero.badge') }}
           </div>
