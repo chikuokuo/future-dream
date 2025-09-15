@@ -1,11 +1,13 @@
 export interface Destination {
   id: string
   name: string
-  category: 'cities' | 'lakes' | 'cinqueTerre' | 'south' | 'tuscany' | 'other'
+  category: DestinationCategory
   coordinates: string
   region: string
   attractions: string[]
 }
+
+export type DestinationCategory = 'cities' | 'lakes' | 'cinqueTerre' | 'south' | 'tuscany' | 'other'
 
 export const italianDestinations: Destination[] = [
   // Milan 米蘭
@@ -332,12 +334,12 @@ export const searchDestinations = (query: string): Destination[] => {
   if (!query.trim()) return italianDestinations
 
   const searchTerm = query.toLowerCase().trim()
-  
-  return italianDestinations.filter(destination => 
+
+  return italianDestinations.filter(destination =>
     destination.name.toLowerCase().includes(searchTerm) ||
     destination.region.toLowerCase().includes(searchTerm) ||
     destination.category.toLowerCase().includes(searchTerm) ||
-    destination.attractions.some(attraction => 
+    destination.attractions.some(attraction =>
       attraction.toLowerCase().includes(searchTerm)
     )
   )
