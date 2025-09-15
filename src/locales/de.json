@@ -173,6 +173,80 @@
   "privacyPolicy": {
     "hero": {
       "title": "Datenschutz-Bestimmungen"
+    },
+    "introduction": "Future Dream („wir“, „unser“, „uns“) verpflichtet sich, Ihre personenbezogenen Daten zu schützen und Ihre Privatsphäre zu respektieren. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen erfassen, verwenden, weitergeben und schützen, wenn Sie unsere Dienste nutzen.",
+    "scope": {
+      "title": "1. Geltungsbereich",
+      "content": "Diese Datenschutzrichtlinie gilt für Ihre Nutzung der Future Dream App, einschließlich der Buchung und des Kaufs von europäischen Reisepaketen, Bahntickets, Eintrittskarten für Sehenswürdigkeiten und gebündelten Reiseprodukten, die von Drittanbietern angeboten werden."
+    },
+    "informationCollected": {
+      "title": "2. Von uns erfasste Informationen",
+      "intro": "Abhängig davon, wie Sie unsere Dienste nutzen, können wir Folgendes erfassen:",
+      "items": {
+        "account": "<strong>Kontoinformationen:</strong> Name, E-Mail-Adresse, Telefonnummer, Passwort.",
+        "booking": "<strong>Buchungs- und Zahlungsdetails:</strong> Bestellverlauf, Zahlungsmethode, Rechnungsdetails.",
+        "travel": "<strong>Reiseinformationen:</strong> Vorlieben, Reiseziele, Ticketdetails.",
+        "device": "<strong>Geräte- & technische Daten:</strong> IP-Adresse, Gerätetyp, Betriebssystem, Browseraktivität.",
+        "communications": "<strong>Kommunikation:</strong> Nachrichten mit dem Kundensupport oder Partnern."
+      },
+      "consent": "Wenn Sie Daten über andere Reisende angeben (z. B. bei Gruppenbuchungen), sind Sie dafür verantwortlich, deren Zustimmung einzuholen."
+    },
+    "howWeUse": {
+      "title": "3. Wie wir Ihre Informationen verwenden",
+      "intro": "Wir können Ihre Informationen verwenden, um:",
+      "items": {
+        "process": "Buchungen, Zahlungen zu bearbeiten und Tickets zu liefern.",
+        "send": "Bestätigungen, Updates und dienstbezogene Nachrichten zu senden.",
+        "provide": "Personalisierte Reiseempfehlungen und Werbeaktionen bereitzustellen.",
+        "improve": "Die App-Leistung und Benutzererfahrung zu verbessern.",
+        "comply": "Gesetzlichen Verpflichtungen nachzukommen (Betrugsprävention, Audits, Finanzberichterstattung)."
+      }
+    },
+    "sharing": {
+      "title": "4. Weitergabe von Informationen",
+      "intro": "Wir geben personenbezogene Daten nur bei Bedarf weiter:",
+      "items": {
+        "partners": "<strong>Dienstleistungspartner</strong> (z. B. Bahnbetreiber, Anbieter von Sehenswürdigkeiten), um Ihre Buchungen zu erfüllen.",
+        "providers": "<strong>Zahlungs- & technische Anbieter</strong> für eine sichere Zahlungsabwicklung und Hosting.",
+        "authorities": "<strong>Regierungs- oder Justizbehörden</strong>, wenn dies gesetzlich vorgeschrieben ist."
+      },
+      "noSale": "Wir verkaufen Ihre personenbezogenen Daten nicht an Dritte."
+    },
+    "marketing": {
+      "title": "5. Marketing & Ihre Wahlmöglichkeiten",
+      "content": "Wir können Werbebotschaften über App-Benachrichtigungen oder E-Mail senden. Sie können Marketingmitteilungen jederzeit abbestellen, ohne die Nutzung der Kerndienste zu beeinträchtigen."
+    },
+    "security": {
+      "title": "6. Datensicherheit",
+      "content": "Wir ergreifen angemessene technische und organisatorische Maßnahmen, um Ihre personenbezogenen Daten zu schützen. Keine Methode der Online-Übertragung oder -Speicherung ist jedoch vollkommen sicher."
+    },
+    "retention": {
+      "title": "7. Datenaufbewahrung",
+      "content": "Wir bewahren Ihre Daten nur so lange auf, wie es zur Erfüllung der in dieser Richtlinie beschriebenen Zwecke oder gesetzlich erforderlich ist. Sobald sie nicht mehr benötigt werden, werden Ihre Daten gelöscht oder anonymisiert."
+    },
+    "yourRights": {
+      "title": "8. Ihre Rechte",
+      "intro": "Abhängig von der geltenden Gesetzgebung haben Sie möglicherweise das Recht auf:",
+      "items": {
+        "access": "Zugriff auf und Anforderung einer Kopie Ihrer personenbezogenen Daten.",
+        "correct": "Korrektur oder Löschung unrichtiger oder unnötiger Daten.",
+        "restrict": "Einschränkung oder Widerspruch gegen unsere Verarbeitung Ihrer Daten.",
+        "withdraw": "Widerruf der Einwilligung für Marketingmitteilungen."
+      },
+      "exercise": "Um diese Rechte auszuüben, kontaktieren Sie uns bitte."
+    },
+    "thirdParty": {
+      "title": "9. Links zu Drittanbietern",
+      "content": "Unsere App kann Links zu Websites oder Diensten von Drittanbietern enthalten. Deren Datenschutzpraktiken unterliegen ihren eigenen Richtlinien, und wir sind nicht für deren Handlungen verantwortlich."
+    },
+    "updates": {
+      "title": "10. Aktualisierungen dieser Richtlinie",
+      "content": "Wir behalten uns das Recht vor, diese Datenschutzrichtlinie von Zeit zu Zeit zu aktualisieren. Wesentliche Änderungen werden über die App oder unsere Website bekannt gegeben."
+    },
+    "contact": {
+      "title": "11. Kontaktieren Sie uns",
+      "intro": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie oder unseren Datenpraktiken haben, zögern Sie nicht, uns zu kontaktieren unter:",
+      "email": "futuredream.traveling@gmail.com"
     }
   },
   "brandValues": {

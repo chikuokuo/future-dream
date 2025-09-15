@@ -173,6 +173,80 @@
   "privacyPolicy": {
     "hero": {
       "title": "Politique de confidentialité"
+    },
+    "introduction": "Future Dream (« nous », « notre », « nos ») s'engage à protéger vos données personnelles et à respecter votre vie privée. Cette politique de confidentialité explique comment nous collectons, utilisons, partageons et protégeons vos informations lorsque vous utilisez nos services.",
+    "scope": {
+      "title": "1. Portée",
+      "content": "Cette politique de confidentialité s'applique à votre utilisation de l'application Future Dream, y compris la réservation et l'achat de forfaits de voyage européens, de billets de train, de billets d'attraction et de produits de voyage groupés proposés par des partenaires tiers."
+    },
+    "informationCollected": {
+      "title": "2. Informations que nous collectons",
+      "intro": "Selon la manière dont vous utilisez nos services, nous pouvons collecter :",
+      "items": {
+        "account": "<strong>Informations sur le compte :</strong> nom, e-mail, numéro de téléphone, mot de passe.",
+        "booking": "<strong>Détails de réservation et de paiement :</strong> historique des commandes, mode de paiement, détails de facturation.",
+        "travel": "<strong>Informations de voyage :</strong> préférences, destinations, détails des billets.",
+        "device": "<strong>Données techniques et de l'appareil :</strong> adresse IP, type d'appareil, système d'exploitation, activité de navigation.",
+        "communications": "<strong>Communications :</strong> messages avec le support client ou les partenaires."
+      },
+      "consent": "Si vous fournissez des données sur d'autres voyageurs (par exemple, pour les réservations de groupe), vous êtes responsable d'obtenir leur consentement."
+    },
+    "howWeUse": {
+      "title": "3. Comment nous utilisons vos informations",
+      "intro": "Nous pouvons utiliser vos informations pour :",
+      "items": {
+        "process": "Traiter les réservations, les paiements et livrer les billets.",
+        "send": "Envoyer des confirmations, des mises à jour et des messages liés au service.",
+        "provide": "Fournir des recommandations de voyage et des promotions personnalisées.",
+        "improve": "Améliorer les performances de l'application et l'expérience utilisateur.",
+        "comply": "Se conformer aux obligations légales (prévention de la fraude, audits, rapports financiers)."
+      }
+    },
+    "sharing": {
+      "title": "4. Partage d'informations",
+      "intro": "Nous ne partageons les données personnelles que lorsque cela est nécessaire :",
+      "items": {
+        "partners": "<strong>Partenaires de service</strong> (par exemple, opérateurs ferroviaires, fournisseurs d'attractions) pour exécuter vos réservations.",
+        "providers": "<strong>Fournisseurs techniques et de paiement</strong> pour le traitement sécurisé des paiements et l'hébergement.",
+        "authorities": "<strong>Autorités gouvernementales ou légales</strong> si la loi l'exige."
+      },
+      "noSale": "Nous ne vendons pas vos informations personnelles à des tiers."
+    },
+    "marketing": {
+      "title": "5. Marketing et vos choix",
+      "content": "Nous pouvons envoyer des messages promotionnels via des notifications d'application ou par e-mail. Vous pouvez vous désinscrire des communications marketing à tout moment sans affecter votre utilisation des services de base."
+    },
+    "security": {
+      "title": "6. Sécurité des données",
+      "content": "Nous utilisons des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles. Cependant, aucune méthode de transmission ou de stockage en ligne n'est totalement sécurisée."
+    },
+    "retention": {
+      "title": "7. Conservation des données",
+      "content": "Nous ne conservons vos données que le temps nécessaire pour atteindre les objectifs décrits dans cette politique ou tel que requis par la loi. Une fois qu'elles ne sont plus nécessaires, vos données seront supprimées ou anonymisées."
+    },
+    "yourRights": {
+      "title": "8. Vos droits",
+      "intro": "Selon la législation applicable, vous pouvez avoir le droit de :",
+      "items": {
+        "access": "Accéder et demander une copie de vos données personnelles.",
+        "correct": "Corriger ou supprimer des données inexactes ou inutiles.",
+        "restrict": "Restreindre ou vous opposer à notre traitement de vos données.",
+        "withdraw": "Retirer votre consentement aux communications marketing."
+      },
+      "exercise": "Pour exercer ces droits, veuillez nous contacter."
+    },
+    "thirdParty": {
+      "title": "9. Liens de tiers",
+      "content": "Notre application peut contenir des liens vers des sites Web ou des services de tiers. Leurs pratiques de confidentialité sont régies par leurs propres politiques, et nous ne sommes pas responsables de leurs actions."
+    },
+    "updates": {
+      "title": "10. Mises à jour de cette politique",
+      "content": "Nous nous réservons le droit de mettre à jour cette politique de confidentialité de temps à autre. Les changements importants seront annoncés via l'application ou notre site Web."
+    },
+    "contact": {
+      "title": "11. Contactez-nous",
+      "intro": "Si vous avez des questions sur cette politique de confidentialité ou nos pratiques en matière de données, n'hésitez pas à nous contacter à :",
+      "email": "futuredream.traveling@gmail.com"
     }
   },
   "brandValues": {

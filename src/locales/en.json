@@ -233,6 +233,80 @@
   "privacyPolicy": {
     "hero": {
       "title": "Privacy Policy"
+    },
+    "introduction": "Future Dream (“we”, “our”, “us”) is committed to protecting your personal data and respecting your privacy. This Privacy Policy explains how we collect, use, share, and protect your information when you use our services.",
+    "scope": {
+      "title": "1. Scope",
+      "content": "This Privacy Policy applies to your use of the Future Dream App, including booking and purchasing European travel packages, train tickets, attraction tickets, and bundled travel products offered by third-party partners."
+    },
+    "informationCollected": {
+      "title": "2. Information We Collect",
+      "intro": "Depending on how you use our services, we may collect:",
+      "items": {
+        "account": "<strong>Account Information:</strong> name, email, phone number, password.",
+        "booking": "<strong>Booking and Payment Details:</strong> order history, payment method, billing details.",
+        "travel": "<strong>Travel Information:</strong> preferences, destinations, ticket details.",
+        "device": "<strong>Device & Technical Data:</strong> IP address, device type, operating system, browsing activity.",
+        "communications": "<strong>Communications:</strong> messages with customer support or partners."
+      },
+      "consent": "If you provide data about other travelers (e.g., for group bookings), you are responsible for obtaining their consent."
+    },
+    "howWeUse": {
+      "title": "3. How We Use Your Information",
+      "intro": "We may use your information to:",
+      "items": {
+        "process": "Process bookings, payments, and deliver tickets.",
+        "send": "Send confirmations, updates, and service-related messages.",
+        "provide": "Provide personalized travel recommendations and promotions.",
+        "improve": "Improve app performance and user experience.",
+        "comply": "Comply with legal obligations (fraud prevention, audits, financial reporting)."
+      }
+    },
+    "sharing": {
+      "title": "4. Sharing of Information",
+      "intro": "We only share personal data when necessary:",
+      "items": {
+        "partners": "<strong>Service Partners</strong> (e.g., railway operators, attraction providers) to fulfill your bookings.",
+        "providers": "<strong>Payment & Technical Providers</strong> for secure payment processing and hosting.",
+        "authorities": "<strong>Government or Legal Authorities</strong> if required by law."
+      },
+      "noSale": "We do not sell your personal information to third parties."
+    },
+    "marketing": {
+      "title": "5. Marketing & Your Choices",
+      "content": "We may send promotional messages via app notifications or email. You can opt out of marketing communications at any time without affecting your use of core services."
+    },
+    "security": {
+      "title": "6. Data Security",
+      "content": "We use appropriate technical and organizational measures to protect your personal data. However, no method of online transmission or storage is completely secure."
+    },
+    "retention": {
+      "title": "7. Data Retention",
+      "content": "We retain your data only as long as necessary to fulfill the purposes described in this Policy or as required by law. Once no longer needed, your data will be deleted or anonymized."
+    },
+    "yourRights": {
+      "title": "8. Your Rights",
+      "intro": "Depending on applicable law, you may have the right to:",
+      "items": {
+        "access": "Access and request a copy of your personal data.",
+        "correct": "Correct or delete inaccurate or unnecessary data.",
+        "restrict": "Restrict or object to our processing of your data.",
+        "withdraw": "Withdraw consent for marketing communications."
+      },
+      "exercise": "To exercise these rights, please contact us."
+    },
+    "thirdParty": {
+      "title": "9. Third-Party Links",
+      "content": "Our app may contain links to third-party websites or services. Their privacy practices are governed by their own policies, and we are not responsible for their actions."
+    },
+    "updates": {
+      "title": "10. Updates to This Policy",
+      "content": "We reserve the right to update this Privacy Policy from time to time. Significant changes will be announced through the App or our website."
+    },
+    "contact": {
+      "title": "11. Contact Us",
+      "intro": "If you have any questions about this Privacy Policy or our data practices, don't hesitate to get in touch with us at:",
+      "email": "futuredream.traveling@gmail.com"
     }
   },
   "brandValues": {

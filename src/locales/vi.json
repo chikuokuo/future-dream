@@ -168,6 +168,80 @@
   "privacyPolicy": {
     "hero": {
       "title": "Chính sách bảo mật"
+    },
+    "introduction": "Future Dream (“chúng tôi”, “của chúng tôi”) cam kết bảo vệ dữ liệu cá nhân của bạn và tôn trọng quyền riêng tư của bạn. Chính sách bảo mật này giải thích cách chúng tôi thu thập, sử dụng, chia sẻ và bảo vệ thông tin của bạn khi bạn sử dụng dịch vụ của chúng tôi.",
+    "scope": {
+      "title": "1. Phạm vi",
+      "content": "Chính sách bảo mật này áp dụng cho việc bạn sử dụng Ứng dụng Future Dream, bao gồm việc đặt và mua các gói du lịch châu Âu, vé tàu, vé tham quan và các sản phẩm du lịch trọn gói do các đối tác bên thứ ba cung cấp."
+    },
+    "informationCollected": {
+      "title": "2. Thông tin chúng tôi thu thập",
+      "intro": "Tùy thuộc vào cách bạn sử dụng dịch vụ của chúng tôi, chúng tôi có thể thu thập:",
+      "items": {
+        "account": "<strong>Thông tin tài khoản:</strong> tên, email, số điện thoại, mật khẩu.",
+        "booking": "<strong>Chi tiết đặt chỗ và thanh toán:</strong> lịch sử đặt hàng, phương thức thanh toán, chi tiết thanh toán.",
+        "travel": "<strong>Thông tin du lịch:</strong> sở thích, điểm đến, chi tiết vé.",
+        "device": "<strong>Dữ liệu kỹ thuật & thiết bị:</strong> địa chỉ IP, loại thiết bị, hệ điều hành, hoạt động duyệt web.",
+        "communications": "<strong>Thông tin liên lạc:</strong> tin nhắn với bộ phận hỗ trợ khách hàng hoặc đối tác."
+      },
+      "consent": "Nếu bạn cung cấp dữ liệu về những khách du lịch khác (ví dụ: cho các đặt chỗ nhóm), bạn có trách nhiệm nhận được sự đồng ý của họ."
+    },
+    "howWeUse": {
+      "title": "3. Cách chúng tôi sử dụng thông tin của bạn",
+      "intro": "Chúng tôi có thể sử dụng thông tin của bạn để:",
+      "items": {
+        "process": "Xử lý đặt chỗ, thanh toán và giao vé.",
+        "send": "Gửi xác nhận, cập nhật và các tin nhắn liên quan đến dịch vụ.",
+        "provide": "Cung cấp các khuyến nghị du lịch và khuyến mãi được cá nhân hóa.",
+        "improve": "Cải thiện hiệu suất ứng dụng và trải nghiệm người dùng.",
+        "comply": "Tuân thủ các nghĩa vụ pháp lý (phòng chống gian lận, kiểm toán, báo cáo tài chính)."
+      }
+    },
+    "sharing": {
+      "title": "4. Chia sẻ thông tin",
+      "intro": "Chúng tôi chỉ chia sẻ dữ liệu cá nhân khi cần thiết:",
+      "items": {
+        "partners": "<strong>Đối tác dịch vụ</strong> (ví dụ: nhà khai thác đường sắt, nhà cung cấp điểm tham quan) để thực hiện các đặt chỗ của bạn.",
+        "providers": "<strong>Nhà cung cấp kỹ thuật & thanh toán</strong> để xử lý thanh toán an toàn và lưu trữ.",
+        "authorities": "<strong>Cơ quan chính phủ hoặc pháp lý</strong> nếu luật pháp yêu cầu."
+      },
+      "noSale": "Chúng tôi không bán thông tin cá nhân của bạn cho bên thứ ba."
+    },
+    "marketing": {
+      "title": "5. Tiếp thị & lựa chọn của bạn",
+      "content": "Chúng tôi có thể gửi tin nhắn quảng cáo qua thông báo ứng dụng hoặc email. Bạn có thể từ chối nhận thông tin tiếp thị bất cứ lúc nào mà không ảnh hưởng đến việc sử dụng các dịch vụ cốt lõi."
+    },
+    "security": {
+      "title": "6. Bảo mật dữ liệu",
+      "content": "Chúng tôi sử dụng các biện pháp kỹ thuật và tổ chức phù hợp để bảo vệ dữ liệu cá nhân của bạn. Tuy nhiên, không có phương thức truyền hoặc lưu trữ trực tuyến nào là hoàn toàn an toàn."
+    },
+    "retention": {
+      "title": "7. Lưu giữ dữ liệu",
+      "content": "Chúng tôi chỉ lưu giữ dữ liệu của bạn trong thời gian cần thiết để thực hiện các mục đích được mô tả trong Chính sách này hoặc theo yêu cầu của pháp luật. Khi không còn cần thiết, dữ liệu của bạn sẽ bị xóa hoặc ẩn danh."
+    },
+    "yourRights": {
+      "title": "8. Quyền của bạn",
+      "intro": "Tùy thuộc vào luật hiện hành, bạn có thể có quyền:",
+      "items": {
+        "access": "Truy cập và yêu cầu một bản sao dữ liệu cá nhân của bạn.",
+        "correct": "Sửa hoặc xóa dữ liệu không chính xác hoặc không cần thiết.",
+        "restrict": "Hạn chế hoặc phản đối việc chúng tôi xử lý dữ liệu của bạn.",
+        "withdraw": "Rút lại sự đồng ý cho các thông tin tiếp thị."
+      },
+      "exercise": "Để thực hiện các quyền này, vui lòng liên hệ với chúng tôi."
+    },
+    "thirdParty": {
+      "title": "9. Liên kết của bên thứ ba",
+      "content": "Ứng dụng của chúng tôi có thể chứa các liên kết đến các trang web hoặc dịch vụ của bên thứ ba. Các hoạt động bảo mật của họ được điều chỉnh bởi các chính sách riêng của họ và chúng tôi không chịu trách nhiệm về các hành động của họ."
+    },
+    "updates": {
+      "title": "10. Cập nhật chính sách này",
+      "content": "Chúng tôi có quyền cập nhật Chính sách bảo mật này theo thời gian. Những thay đổi quan trọng sẽ được thông báo qua Ứng dụng hoặc trang web của chúng tôi."
+    },
+    "contact": {
+      "title": "11. Liên hệ với chúng tôi",
+      "intro": "Nếu bạn có bất kỳ câu hỏi nào về Chính sách bảo mật này hoặc các hoạt động dữ liệu của chúng tôi, đừng ngần ngại liên hệ với chúng tôi tại:",
+      "email": "futuredream.traveling@gmail.com"
     }
   },
   "brandValues": {

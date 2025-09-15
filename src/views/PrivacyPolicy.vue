@@ -7,69 +7,69 @@
     </section>
 
     <div class="container content-container">
-      <p>Future Dream (“we”, “our”, “us”) is committed to protecting your personal data and respecting your privacy. This Privacy Policy explains how we collect, use, share, and protect your information when you use our services.</p>
+      <p>{{ $t('privacyPolicy.introduction') }}</p>
 
-      <h2>1. Scope</h2>
-      <p>This Privacy Policy applies to your use of the Future Dream App, including booking and purchasing European travel packages, train tickets, attraction tickets, and bundled travel products offered by third-party partners.</p>
+      <h2>{{ $t('privacyPolicy.scope.title') }}</h2>
+      <p>{{ $t('privacyPolicy.scope.content') }}</p>
 
-      <h2>2. Information We Collect</h2>
-      <p>Depending on how you use our services, we may collect:</p>
+      <h2>{{ $t('privacyPolicy.informationCollected.title') }}</h2>
+      <p>{{ $t('privacyPolicy.informationCollected.intro') }}</p>
       <ul>
-        <li><strong>Account Information:</strong> name, email, phone number, password.</li>
-        <li><strong>Booking and Payment Details:</strong> order history, payment method, billing details.</li>
-        <li><strong>Travel Information:</strong> preferences, destinations, ticket details.</li>
-        <li><strong>Device & Technical Data:</strong> IP address, device type, operating system, browsing activity.</li>
-        <li><strong>Communications:</strong> messages with customer support or partners.</li>
+        <li v-html="$t('privacyPolicy.informationCollected.items.account')"></li>
+        <li v-html="$t('privacyPolicy.informationCollected.items.booking')"></li>
+        <li v-html="$t('privacyPolicy.informationCollected.items.travel')"></li>
+        <li v-html="$t('privacyPolicy.informationCollected.items.device')"></li>
+        <li v-html="$t('privacyPolicy.informationCollected.items.communications')"></li>
       </ul>
-      <p>If you provide data about other travelers (e.g., for group bookings), you are responsible for obtaining their consent.</p>
+      <p>{{ $t('privacyPolicy.informationCollected.consent') }}</p>
 
-      <h2>3. How We Use Your Information</h2>
-      <p>We may use your information to:</p>
+      <h2>{{ $t('privacyPolicy.howWeUse.title') }}</h2>
+      <p>{{ $t('privacyPolicy.howWeUse.intro') }}</p>
       <ul>
-        <li>Process bookings, payments, and deliver tickets.</li>
-        <li>Send confirmations, updates, and service-related messages.</li>
-        <li>Provide personalized travel recommendations and promotions.</li>
-        <li>Improve app performance and user experience.</li>
-        <li>Comply with legal obligations (fraud prevention, audits, financial reporting).</li>
+        <li>{{ $t('privacyPolicy.howWeUse.items.process') }}</li>
+        <li>{{ $t('privacyPolicy.howWeUse.items.send') }}</li>
+        <li>{{ $t('privacyPolicy.howWeUse.items.provide') }}</li>
+        <li>{{ $t('privacyPolicy.howWeUse.items.improve') }}</li>
+        <li>{{ $t('privacyPolicy.howWeUse.items.comply') }}</li>
       </ul>
 
-      <h2>4. Sharing of Information</h2>
-      <p>We only share personal data when necessary:</p>
+      <h2>{{ $t('privacyPolicy.sharing.title') }}</h2>
+      <p>{{ $t('privacyPolicy.sharing.intro') }}</p>
       <ul>
-        <li><strong>Service Partners</strong> (e.g., railway operators, attraction providers) to fulfill your bookings.</li>
-        <li><strong>Payment & Technical Providers</strong> for secure payment processing and hosting.</li>
-        <li><strong>Government or Legal Authorities</strong> if required by law.</li>
+        <li v-html="$t('privacyPolicy.sharing.items.partners')"></li>
+        <li v-html="$t('privacyPolicy.sharing.items.providers')"></li>
+        <li v-html="$t('privacyPolicy.sharing.items.authorities')"></li>
       </ul>
-      <p>We do not sell your personal information to third parties.</p>
+      <p>{{ $t('privacyPolicy.sharing.noSale') }}</p>
 
-      <h2>5. Marketing & Your Choices</h2>
-      <p>We may send promotional messages via app notifications or email. You can opt out of marketing communications at any time without affecting your use of core services.</p>
+      <h2>{{ $t('privacyPolicy.marketing.title') }}</h2>
+      <p>{{ $t('privacyPolicy.marketing.content') }}</p>
 
-      <h2>6. Data Security</h2>
-      <p>We use appropriate technical and organizational measures to protect your personal data. However, no method of online transmission or storage is completely secure.</p>
+      <h2>{{ $t('privacyPolicy.security.title') }}</h2>
+      <p>{{ $t('privacyPolicy.security.content') }}</p>
 
-      <h2>7. Data Retention</h2>
-      <p>We retain your data only as long as necessary to fulfill the purposes described in this Policy or as required by law. Once no longer needed, your data will be deleted or anonymized.</p>
+      <h2>{{ $t('privacyPolicy.retention.title') }}</h2>
+      <p>{{ $t('privacyPolicy.retention.content') }}</p>
 
-      <h2>8. Your Rights</h2>
-      <p>Depending on applicable law, you may have the right to:</p>
+      <h2>{{ $t('privacyPolicy.yourRights.title') }}</h2>
+      <p>{{ $t('privacyPolicy.yourRights.intro') }}</p>
       <ul>
-        <li>Access and request a copy of your personal data.</li>
-        <li>Correct or delete inaccurate or unnecessary data.</li>
-        <li>Restrict or object to our processing of your data.</li>
-        <li>Withdraw consent for marketing communications.</li>
+        <li>{{ $t('privacyPolicy.yourRights.items.access') }}</li>
+        <li>{{ $t('privacyPolicy.yourRights.items.correct') }}</li>
+        <li>{{ $t('privacyPolicy.yourRights.items.restrict') }}</li>
+        <li>{{ $t('privacyPolicy.yourRights.items.withdraw') }}</li>
       </ul>
-      <p>To exercise these rights, please contact us.</p>
+      <p>{{ $t('privacyPolicy.yourRights.exercise') }}</p>
 
-      <h2>9. Third-Party Links</h2>
-      <p>Our app may contain links to third-party websites or services. Their privacy practices are governed by their own policies, and we are not responsible for their actions.</p>
+      <h2>{{ $t('privacyPolicy.thirdParty.title') }}</h2>
+      <p>{{ $t('privacyPolicy.thirdParty.content') }}</p>
 
-      <h2>10. Updates to This Policy</h2>
-      <p>We reserve the right to update this Privacy Policy from time to time. Significant changes will be announced through the App or our website.</p>
+      <h2>{{ $t('privacyPolicy.updates.title') }}</h2>
+      <p>{{ $t('privacyPolicy.updates.content') }}</p>
 
-      <h2>11. Contact Us</h2>
-      <p>If you have any questions about this Privacy Policy or our data practices, don't hesitate to get in touch with us at:</p>
-      <p><a href="mailto:futuredream.traveling@gmail.com">futuredream.traveling@gmail.com</a></p>
+      <h2>{{ $t('privacyPolicy.contact.title') }}</h2>
+      <p>{{ $t('privacyPolicy.contact.intro') }}</p>
+      <p><a :href="'mailto:' + $t('privacyPolicy.contact.email')">{{ $t('privacyPolicy.contact.email') }}</a></p>
     </div>
   </div>
 </template>
