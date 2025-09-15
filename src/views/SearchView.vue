@@ -54,7 +54,7 @@
           </div>
         </aside>
         <div class="results-map">
-          <iframe class="gmap" :src="mapSrc" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe class="gmap" :src="mapSrc" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
 
