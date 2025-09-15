@@ -227,7 +227,13 @@
     "quickLinks": "Quick Links",
     "contactUs": "Contact Us",
     "followUs": "Follow Us",
-    "allRightsReserved": "All rights reserved."
+    "allRightsReserved": "All rights reserved.",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "privacyPolicy": {
+    "hero": {
+      "title": "Privacy Policy"
+    }
   },
   "brandValues": {
     "title": "Brand Core Values",
@@ -245,29 +251,60 @@
     }
   },
   "search": {
-    "destination": "義大利城市列表",
+    "destination": "Destination",
     "date": "Date",
     "people": "Number of people",
     "button": "Search",
     "listButton": "List",
     "highlights": "Italy Highlights",
     "noResults": "No tours found for the selected destination.",
-    "cities": {
-      "milano": "Milano",
-      "roma": "Roma", 
-      "firenze": "Firenze",
-      "venezia": "Venezia"
+    "categories": {
+      "cities": "Italian Cities",
+      "lakes": "Lakes & Mountains"
     },
-    "attractions": {
-      "duomoMilano": "Duomo di Milano",
-      "galleriaVittorio": "Galleria Vittorio Emanuele II",
-      "colosseum": "Colosseo",
-      "pantheon": "Pantheon",
-      "treviFountain": "Fontana di Trevi",
-      "uffiziGallery": "Uffizi Gallery",
-      "ponteVecchio": "Ponte Vecchio",
-      "piazzaSanMarco": "Piazza San Marco",
-      "grandCanal": "Grand Canal"
+    "cities": {
+      "milano": "Milan",
+      "roma": "Rome",
+      "firenze": "Florence",
+      "venezia": "Venice",
+      "pisa": "Pisa",
+      "siena": "Siena",
+      "lucca": "Lucca",
+      "napoli": "Naples",
+      "pompeii": "Pompeii",
+      "amalfi": "Amalfi",
+      "sorrento": "Sorrento",
+      "capri": "Capri",
+      "ischia": "Ischia",
+      "turin": "Turin",
+      "genova": "Genova",
+      "portofino": "Portofino",
+      "verona": "Verona",
+      "bologna": "Bologna",
+      "assisi": "Assisi",
+      "orvieto": "Orvieto"
+    },
+    "lakes": {
+      "lagodiComo": "Lake Como",
+      "bellagio": "Bellagio",
+      "lagodiGarda": "Lake Garda",
+      "sirmione": "Sirmione",
+      "desenzano": "Desenzano",
+      "lagoMaggiore": "Lake Maggiore",
+      "lagodOrta": "Lake Orta",
+      "lagodIseo": "Lake Iseo",
+      "dolomiti": "Dolomites",
+      "canazei": "Canazei",
+      "cortina": "Cortina d'Ampezzo",
+      "treCime": "Tre Cime di Lavaredo"
+    },
+    "cinqueTerre": {
+      "title": "Cinque Terre",
+      "riomaggiore": "Riomaggiore",
+      "manarola": "Manarola", 
+      "corniglia": "Corniglia",
+      "vernazza": "Vernazza",
+      "monterosso": "Monterosso al Mare"
     }
   },
   "accessibility": {

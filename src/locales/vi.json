@@ -83,7 +83,12 @@
     "florence": "Florence",
     "viewMore": "Xem thêm",
     "from": "Từ",
-    "eur": "EUR"
+    "eur": "EUR",
+    "countries": {
+      "italy": "Ý",
+      "germany": "Đức"
+    },
+    "germany": "Đức"
   },
   "promotion": {
     "title": "Biến Mọi Vé Thành Bất Ngờ Du Lịch",
@@ -157,6 +162,99 @@
     "quickLinks": "Liên kết nhanh",
     "contactUs": "Liên hệ chúng tôi",
     "followUs": "Theo dõi chúng tôi",
-    "allRightsReserved": "Tất cả quyền được bảo lưu."
+    "allRightsReserved": "Tất cả quyền được bảo lưu.",
+    "privacyPolicy": "Chính sách bảo mật"
+  },
+  "privacyPolicy": {
+    "hero": {
+      "title": "Chính sách bảo mật"
+    }
+  },
+  "brandValues": {
+    "title": "Giá trị cốt lõi của thương hiệu",
+    "convenience": {
+      "title": "Sự tiện lợi",
+      "description": "Bán vé một cửa giúp đơn giản hóa việc lập kế hoạch du lịch."
+    },
+    "trust": {
+      "title": "Sự tin cậy",
+      "description": "Giá cả minh bạch và các điều khoản rõ ràng để tránh các bẫy ẩn."
+    },
+    "discovery": {
+      "title": "Sự khám phá",
+      "description": "Thông qua các chương trình khuyến mãi được trò chơi hóa và các gói đi kèm, mỗi hành trình đều cảm thấy như một cuộc phiêu lưu."
+    }
+  },
+  "search": {
+    "destination": "Điểm đến",
+    "date": "Ngày",
+    "people": "Số người",
+    "button": "Tìm kiếm",
+    "listButton": "Danh sách",
+    "highlights": "Điểm nổi bật của Ý",
+    "noResults": "Không tìm thấy tour nào cho điểm đến đã chọn.",
+    "categories": {
+      "cities": "Thành phố Ý",
+      "lakes": "Hồ & Núi"
+    },
+    "cities": {
+      "milano": "Milan",
+      "roma": "Rome",
+      "firenze": "Florence",
+      "venezia": "Venice",
+      "pisa": "Pisa",
+      "siena": "Siena",
+      "lucca": "Lucca",
+      "napoli": "Napoli",
+      "pompeii": "Pompeii",
+      "amalfi": "Amalfi",
+      "sorrento": "Sorrento",
+      "capri": "Capri",
+      "ischia": "Ischia",
+      "turin": "Turin",
+      "genova": "Genova",
+      "portofino": "Portofino",
+      "verona": "Verona",
+      "bologna": "Bologna",
+      "assisi": "Assisi",
+      "orvieto": "Orvieto"
+    },
+    "lakes": {
+      "lagodiComo": "Hồ Como",
+      "bellagio": "Bellagio",
+      "lagodiGarda": "Hồ Garda",
+      "sirmione": "Sirmione",
+      "desenzano": "Desenzano",
+      "lagoMaggiore": "Hồ Maggiore",
+      "lagodOrta": "Hồ Orta",
+      "lagodIseo": "Hồ Iseo",
+      "dolomiti": "Dolomites",
+      "canazei": "Canazei",
+      "cortina": "Cortina",
+      "treCime": "Tre Cime di Lavaredo"
+    },
+    "cinqueTerre": {
+      "title": "Cinque Terre",
+      "riomaggiore": "Riomaggiore",
+      "manarola": "Manarola",
+      "corniglia": "Corniglia",
+      "vernazza": "Vernazza",
+      "monterosso": "Monterosso al Mare"
+    }
+  },
+  "accessibility": {
+    "altText": {
+      "corporatePartnership1": "Đối tác doanh nghiệp 1",
+      "corporatePartnership2": "Đối tác doanh nghiệp 2",
+      "futuredreamInvestors": "Nhà đầu tư Future Dream",
+      "futuredreamLogo": "Logo Future Dream",
+      "uffiziGalleryCourtyard": "Sân trong Phòng trưng bày Uffizi",
+      "neuschwansteinCastle": "Lâu đài Neuschwanstein trong sương mù",
+      "italianRailNetwork": "Bản đồ mạng lưới đường sắt Ý"
+    },
+    "ariaLabels": {
+      "facebook": "Facebook",
+      "downloadAndroidApp": "Tải xuống ứng dụng Android"
+    }
   }
 }

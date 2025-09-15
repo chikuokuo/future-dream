@@ -1,12 +1,33 @@
 <template>
   <div class="search-bar-container">
     <div class="search-bar">
-      <div class="search-input-group">
+      <div class="search-input-group destination-search">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-        <select v-model="destination">
-          <option value="italy">{{ $t('popularTours.countries.italy') }}</option>
-          <option value="germany">{{ $t('popularTours.countries.germany') }}</option>
-        </select>
+        <input 
+          type="text" 
+          v-model="destinationInput"
+          :placeholder="$t('search.destination')"
+          @input="handleDestinationInput"
+          @focus="showSuggestions = true"
+          @blur="handleBlur"
+          autocomplete="off"
+        />
+        <div v-if="showSuggestions && filteredDestinations.length > 0" class="suggestions-dropdown">
+          <div 
+            v-for="dest in filteredDestinations" 
+            :key="dest.id"
+            class="suggestion-item"
+            @mousedown="selectDestination(dest)"
+          >
+            <div class="suggestion-main">
+              <span class="destination-name">{{ dest.name }}</span>
+              <span class="destination-region">{{ dest.region }}</span>
+            </div>
+            <div class="suggestion-attractions">
+              {{ dest.attractions.slice(0, 2).join(', ') }}
+            </div>
+          </div>
+        </div>
       </div>
       <div class="divider"></div>
       <div class="search-input-group">
@@ -26,8 +47,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { ref, watch, computed } from 'vue'
 import { useRouter } from 'vue-router'
+import { italianDestinations, searchDestinations, type Destination } from '@/data/italianDestinations'
 
 interface Props {
   initialDestination?: string
@@ -38,14 +60,39 @@ interface Props {
 const props = defineProps<Props>()
 
 const router = useRouter()
-const destination = ref<'italy' | 'germany'>('italy')
+const destinationInput = ref('')
+const selectedDestination = ref<Destination | null>(null)
 const date = ref('')
 const people = ref(1)
+const showSuggestions = ref(false)
+
+// Search functionality
+const filteredDestinations = computed(() => {
+  if (!destinationInput.value.trim()) return []
+  return searchDestinations(destinationInput.value).slice(0, 8)
+})
+
+const handleDestinationInput = () => {
+  selectedDestination.value = null
+  showSuggestions.value = true
+}
+
+const selectDestination = (destination: Destination) => {
+  selectedDestination.value = destination
+  destinationInput.value = destination.name
+  showSuggestions.value = false
+}
+
+const handleBlur = () => {
+  setTimeout(() => {
+    showSuggestions.value = false
+  }, 200)
+}
 
 // Initialize from props when provided (used on Search page)
 const applyInitial = () => {
-  if (props.initialDestination === 'italy' || props.initialDestination === 'germany') {
-    destination.value = props.initialDestination
+  if (typeof props.initialDestination === 'string') {
+    destinationInput.value = props.initialDestination
   }
   if (typeof props.initialDate === 'string') {
     date.value = props.initialDate
@@ -59,10 +106,12 @@ applyInitial()
 watch(() => [props.initialDestination, props.initialDate, props.initialPeople], applyInitial)
 
 const handleSearch = () => {
+  const destinationQuery = selectedDestination.value ? selectedDestination.value.name : destinationInput.value
+  
   router.push({
     name: 'search',
     query: {
-      destination: destination.value,
+      destination: destinationQuery || 'italy',
       date: date.value,
       people: people.value,
     },
@@ -97,6 +146,10 @@ const handleSearch = () => {
   min-width: 0; /* allow shrink */
 }
 
+.destination-search {
+  position: relative;
+}
+
 .search-icon {
   color: var(--text-secondary);
   margin-right: 0.5rem;
@@ -128,6 +181,64 @@ const handleSearch = () => {
 }
 
 .search-button:hover { background-color: var(--color-warning-600); }
+
+/* Suggestions Dropdown */
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--bg-paper);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  z-index: 1000;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 4px;
+}
+
+.suggestion-item {
+  padding: 0.75rem;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-light);
+  transition: background-color 0.2s ease;
+}
+
+.suggestion-item:last-child {
+  border-bottom: none;
+}
+
+.suggestion-item:hover {
+  background-color: var(--md-primary-container);
+}
+
+.suggestion-main {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.destination-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.destination-region {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  background: var(--bg-default);
+  padding: 0.125rem 0.375rem;
+  border-radius: 4px;
+}
+
+.suggestion-attractions {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.2;
+}
 
 /* Mobile adjustments */
 @media (max-width: 768px) {

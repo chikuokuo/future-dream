@@ -27,26 +27,62 @@
           <div class="filter-menu-content">
             <h3>{{ $t('search.highlights') }}</h3>
             <div class="city-filters">
-              <div class="city-group">
-                <h4>{{ $t('search.cities.milano') }}</h4>
-                <button @click="showPlace('Duomo di Milano, Milan')">{{ $t('search.attractions.duomoMilano') }}</button>
-                <button @click="showPlace('Galleria Vittorio Emanuele II, Milan')">{{ $t('search.attractions.galleriaVittorio') }}</button>
+              <!-- Italian Cities -->
+              <div class="category-section">
+                <h3 class="category-title">{{ $t('search.categories.cities') }}</h3>
+                <div class="destinations-grid">
+                  <button @click="showPlace('Milan, Italy')" class="destination-btn">{{ $t('search.cities.milano') }}</button>
+                  <button @click="showPlace('Rome, Italy')" class="destination-btn">{{ $t('search.cities.roma') }}</button>
+                  <button @click="showPlace('Florence, Italy')" class="destination-btn">{{ $t('search.cities.firenze') }}</button>
+                  <button @click="showPlace('Venice, Italy')" class="destination-btn">{{ $t('search.cities.venezia') }}</button>
+                  <button @click="showPlace('Pisa, Italy')" class="destination-btn">{{ $t('search.cities.pisa') }}</button>
+                  <button @click="showPlace('Siena, Italy')" class="destination-btn">{{ $t('search.cities.siena') }}</button>
+                  <button @click="showPlace('Lucca, Italy')" class="destination-btn">{{ $t('search.cities.lucca') }}</button>
+                  <button @click="showPlace('Naples, Italy')" class="destination-btn">{{ $t('search.cities.napoli') }}</button>
+                  <button @click="showPlace('Pompeii, Italy')" class="destination-btn">{{ $t('search.cities.pompeii') }}</button>
+                  <button @click="showPlace('Amalfi, Italy')" class="destination-btn">{{ $t('search.cities.amalfi') }}</button>
+                  <button @click="showPlace('Sorrento, Italy')" class="destination-btn">{{ $t('search.cities.sorrento') }}</button>
+                  <button @click="showPlace('Capri, Italy')" class="destination-btn">{{ $t('search.cities.capri') }}</button>
+                  <button @click="showPlace('Ischia, Italy')" class="destination-btn">{{ $t('search.cities.ischia') }}</button>
+                  <button @click="showPlace('Turin, Italy')" class="destination-btn">{{ $t('search.cities.turin') }}</button>
+                  <button @click="showPlace('Genova, Italy')" class="destination-btn">{{ $t('search.cities.genova') }}</button>
+                  <button @click="showPlace('Portofino, Italy')" class="destination-btn">{{ $t('search.cities.portofino') }}</button>
+                  <button @click="showPlace('Verona, Italy')" class="destination-btn">{{ $t('search.cities.verona') }}</button>
+                  <button @click="showPlace('Bologna, Italy')" class="destination-btn">{{ $t('search.cities.bologna') }}</button>
+                  <button @click="showPlace('Assisi, Italy')" class="destination-btn">{{ $t('search.cities.assisi') }}</button>
+                  <button @click="showPlace('Orvieto, Italy')" class="destination-btn">{{ $t('search.cities.orvieto') }}</button>
+                </div>
               </div>
-              <div class="city-group">
-                <h4>{{ $t('search.cities.roma') }}</h4>
-                <button @click="showPlace('Colosseum, Rome')">{{ $t('search.attractions.colosseum') }}</button>
-                <button @click="showPlace('Pantheon, Rome')">{{ $t('search.attractions.pantheon') }}</button>
-                <button @click="showPlace('Trevi Fountain, Rome')">{{ $t('search.attractions.treviFountain') }}</button>
+
+              <!-- Lakes & Mountains -->
+              <div class="category-section">
+                <h3 class="category-title">{{ $t('search.categories.lakes') }}</h3>
+                <div class="destinations-grid">
+                  <button @click="showPlace('Lake Como, Italy')" class="destination-btn">{{ $t('search.lakes.lagodiComo') }}</button>
+                  <button @click="showPlace('Bellagio, Italy')" class="destination-btn">{{ $t('search.lakes.bellagio') }}</button>
+                  <button @click="showPlace('Lake Garda, Italy')" class="destination-btn">{{ $t('search.lakes.lagodiGarda') }}</button>
+                  <button @click="showPlace('Sirmione, Italy')" class="destination-btn">{{ $t('search.lakes.sirmione') }}</button>
+                  <button @click="showPlace('Desenzano, Italy')" class="destination-btn">{{ $t('search.lakes.desenzano') }}</button>
+                  <button @click="showPlace('Lake Maggiore, Italy')" class="destination-btn">{{ $t('search.lakes.lagoMaggiore') }}</button>
+                  <button @click="showPlace('Lake Orta, Italy')" class="destination-btn">{{ $t('search.lakes.lagodOrta') }}</button>
+                  <button @click="showPlace('Lake Iseo, Italy')" class="destination-btn">{{ $t('search.lakes.lagodIseo') }}</button>
+                  <button @click="showPlace('Dolomites, Italy')" class="destination-btn">{{ $t('search.lakes.dolomiti') }}</button>
+                  <button @click="showPlace('Canazei, Italy')" class="destination-btn">{{ $t('search.lakes.canazei') }}</button>
+                  <button @click="showPlace('Cortina d\\\'Ampezzo, Italy')" class="destination-btn">{{ $t('search.lakes.cortina') }}</button>
+                  <button @click="showPlace('Tre Cime di Lavaredo, Italy')" class="destination-btn">{{ $t('search.lakes.treCime') }}</button>
+                </div>
               </div>
-              <div class="city-group">
-                <h4>{{ $t('search.cities.firenze') }}</h4>
-                <button @click="showPlace('Uffizi Gallery, Florence')">{{ $t('search.attractions.uffiziGallery') }}</button>
-                <button @click="showPlace('Ponte Vecchio, Florence')">{{ $t('search.attractions.ponteVecchio') }}</button>
-              </div>
-              <div class="city-group">
-                <h4>{{ $t('search.cities.venezia') }}</h4>
-                <button @click="showPlace('Piazza San Marco, Venice')">{{ $t('search.attractions.piazzaSanMarco') }}</button>
-                <button @click="showPlace('Grand Canal, Venice')">{{ $t('search.attractions.grandCanal') }}</button>
+
+              <!-- Cinque Terre -->
+              <div class="category-section">
+                <h3 class="category-title">{{ $t('search.cinqueTerre.title') }}</h3>
+                <div class="destinations-grid">
+                  <button @click="showPlace('Riomaggiore, Italy')" class="destination-btn">{{ $t('search.cinqueTerre.riomaggiore') }}</button>
+                  <button @click="showPlace('Manarola, Italy')" class="destination-btn">{{ $t('search.cinqueTerre.manarola') }}</button>
+                  <button @click="showPlace('Corniglia, Italy')" class="destination-btn">{{ $t('search.cinqueTerre.corniglia') }}</button>
+                  <button @click="showPlace('Vernazza, Italy')" class="destination-btn">{{ $t('search.cinqueTerre.vernazza') }}</button>
+                  <button @click="showPlace('Monterosso al Mare, Italy')" class="destination-btn">{{ $t('search.cinqueTerre.monterosso') }}</button>
+                </div>
               </div>
             </div>
           </div>
@@ -61,7 +97,7 @@
           <div v-for="tour in filteredTours" :key="tour._id" class="tour-card" @click="() => handleViewMoreClick(tour)">
             <div class="card-image">
               <img :src="tour.images[0]" :alt="tour.name" />
-              <div class="location-badge" :class="tour.location.toLowerCase()">{{ tour.location }}</div>
+              <div class="location-badge" :class="tour.location.toLowerCase()">{{ $t('popularTours.' + tour.location.toLowerCase()) }}</div>
             </div>
             <div class="card-content">
               <h3 class="tour-title">{{ tour.name }}</h3>
@@ -91,6 +127,7 @@ import SearchBar from '@/components/SearchBar.vue'
 import { useTours } from '@/composables/useTours'
 import { useCurrency } from '@/composables/useCurrency'
 import { trackButtonClick } from '@/utils/analytics'
+import { italianDestinations, getDestinationById, type Destination } from '@/data/italianDestinations'
 
 const route = useRoute()
 const { allTours } = useTours()
@@ -106,10 +143,42 @@ const filteredTours = computed(() => {
 })
 
 const placeQuery = ref('Italy')
-const mapSrc = computed(() => `https://www.google.com/maps?q=${encodeURIComponent(placeQuery.value)}&output=embed`)
+
+// Define multiple locations with their coordinates and prices
+const mapLocations = [
+  { name: 'Duomo di Milano', coords: '45.464664,9.188540', price: '€85' },
+  { name: 'Colosseum Rome', coords: '41.890251,12.492373', price: '€95' },
+  { name: 'Uffizi Gallery Florence', coords: '43.768175,11.255576', price: '€120' },
+  { name: 'Piazza San Marco Venice', coords: '45.434046,12.338874', price: '€110' },
+  { name: 'Pantheon Rome', coords: '41.898762,12.476915', price: '€65' },
+  { name: 'Ponte Vecchio Florence', coords: '43.767960,11.253252', price: '€45' },
+  { name: 'Grand Canal Venice', coords: '45.440847,12.315515', price: '€89' },
+  { name: 'Trevi Fountain Rome', coords: '41.900928,12.483313', price: '€55' }
+]
+
+const mapSrc = computed(() => {
+  if (placeQuery.value && placeQuery.value !== 'Italy') {
+    // Show specific location when clicked
+    return `https://www.google.com/maps?q=${encodeURIComponent(placeQuery.value)}&output=embed`
+  } else {
+    // Show Italy overview with centered view
+    // Unfortunately, Google Maps Embed API doesn't support multiple custom markers
+    // We would need to implement Google Maps JavaScript API for custom markers with prices
+    return `https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5906818.875331818!2d9.183594!3d41.87194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sit!4v1000000000000!5m2!1sen!2sit&output=embed`
+  }
+})
+
 const showPlace = (q: string) => {
   placeQuery.value = q
   showFilterMenu.value = false
+}
+
+const showDestination = (destinationId: string) => {
+  const destination = getDestinationById(destinationId)
+  if (destination) {
+    placeQuery.value = `${destination.name}, Italy`
+    showFilterMenu.value = false
+  }
 }
 
 const showFilterMenu = ref(false)
@@ -161,7 +230,6 @@ const handleViewMoreClick = (tour: Tour) => {
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
@@ -283,36 +351,53 @@ const handleViewMoreClick = (tour: Tour) => {
 }
 
 .city-filters {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.city-group h4 {
-  margin: 0 0 0.5rem 0;
+.category-section {
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 1rem;
+}
+
+.category-section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.category-title {
+  margin: 0 0 0.75rem 0;
   color: var(--md-primary);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
-.city-group button {
-  display: block;
-  width: 100%;
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.5rem;
+}
+
+.destination-btn {
   text-align: left;
   background: var(--bg-default);
   border: 1px solid var(--border-light);
   border-radius: 6px;
-  padding: 0.4rem 0.6rem;
-  margin-bottom: 0.3rem;
+  padding: 0.5rem 0.75rem;
   cursor: pointer;
   color: var(--text-primary);
   transition: all 0.2s ease;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.city-group button:hover {
+.destination-btn:hover {
   background: var(--md-primary-container);
   border-color: var(--md-primary);
+  transform: translateY(-1px);
 }
 
 /* Tours Section */
@@ -492,9 +577,14 @@ const handleViewMoreClick = (tour: Tour) => {
     padding: 1rem;
   }
 
-  .city-filters {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
+  .destinations-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.4rem;
+  }
+
+  .destination-btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
   }
 
   .tours-grid {
@@ -534,6 +624,20 @@ const handleViewMoreClick = (tour: Tour) => {
 
   .filter-menu-content {
     padding: 0.75rem;
+  }
+
+  .category-title {
+    font-size: 0.9rem;
+  }
+
+  .destinations-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.3rem;
+  }
+
+  .destination-btn {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.5rem;
   }
 
   .filter-menu h3 {

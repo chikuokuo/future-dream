@@ -83,7 +83,12 @@
     "florence": "피렌체",
     "viewMore": "더 보기",
     "from": "부터",
-    "eur": "유로"
+    "eur": "유로",
+    "countries": {
+      "italy": "이탈리아",
+      "germany": "독일"
+    },
+    "germany": "독일"
   },
   "promotion": {
     "title": "모든 티켓을 여행 서프라이즈로 변환하세요",
@@ -157,6 +162,99 @@
     "quickLinks": "빠른 링크",
     "contactUs": "문의하기",
     "followUs": "팔로우",
-    "allRightsReserved": "모든 권리 보유."
+    "allRightsReserved": "모든 권리 보유.",
+    "privacyPolicy": "개인 정보 정책"
+  },
+  "privacyPolicy": {
+    "hero": {
+      "title": "개인 정보 정책"
+    }
+  },
+  "brandValues": {
+    "title": "브랜드 핵심 가치",
+    "convenience": {
+      "title": "편의성",
+      "description": "여행 계획을 단순화하는 원스톱 티켓팅."
+    },
+    "trust": {
+      "title": "신뢰",
+      "description": "숨겨진 함정을 피하기 위한 투명한 가격 책정과 명확한 조건."
+    },
+    "discovery": {
+      "title": "발견",
+      "description": "게임화된 프로모션과 묶음 상품을 통해 모든 여정이 모험처럼 느껴집니다."
+    }
+  },
+  "search": {
+    "destination": "목적지",
+    "date": "날짜",
+    "people": "인원수",
+    "button": "검색",
+    "listButton": "목록",
+    "highlights": "이탈리아 하이라이트",
+    "noResults": "선택한 목적지에 대한 투어를 찾을 수 없습니다.",
+    "categories": {
+      "cities": "이탈리아 도시",
+      "lakes": "호수 & 산"
+    },
+    "cities": {
+      "milano": "밀라노",
+      "roma": "로마",
+      "firenze": "피렌체",
+      "venezia": "베네치아",
+      "pisa": "피사",
+      "siena": "시에나",
+      "lucca": "루카",
+      "napoli": "나폴리",
+      "pompeii": "폼페이",
+      "amalfi": "아말피",
+      "sorrento": "소렌토",
+      "capri": "카프리",
+      "ischia": "이스키아",
+      "turin": "토리노",
+      "genova": "제노바",
+      "portofino": "포르토피노",
+      "verona": "베로나",
+      "bologna": "볼로냐",
+      "assisi": "아시시",
+      "orvieto": "오르비에토"
+    },
+    "lakes": {
+      "lagodiComo": "코모 호수",
+      "bellagio": "벨라지오",
+      "lagodiGarda": "가르다 호수",
+      "sirmione": "시르미오네",
+      "desenzano": "데젠차노",
+      "lagoMaggiore": "마조레 호수",
+      "lagodOrta": "오르타 호수",
+      "lagodIseo": "이세오 호수",
+      "dolomiti": "돌로미티",
+      "canazei": "카나제이",
+      "cortina": "코르티나",
+      "treCime": "트레치메 디 라바레도"
+    },
+    "cinqueTerre": {
+      "title": "친퀘테레",
+      "riomaggiore": "리오마조레",
+      "manarola": "마나롤라",
+      "corniglia": "코르닐리아",
+      "vernazza": "베르나차",
+      "monterosso": "몬테로소 알 마레"
+    }
+  },
+  "accessibility": {
+    "altText": {
+      "corporatePartnership1": "기업 파트너십 1",
+      "corporatePartnership2": "기업 파트너십 2",
+      "futuredreamInvestors": "Future Dream 투자자",
+      "futuredreamLogo": "Future Dream 로고",
+      "uffiziGalleryCourtyard": "우피치 미술관 안뜰",
+      "neuschwansteinCastle": "안개 속의 노이슈반슈타인 성",
+      "italianRailNetwork": "이탈리아 철도망 지도"
+    },
+    "ariaLabels": {
+      "facebook": "페이스북",
+      "downloadAndroidApp": "안드로이드 앱 다운로드"
+    }
   }
 }

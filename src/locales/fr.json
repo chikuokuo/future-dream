@@ -57,7 +57,12 @@
     "florence": "Florence",
     "from": "Dès",
     "eur": "€",
-    "viewMore": "Voir les détails"
+    "viewMore": "Voir les détails",
+    "countries": {
+      "italy": "Italie",
+      "germany": "Allemagne"
+    },
+    "germany": "Allemagne"
   },
   "promotion": {
     "title": "Transformez Chaque Billet en Surprise de Voyage",
@@ -162,6 +167,99 @@
     "quickLinks": "Liens Rapides",
     "contactUs": "Nous Contacter",
     "followUs": "Nous Suivre",
-    "allRightsReserved": "Tous droits réservés."
+    "allRightsReserved": "Tous droits réservés.",
+    "privacyPolicy": "Politique de confidentialité"
+  },
+  "privacyPolicy": {
+    "hero": {
+      "title": "Politique de confidentialité"
+    }
+  },
+  "brandValues": {
+    "title": "Valeurs Fondamentales de la Marque",
+    "convenience": {
+      "title": "Commodité",
+      "description": "Une billetterie unique qui simplifie la planification de voyage."
+    },
+    "trust": {
+      "title": "Confiance",
+      "description": "Des prix transparents et des conditions claires pour éviter les pièges cachés."
+    },
+    "discovery": {
+      "title": "Découverte",
+      "description": "Grâce à des promotions ludiques et des forfaits, chaque voyage ressemble à une aventure."
+    }
+  },
+  "search": {
+    "destination": "Destination",
+    "date": "Date",
+    "people": "Nombre de personnes",
+    "button": "Rechercher",
+    "listButton": "Liste",
+    "highlights": "Points forts de l'Italie",
+    "noResults": "Aucun circuit trouvé pour la destination sélectionnée.",
+    "categories": {
+      "cities": "Villes italiennes",
+      "lakes": "Lacs et montagnes"
+    },
+    "cities": {
+      "milano": "Milan",
+      "roma": "Rome",
+      "firenze": "Florence",
+      "venezia": "Venise",
+      "pisa": "Pise",
+      "siena": "Sienne",
+      "lucca": "Lucques",
+      "napoli": "Naples",
+      "pompeii": "Pompéi",
+      "amalfi": "Amalfi",
+      "sorrento": "Sorrente",
+      "capri": "Capri",
+      "ischia": "Ischia",
+      "turin": "Turin",
+      "genova": "Gênes",
+      "portofino": "Portofino",
+      "verona": "Vérone",
+      "bologna": "Bologne",
+      "assisi": "Assise",
+      "orvieto": "Orvieto"
+    },
+    "lakes": {
+      "lagodiComo": "Lac de Côme",
+      "bellagio": "Bellagio",
+      "lagodiGarda": "Lac de Garde",
+      "sirmione": "Sirmione",
+      "desenzano": "Desenzano",
+      "lagoMaggiore": "Lac Majeur",
+      "lagodOrta": "Lac d'Orta",
+      "lagodIseo": "Lac d'Iseo",
+      "dolomiti": "Dolomites",
+      "canazei": "Canazei",
+      "cortina": "Cortina",
+      "treCime": "Tre Cime di Lavaredo"
+    },
+    "cinqueTerre": {
+      "title": "Cinque Terre",
+      "riomaggiore": "Riomaggiore",
+      "manarola": "Manarola",
+      "corniglia": "Corniglia",
+      "vernazza": "Vernazza",
+      "monterosso": "Monterosso al Mare"
+    }
+  },
+  "accessibility": {
+    "altText": {
+      "corporatePartnership1": "Partenariat d'entreprise 1",
+      "corporatePartnership2": "Partenariat d'entreprise 2",
+      "futuredreamInvestors": "Investisseurs de Future Dream",
+      "futuredreamLogo": "Logo de Future Dream",
+      "uffiziGalleryCourtyard": "Cour de la Galerie des Offices",
+      "neuschwansteinCastle": "Château de Neuschwanstein dans le brouillard",
+      "italianRailNetwork": "Carte du réseau ferroviaire italien"
+    },
+    "ariaLabels": {
+      "facebook": "Facebook",
+      "downloadAndroidApp": "Télécharger l'application Android"
+    }
   }
 }

@@ -17,7 +17,7 @@
         <div v-for="tour in filteredTours" :key="tour._id" class="tour-card" @click="() => handleViewMoreClick(tour)">
           <div class="card-image">
             <img :src="tour.images[0]" :alt="tour.name" />
-            <div class="location-badge" :class="tour.location.toLowerCase()">{{ tour.location }}</div>
+            <div class="location-badge" :class="tour.location.toLowerCase()">{{ $t('popularTours.' + tour.location.toLowerCase()) }}</div>
           </div>
           <div class="card-content">
             <h3 class="tour-title">{{ tour.name }}</h3>

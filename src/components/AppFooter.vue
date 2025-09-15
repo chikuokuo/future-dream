@@ -13,6 +13,7 @@
         <ul>
           <li><router-link to="/">{{ $t('header.home') }}</router-link></li>
           <li><router-link to="/about">{{ $t('header.about') }}</router-link></li>
+          <li><router-link to="/privacy-policy">{{ $t('footer.privacyPolicy') }}</router-link></li>
         </ul>
       </div>
       <div class="footer-section contact">

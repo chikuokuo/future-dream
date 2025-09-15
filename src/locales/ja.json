@@ -83,7 +83,12 @@
     "florence": "フィレンツェ",
     "viewMore": "もっと見る",
     "from": "から",
-    "eur": "ユーロ"
+    "eur": "ユーロ",
+    "countries": {
+      "italy": "イタリア",
+      "germany": "ドイツ"
+    },
+    "germany": "ドイツ"
   },
   "promotion": {
     "title": "すべてのチケットを旅行サプライズに変える",
@@ -157,6 +162,99 @@
     "quickLinks": "クイックリンク",
     "contactUs": "お問い合わせ",
     "followUs": "フォローする",
-    "allRightsReserved": "無断転載禁止。"
+    "allRightsReserved": "無断転載禁止。",
+    "privacyPolicy": "プライバシーポリシー"
+  },
+  "privacyPolicy": {
+    "hero": {
+      "title": "プライバシーポリシー"
+    }
+  },
+  "brandValues": {
+    "title": "ブランドのコアバリュー",
+    "convenience": {
+      "title": "利便性",
+      "description": "旅行計画を簡素化するワンストップチケッティング。"
+    },
+    "trust": {
+      "title": "信頼",
+      "description": "隠れた罠を避けるための透明な価格設定と明確な条件。"
+    },
+    "discovery": {
+      "title": "発見",
+      "description": "ゲーム化されたプロモーションやバンドルパッケージを通じて、すべての旅が冒険のように感じられます。"
+    }
+  },
+  "search": {
+    "destination": "目的地",
+    "date": "日付",
+    "people": "人数",
+    "button": "検索",
+    "listButton": "リスト",
+    "highlights": "イタリアのハイライト",
+    "noResults": "選択した目的地に該当するツアーが見つかりませんでした。",
+    "categories": {
+      "cities": "イタリアの都市",
+      "lakes": "湖と山"
+    },
+    "cities": {
+      "milano": "ミラノ",
+      "roma": "ローマ",
+      "firenze": "フィレンツェ",
+      "venezia": "ヴェネツィア",
+      "pisa": "ピサ",
+      "siena": "シエナ",
+      "lucca": "ルッカ",
+      "napoli": "ナポリ",
+      "pompeii": "ポンペイ",
+      "amalfi": "アマルフィ",
+      "sorrento": "ソレント",
+      "capri": "カプリ島",
+      "ischia": "イスキア島",
+      "turin": "トリノ",
+      "genova": "ジェノヴァ",
+      "portofino": "ポルトフィーノ",
+      "verona": "ヴェローナ",
+      "bologna": "ボローニャ",
+      "assisi": "アッシジ",
+      "orvieto": "オルヴィエート"
+    },
+    "lakes": {
+      "lagodiComo": "コモ湖",
+      "bellagio": "ベッラージョ",
+      "lagodiGarda": "ガルダ湖",
+      "sirmione": "シルミオーネ",
+      "desenzano": "デゼンツァーノ",
+      "lagoMaggiore": "マッジョーレ湖",
+      "lagodOrta": "オルタ湖",
+      "lagodIseo": "イゼーオ湖",
+      "dolomiti": "ドロミーティ",
+      "canazei": "カナツェーイ",
+      "cortina": "コルティーナ",
+      "treCime": "トレ・チーメ・ディ・ラヴァレード"
+    },
+    "cinqueTerre": {
+      "title": "チンクエ・テッレ",
+      "riomaggiore": "リオマッジョーレ",
+      "manarola": "マナローラ",
+      "corniglia": "コルニリア",
+      "vernazza": "ヴェルナッツァ",
+      "monterosso": "モンテロッソ・アル・マーレ"
+    }
+  },
+  "accessibility": {
+    "altText": {
+      "corporatePartnership1": "企業パートナーシップ1",
+      "corporatePartnership2": "企業パートナーシップ2",
+      "futuredreamInvestors": "Future Dream 投資家",
+      "futuredreamLogo": "Future Dream ロゴ",
+      "uffiziGalleryCourtyard": "ウフィツィ美術館の中庭",
+      "neuschwansteinCastle": "霧の中のノイシュヴァンシュタイン城",
+      "italianRailNetwork": "イタリア鉄道網の地図"
+    },
+    "ariaLabels": {
+      "facebook": "フェイスブック",
+      "downloadAndroidApp": "Androidアプリをダウンロード"
+    }
   }
 }
