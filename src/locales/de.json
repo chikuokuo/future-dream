@@ -1,7 +1,9 @@
 {
   "header": {
     "language": "Sprache",
-    "downloadApp": "App herunterladen"
+    "downloadApp": "App herunterladen",
+    "home": "Startseite",
+    "about": "Über uns"
   },
   "hero": {
     "badge": "👑 Neuschwanstein Schloss Buchung leicht gemacht",
@@ -154,5 +156,12 @@
       }
     },
     "cta": "Italienische Bahnpässe buchen"
+  },
+  "footer": {
+    "aboutText": "Ihre All-in-One-App für europäische Reisen, die es einfach macht, Tickets für Züge und Top-Attraktionen zu buchen.",
+    "quickLinks": "Schnelllinks",
+    "contactUs": "Kontaktieren Sie uns",
+    "followUs": "Folgen Sie uns",
+    "allRightsReserved": "Alle Rechte vorbehalten."
   }
 }

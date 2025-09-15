@@ -3,6 +3,7 @@
     "brand": "Future Dream",
     "language": "Language",
     "downloadApp": "Download App",
+    "home": "Home",
     "about": "About Us"
   },
   "hero": {
@@ -171,8 +172,35 @@
   "about": {
     "title": "About Future Dream",
     "hero": {
-      "title": "Our Journey, Your Adventure",
-      "subtitle": "Connecting travelers to the heart of Europe's culture and history."
+      "title": "Fun Starts Here",
+      "subtitle": "Let Future Dream lead you to discover your own world of fun."
+    },
+    "intro": {
+      "title": "About Future Dream",
+      "subtitle": "No matter when, no matter where, we'll help you find the best things to do and see.",
+      "content": "Looking for great deals on local attractions? Or the best hotel deals? Or a relaxing getaway? Future Dream has it all. With a few taps, your next adventure is ready."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "subtitle": "Bringing you closer to the world",
+      "content": "Whether it's discovering local gems or traveling abroad, we turn the world into your playground. Go explore!"
+    },
+    "promise": {
+      "title": "Our Promise",
+      "items": {
+        "simple": {
+          "title": "Simple and Easy",
+          "content": "From discovery and booking to the experience itself, we're here to make your journey effortless."
+        },
+        "local": {
+          "title": "Authentic Experiences",
+          "content": "Our local teams hand-pick the most authentic things to do, so you can enjoy the best of every destination."
+        },
+        "curiosity": {
+          "title": "Endless Curiosity",
+          "content": "The world is vast! We maintain endless curiosity, constantly discovering new and unique things to do."
+        }
+      }
     },
     "brand": {
       "title": "Our Brand",
@@ -184,5 +212,12 @@
       "paragraph1": "The Future Dream app is your one-stop shop for booking train tickets, and admission to top attractions across Italy and Germany. We offer a curated selection of the best travel experiences, from high-speed trains to iconic landmarks like the Uffizi Gallery and Neuschwanstein Castle.",
       "paragraph2": "With features like instant booking, digital e-tickets, and multi-language support, our app is designed to take the stress out of travel planning. Whether you're a seasoned traveler or a first-time visitor, Future Dream is your trusted partner for an unforgettable European adventure."
     }
+  },
+  "footer": {
+    "aboutText": "Your one-stop app for European travel, making it seamless to book tickets for trains and top attractions.",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "followUs": "Follow Us",
+    "allRightsReserved": "All rights reserved."
   }
 }

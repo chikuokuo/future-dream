@@ -1,7 +1,9 @@
 {
   "header": {
     "language": "Langue",
-    "downloadApp": "Télécharger l'app"
+    "downloadApp": "Télécharger l'app",
+    "home": "Accueil",
+    "about": "À propos de nous"
   },
   "hero": {
     "badge": "👑 Réservation du château de Neuschwanstein simplifiée",
@@ -154,5 +156,12 @@
       }
     },
     "cta": "Réserver Pass Ferroviaires Italiens"
+  },
+  "footer": {
+    "aboutText": "Votre application tout-en-un pour les voyages européens, facilitant la réservation de billets de train et d'attractions populaires.",
+    "quickLinks": "Liens Rapides",
+    "contactUs": "Nous Contacter",
+    "followUs": "Nous Suivre",
+    "allRightsReserved": "Tous droits réservés."
   }
 }

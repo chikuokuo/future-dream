@@ -2,7 +2,9 @@
   "header": {
     "brand": "Future Dream",
     "language": "Ngôn ngữ",
-    "downloadApp": "Tải ứng dụng"
+    "downloadApp": "Tải ứng dụng",
+    "home": "Trang chủ",
+    "about": "Giới thiệu"
   },
   "hero": {
     "badge": "Giải pháp du lịch Ý toàn diện",
@@ -149,5 +151,12 @@
       "content2": "Khi đến nơi, bạn có thể đi xe buýt hoặc đi bộ lên đồi. Nên đặt vé trực tuyến trước để tránh phải xếp hàng."
     },
     "cta": "Mua vé & Tải ứng dụng"
+  },
+  "footer": {
+    "aboutText": "Ứng dụng một điểm đến cho du lịch châu Âu, giúp việc đặt vé tàu và các điểm tham quan hàng đầu trở nên dễ dàng.",
+    "quickLinks": "Liên kết nhanh",
+    "contactUs": "Liên hệ chúng tôi",
+    "followUs": "Theo dõi chúng tôi",
+    "allRightsReserved": "Tất cả quyền được bảo lưu."
   }
 }
