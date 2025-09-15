@@ -9,7 +9,7 @@
 
       <!-- Download App Button -->
       <div class="header-actions">
-        <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk"
+        <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/future-dream-travel.apk "
           class="download-app-btn" download="NeuschwansteinCastle-App.apk"
           @click="() => trackButtonClick('downloadAppBtn', { download_type: 'apk', location: 'header' })">
           <span class="download-icon">📱</span>

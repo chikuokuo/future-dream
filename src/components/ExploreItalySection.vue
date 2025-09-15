@@ -36,7 +36,7 @@
             </div>
 
             <div class="cta-container">
-                <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk"
+                <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/future-dream-travel.apk"
                     class="cta-button" download="FutureDream-App.apk"
                     @click="() => trackButtonClick('ctaButton', { download_type: 'apk', location: 'explore_italy_section' })">
                     <span class="btn-icon">⬇️</span>

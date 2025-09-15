@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-background">
-        <div class="hero-content">
+        <div class="hero-content">app-release
           <div class="hero-badge">
             {{ $t('hero.badge') }}
           </div>
@@ -28,7 +28,7 @@
           </div>
 
           <div class="hero-buttons">
-            <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk"
+            <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/future-dream-travel.apk"
               class="btn-primary" download="NeuschwansteinCastle-App.apk"
               @click="() => trackButtonClick('btnPrimary', { download_type: 'apk', location: 'hero_section' })">
               <span class="btn-icon">📱</span>
