@@ -55,7 +55,7 @@ import { trackButtonClick } from '@/utils/analytics'
 const { locale, t } = useI18n()
 const { format: formatCurrency } = useCurrency()
 
-const selectedCountry = ref('italy')
+const selectedCountry = ref<'italy' | 'germany'>('italy')
 
 // Product data
 const toursData = computed(() => ({
