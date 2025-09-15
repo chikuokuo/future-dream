@@ -26,13 +26,37 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { useRouter } from 'vue-router'
+
+interface Props {
+  initialDestination?: string
+  initialDate?: string
+  initialPeople?: number
+}
+
+const props = defineProps<Props>()
 
 const router = useRouter()
 const destination = ref<'italy' | 'germany'>('italy')
 const date = ref('')
 const people = ref(1)
+
+// Initialize from props when provided (used on Search page)
+const applyInitial = () => {
+  if (props.initialDestination === 'italy' || props.initialDestination === 'germany') {
+    destination.value = props.initialDestination
+  }
+  if (typeof props.initialDate === 'string') {
+    date.value = props.initialDate
+  }
+  if (typeof props.initialPeople === 'number' && !Number.isNaN(props.initialPeople)) {
+    people.value = Math.max(1, props.initialPeople)
+  }
+}
+applyInitial()
+
+watch(() => [props.initialDestination, props.initialDate, props.initialPeople], applyInitial)
 
 const handleSearch = () => {
   router.push({

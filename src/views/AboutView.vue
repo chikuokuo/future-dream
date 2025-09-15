@@ -59,8 +59,8 @@
             <p class="section-paragraph">{{ $t('about.partnerships.content') }}</p>
           </div>
           <div class="partnership-photos-container">
-            <img src="@/assets/images/aboutUs-cowork-1.jpg" alt="Corporate Partnership 1" class="partnership-photo" />
-            <img src="@/assets/images/aboutUs-cowork-2.jpg" alt="Corporate Partnership 2" class="partnership-photo" />
+            <img src="@/assets/images/aboutUs-cowork-1.jpg" :alt="$t('accessibility.altText.corporatePartnership1')" class="partnership-photo" />
+            <img src="@/assets/images/aboutUs-cowork-2.jpg" :alt="$t('accessibility.altText.corporatePartnership2')" class="partnership-photo" />
           </div>
         </div>
       </section>
@@ -69,7 +69,7 @@
       <section class="investors-section">
         <div class="investor-layout">
           <div class="investor-photo-container">
-            <img src="@/assets/images/aboutUs-investor-1.jpg" alt="Future Dream Investors" class="investor-photo" />
+            <img src="@/assets/images/aboutUs-investor-1.jpg" :alt="$t('accessibility.altText.futuredreamInvestors')" class="investor-photo" />
           </div>
           <div class="investor-text-content">
             <h2 class="section-heading">{{ $t('about.investors.title') }}</h2>

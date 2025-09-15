@@ -248,6 +248,41 @@
     "destination": "義大利城市列表",
     "date": "Date",
     "people": "Number of people",
-    "button": "Search"
+    "button": "Search",
+    "listButton": "List",
+    "highlights": "Italy Highlights",
+    "noResults": "No tours found for the selected destination.",
+    "cities": {
+      "milano": "Milano",
+      "roma": "Roma", 
+      "firenze": "Firenze",
+      "venezia": "Venezia"
+    },
+    "attractions": {
+      "duomoMilano": "Duomo di Milano",
+      "galleriaVittorio": "Galleria Vittorio Emanuele II",
+      "colosseum": "Colosseo",
+      "pantheon": "Pantheon",
+      "treviFountain": "Fontana di Trevi",
+      "uffiziGallery": "Uffizi Gallery",
+      "ponteVecchio": "Ponte Vecchio",
+      "piazzaSanMarco": "Piazza San Marco",
+      "grandCanal": "Grand Canal"
+    }
+  },
+  "accessibility": {
+    "altText": {
+      "corporatePartnership1": "Corporate Partnership 1",
+      "corporatePartnership2": "Corporate Partnership 2", 
+      "futuredreamInvestors": "Future Dream Investors",
+      "futuredreamLogo": "Future Dream Logo",
+      "uffiziGalleryCourtyard": "Uffizi Gallery courtyard",
+      "neuschwansteinCastle": "Neuschwanstein Castle in the mist",
+      "italianRailNetwork": "Map of Italian Rail network"
+    },
+    "ariaLabels": {
+      "facebook": "Facebook",
+      "downloadAndroidApp": "Download Android App"
+    }
   }
 }

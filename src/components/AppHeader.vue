@@ -256,7 +256,7 @@ onUnmounted(() => {
 /* Responsive Design */
 @media (max-width: 768px) {
   .header-container { padding: 0.6rem 1rem; }
-  .brand-title { font-size: 1.05rem; }
+  .brand-title { font-size: 1rem; }
   .nav-link { font-size: 0.85rem; padding: 0.4rem 0.75rem; }
 }
 
@@ -638,7 +638,7 @@ onUnmounted(() => {
   }
 
   .brand-title {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .header-actions {

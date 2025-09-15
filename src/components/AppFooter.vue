@@ -3,7 +3,7 @@
     <div class="container footer-content">
       <div class="footer-section about">
         <div class="logo-container">
-          <img src="@/assets/images/logo-futureDream.svg" alt="Future Dream Logo" class="footer-logo" />
+          <img src="@/assets/images/logo-futureDream.svg" :alt="$t('accessibility.altText.futuredreamLogo')" class="footer-logo" />
           <h2 class="footer-title">Future Dream</h2>
         </div>
         <p>{{ $t('footer.aboutText') }}</p>
@@ -25,7 +25,7 @@
       <div class="footer-section social">
         <h3 class="footer-heading">{{ $t('footer.followUs') }}</h3>
         <div class="social-links">
-          <a href="https://www.facebook.com/people/Future-Dream/61580857592468/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <a href="https://www.facebook.com/people/Future-Dream/61580857592468/" target="_blank" rel="noopener noreferrer" :aria-label="$t('accessibility.ariaLabels.facebook')">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
           </a>
         </div>
@@ -33,7 +33,7 @@
     </div>
     <div class="footer-bottom">
       <p>&copy; {{ new Date().getFullYear() }} Future Dream. {{ $t('footer.allRightsReserved') }}</p>
-      <a class="footer-download" href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk" download="NeuschwansteinCastle-App.apk" aria-label="Download Android App">
+      <a class="footer-download" href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk" download="NeuschwansteinCastle-App.apk" :aria-label="$t('accessibility.ariaLabels.downloadAndroidApp')">
         <span class="footer-download-icon">⬇️</span>
         {{ $t('download.button') }}
       </a>
