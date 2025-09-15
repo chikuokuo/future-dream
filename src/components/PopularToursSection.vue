@@ -49,6 +49,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 
 // Import images
@@ -59,6 +60,8 @@ import italyPrivateTourImg from '@/assets/images/TravelCard/italy_private_tour_5
 import florenceDayTripImg from '@/assets/images/TravelCard/florence_daytrip_from_rome_train.jpg'
 import florenceRenaissanceImg from '@/assets/images/TravelCard/florence_smallgroup_renaissance_tour.jpg'
 import { trackButtonClick } from '@/utils/analytics'
+
+const { locale } = useI18n()
 
 // Product data
 const toursData = {
@@ -155,7 +158,8 @@ const handleViewMoreClick = (tour: Tour) => {
     tour_name: tour.name,
     tour_location: tour.location,
     tour_price: tour.price_eur,
-    section: 'popular_tours'
+    section: 'popular_tours',
+    current_language: locale.value
   })
 }
 </script>
@@ -306,7 +310,7 @@ const handleViewMoreClick = (tour: Tour) => {
 .price-amount {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #059669;
+  color: #000000;
 }
 
 .view-more-btn {

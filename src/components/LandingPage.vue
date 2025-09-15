@@ -30,7 +30,7 @@
           <div class="hero-buttons">
             <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/future-dream-travel.apk"
               class="btn-primary" download="NeuschwansteinCastle-App.apk"
-              @click="() => trackButtonClick('btnPrimary', { download_type: 'apk', location: 'hero_section' })">
+              @click="() => trackButtonClick('btnPrimary', { download_type: 'apk', location: 'hero_section', current_language: locale })">
               <span class="btn-icon">📱</span>
               {{ $t('hero.downloadApk') }}
             </a>
@@ -93,7 +93,7 @@
 
         <a href="https://github.com/chikuokuo/ticket_sale/releases/latest/download/app-release.apk" class="download-btn"
           download="NeuschwansteinCastle-App.apk"
-          @click="() => trackButtonClick('downloadBtn', { download_type: 'apk', location: 'download_section' })">
+          @click="() => trackButtonClick('downloadBtn', { download_type: 'apk', location: 'download_section', current_language: locale })">
           <span class="download-btn-icon">⬇️</span>
           {{ $t('download.button') }}
         </a>
@@ -116,7 +116,7 @@ import UffiziGallerySection from './UffiziGallerySection.vue'
 import NeuschwansteinCastleSection from './NeuschwansteinCastleSection.vue'
 
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
 // SEO Meta Tags
 useHead({
@@ -146,7 +146,7 @@ const scrollToNextSection = () => {
 }
 
 const handleLearnMoreClick = () => {
-  trackButtonClick('learnMoreBtn', { scroll_target: 'popular_tours', location: 'hero_section' })
+  trackButtonClick('learnMoreBtn', { scroll_target: 'popular_tours', location: 'hero_section', current_language: locale.value })
   scrollToNextSection()
 }
 
