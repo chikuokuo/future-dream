@@ -1,12 +1,12 @@
 <template>
   <div class="destination-search-demo">
     <h3>Italian Destinations Search Demo</h3>
-    
+
     <!-- Search Input -->
     <div class="search-section">
-      <input 
-        v-model="searchQuery" 
-        type="text" 
+      <input
+        v-model="searchQuery"
+        type="text"
         placeholder="Search Italian destinations, attractions, or regions..."
         class="search-input"
       />
@@ -16,8 +16,8 @@
     <div v-if="!searchQuery" class="popular-section">
       <h4>Popular Destinations</h4>
       <div class="destinations-grid">
-        <div 
-          v-for="dest in popularDestinations" 
+        <div
+          v-for="dest in popularDestinations"
           :key="dest.id"
           class="destination-card"
           @click="showDestinationDetail(dest)"
@@ -35,8 +35,8 @@
     <div v-if="searchQuery && searchResults.length > 0" class="results-section">
       <h4>Search Results ({{ searchResults.length }})</h4>
       <div class="destinations-grid">
-        <div 
-          v-for="dest in searchResults" 
+        <div
+          v-for="dest in searchResults"
           :key="dest.id"
           class="destination-card"
           @click="showDestinationDetail(dest)"
@@ -59,8 +59,8 @@
     <div v-if="!searchQuery" class="categories-section">
       <h4>Browse by Category</h4>
       <div class="category-tabs">
-        <button 
-          v-for="(destinations, category) in filteredByCategory" 
+        <button
+          v-for="(destinations, category) in filteredByCategory"
           :key="category"
           @click="selectedCategory = category"
           :class="{ active: selectedCategory === category }"
@@ -69,11 +69,11 @@
           {{ category }} ({{ destinations.length }})
         </button>
       </div>
-      
+
       <div v-if="selectedCategory" class="category-results">
         <div class="destinations-grid">
-          <div 
-            v-for="dest in filteredByCategory[selectedCategory]" 
+          <div
+            v-for="dest in filteredByCategory[selectedCategory]"
             :key="dest.id"
             class="destination-card"
             @click="showDestinationDetail(dest)"
@@ -109,7 +109,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useDestinationSearch } from '@/composables/useDestinationSearch'
-import type { Destination } from '@/data/italianDestinations'
+import type { Destination, DestinationCategory } from '@/data/italianDestinations'
 
 const {
   searchQuery,
@@ -119,7 +119,7 @@ const {
 } = useDestinationSearch()
 
 const selectedDestination = ref<Destination | null>(null)
-const selectedCategory = ref<string>('cities')
+const selectedCategory = ref<DestinationCategory>('cities')
 
 const showDestinationDetail = (destination: Destination) => {
   selectedDestination.value = destination
